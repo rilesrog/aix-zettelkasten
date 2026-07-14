@@ -1,0 +1,47 @@
+name: Automated Ingest and Deploy
+
+on:
+  schedule:
+    # Run once every night at midnight UTC
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual pipeline run with 1 click
+
+permissions:
+  contents: write
+
+jobs:
+  ingest-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install System Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Crawler Pipeline Agent
+        env:
+          ZOTERO_USER_ID: ${{ secrets.ZOTERO_USER_ID }}
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python agent.py
+
+      - name: Commit and Push New Markdown Files
+        run: |
+          git config --global user.name "AIX-Zettelkasten-Bot"
+          git config --global user.email "bot@github.com"
+          git add docs/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Content Update - $(date +'%Y-%m-%d')" && git push)
+
+      - name: Build and Deploy MkDocs Web UI
+        run: mkdocs gh-deploy --force
