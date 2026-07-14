@@ -6,7 +6,7 @@ ingest_date: "2026-07-14"
 status: "publish"
 ---
 
-arXiv:2404.14218v1  [cs.HC]  22 Apr 2024
+arXiv:2404.14218v1 \[cs.HC\] 22 Apr 2024
 
 # Designing Safe and Engaging AI Experiences for Children: Towards the Definition of Best Practices in UI/UX Design
 
@@ -26,8 +26,8 @@ Additional Key Words and Phrases: Human-centered Computing; Child-computer Inter
 ## ACM Reference Format:
 
 Grazia Ragone, Paolo Buono, and Rosa Lanzilotti. 2024. Designing Safe and Engaging AI Experiences for Children: Towards the
-Definition of Best Practices in UI/UX Design. In *CHI 2024 Workshop on Child-centred AI Design, May 11, 2024, Honolulu, HI, USA.* ACM,
-New York, NY, USA, 4 pages. https://doi.org/XXXXXXX.XXXXXXX
+Definition of Best Practices in UI/UX Design. In _CHI 2024 Workshop on Child-centred AI Design, May 11, 2024, Honolulu, HI, USA._ ACM,
+New York, NY, USA, 4 pages. [https://doi.org/XXXXXXX.XXXXXXX](https://doi.org/XXXXXXX.XXXXXXX)
 
 ## 1 INTRODUCTION
 
@@ -44,19 +44,19 @@ with children, thus advocating for responsible and child-centered AI design prac
 Central to this endeavor is a focus on fostering positive learning outcomes and engagement. The proposed frame-
 
 Central to this endeavor is a focus on fostering positive learning outcomes and engagement. The proposed framework provides guidelines and strategies to prioritise children’s well-being and development in AI interface design.
-arXiv:2404.14218v1  [cs.HC]  22 Apr 2024Through extensive stakeholder involvement and strict adherence to ethical guidelines, the goal is to facilitate the creation of AI interfaces that effectively meet the distinctive needs of young users while upholding the highest standards
+arXiv:2404.14218v1 \[cs.HC\] 22 Apr 2024Through extensive stakeholder involvement and strict adherence to ethical guidelines, the goal is to facilitate the creation of AI interfaces that effectively meet the distinctive needs of young users while upholding the highest standards
 of safety and reliability.
 
 Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not
 made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components
 of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on
-servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
+servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from [permissions@acm.org](mailto:permissions@acm.org).
 © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.
 Manuscript submitted to ACM
 
 Manuscript submitted to ACM
 
----
+* * *
 
 To underscore the significance of creating safe, trustworthy, and reliable intelligent systems, consider an AI-driven
 educational game for children. Recommendations include aligning game content with educational objectives, incorporating adaptive learning features, providing real-time feedback, and ensuring accessibility. Evaluation metrics should
@@ -69,22 +69,22 @@ children, we aim to create interfaces that align with children’s learning need
 integrating the following components into the framework.
 Collaborative workshops involving children, educators, designers, and researchers can be organised to gather di-
 
-Collaborative workshops involving children, educators, designers, and researchers can be organised to gather diverse perspectives and co-create design ideas [4]. These workshops will serve as foundational platforms for requirement identification and brainstorming. Additionally, we suggest conducting Child-Centric Design Sessions where children actively participate in the interface design process. Their input will be solicited to ensure that the final product
-resonates with their preferences and needs [3]. Moreover, employing rapid prototyping techniques will allow us to
-create iterative versions of the interface [2]. These prototypes will be tested with children to gather real-time feedback
+Collaborative workshops involving children, educators, designers, and researchers can be organised to gather diverse perspectives and co-create design ideas \[4\]. These workshops will serve as foundational platforms for requirement identification and brainstorming. Additionally, we suggest conducting Child-Centric Design Sessions where children actively participate in the interface design process. Their input will be solicited to ensure that the final product
+resonates with their preferences and needs \[3\]. Moreover, employing rapid prototyping techniques will allow us to
+create iterative versions of the interface \[2\]. These prototypes will be tested with children to gather real-time feedback
 and refine the design based on user preferences.
 Furthermore, we propose employing a combination of qualitative and quantitative research methods to gain com-
 
-Furthermore, we propose employing a combination of qualitative and quantitative research methods to gain comprehensive insights into children’s interaction with the AI interface [6]. This approach will involve both observational
+Furthermore, we propose employing a combination of qualitative and quantitative research methods to gain comprehensive insights into children’s interaction with the AI interface \[6\]. This approach will involve both observational
 and ethnographic studies, as well as data collection, to capture nuanced user behaviors and preferences. By integrating observational methods and ethnographic research, we aim to better understand children’s socio-cultural context
-and everyday interactions with technology [5]. By integrating these innovative methodologies, we strive to develop a
+and everyday interactions with technology \[5\]. By integrating these innovative methodologies, we strive to develop a
 robust framework for designing AI interfaces that are effective, engaging, and safe for children.
 
 ## 2 TOWARDS ETHICAL AND ENGAGING AI INTERFACES FOR CHILDREN: A COMPREHENSIVE FRAMEWORK
 
 Designing AI interfaces for children requires a holistic approach that integrates key methodologies and practices to
-ensure human-centered design [7]. Collaborative workshops involving child psychologists, educators, assessment specialists, and children themselves serve as foundational platforms for gathering insights and feedback to inform interface
-development. Adherence to ethical guidelines and obtaining informed consent are essential to prioritise child participants’ well-being and safety [8].
+ensure human-centered design \[7\]. Collaborative workshops involving child psychologists, educators, assessment specialists, and children themselves serve as foundational platforms for gathering insights and feedback to inform interface
+development. Adherence to ethical guidelines and obtaining informed consent are essential to prioritise child participants’ well-being and safety \[8\].
 The proposed framework advocates for a series of iterative steps. We propose leveraging the opportunity of a col-
 
 Following the workshop, an iterative exchange of ideas and stakeholder feedback would be crucial for refining and
@@ -92,7 +92,7 @@ finalising the guidelines. Input from psychologists and educators would be parti
 guidelines prioritise positive learning outcomes and align with the developmental needs of children. By fostering collaboration and incorporating insights from various disciplines, we can develop comprehensive and effective guidelines
 for designing and assessing AI systems tailored to children’s unique needs and preferences.
 
----
+* * *
 
 User testing sessions with children are pivotal, allowing observation of interactions to identify usability issues and
 understand preferences and behaviours. Involving assessment specialists ensures alignment with educational objectives and accurate evaluation of learning outcomes. Additionally, emphasising strict adherence to ethical guidelines
@@ -126,18 +126,18 @@ Following these practices, designers can create AI interfaces that offer enrichi
 
 Schneiderman’s Human-Centered AI framework emphasises the importance of trustworthiness, reliability, and safety
 in AI interactions, with key metrics including transparency, explainability, accuracy, consistency, robustness, fairness,
-and user control [1]. For children interacting with AI interfaces, ensuring these qualities is paramount. *Transparency*
-ensures children understand how AI systems work, fostering comprehension and trust. *Explainability* complements
-transparency by ensuring algorithms are understandable to young users, promoting learning. *Accuracy* prevents misinformation, vital for reliable learning experiences, such as accurate translations in language learning apps. *Consistency*
-builds trust over time, providing reliable performance in AI-driven activities like storytelling apps. *Robustness* enables
+and user control \[1\]. For children interacting with AI interfaces, ensuring these qualities is paramount. _Transparency_
+ensures children understand how AI systems work, fostering comprehension and trust. _Explainability_ complements
+transparency by ensuring algorithms are understandable to young users, promoting learning. _Accuracy_ prevents misinformation, vital for reliable learning experiences, such as accurate translations in language learning apps. _Consistency_
+builds trust over time, providing reliable performance in AI-driven activities like storytelling apps. _Robustness_ enables
 adaptability, ensuring AI systems perform reliably across various inputs and scenarios, as seen in educational games
-adjusting to individual progress. *Fairness* guarantees equitable treatment, crucial for personalised learning platforms
-offering unbiased recommendations to every child. Lastly, *user control* and *autonomy* empower children to personalise
+adjusting to individual progress. _Fairness_ guarantees equitable treatment, crucial for personalised learning platforms
+offering unbiased recommendations to every child. Lastly, _user control_ and _autonomy_ empower children to personalise
 their interactions, fostering a sense of ownership over their learning journey. By prioritising these metrics in AI interface design and evaluation, we can create engaging, trustworthy, and safe experiences that support children’s learning
 and development in the digital age. This systematic approach ensures positive and responsible interactions, benefiting
 users of all ages.
 
----
+* * *
 
 ## 5 CONCLUSION
 
@@ -156,34 +156,33 @@ CUP: H97G22000210007).
 
 ## REFERENCES
 
-[1] Shneiderman Ben. 2022. *Human-Centered AI* (1 ed.). Oxford University Press. 400 pages.
-[2] Snyder Caroline. 2003. Paper Prototyping: The Fast and Easy Way to Design and Refine user Interfaces. *Morgan Kaufmann Publishers, Burlington*
-(2003), 5–18. https://www.abebooks.it/9781558608702/Paper-Prototyping-Fast-Easy-Way-1558608702/plp
-[3] Allison Druin. 1999. The role of children in the design of new technology. *Behaviour & Information Technology* 21, 1 (1999), 1–25.
-https://doi.org/10.1080/01449290110108659
-[4] Sanders E.B.N. and Stappers P.J.S. 2008. Co-creation and the new landscapes of design. *International Journal of CoCreation in Design and the Arts* 4,
-1 (2008), 5–18. https://doi.org/10.1080/15710880701875068
-[5] Martyn Hammersley and Paul Atkinson. 2019. *Ethnography Principles in Practice* (4 ed.). Imprint Routledge. 292 pages.
-https://doi.org/10.4324/9781315146027
-[6] Creswell J. and Creswell D. 2022. *Research Design Qualitative, Quantitative and Mixed Methods Approaches* (6 ed.). SAGE Publications. 400 pages.
-[7] Schoenherr JR., Abbas R., Michael K., Rivas P., and Anderson T.D. 2023. Designing AI Using a Human-Centered Approach: Explainability and
-Accuracy Toward Trustworthiness. *IEEE Transactions on Technology and Society* 4, 1 (2023), 9–23. https://doi.org/10.1109/TTS.2023.3257627
-[8] Mahomed S., Aitken M., Atabey A., Wong J., and Briggs M. 2023. *AI, Children’s Rights, & Wellbeing: Transnational Frameworks: Mapping 13*
-*Frameworks at the Intersections of Data-Intensive Technologies, Children’s Rights, and Wellbeing.* Technical Report 1. The Alan Turing Institute.
-https://www.turing.ac.uk/sites/default/files/2023-11/ai-childrens_rights-_wellbeing-transnational_frameworks_report.pdf
+\[1\] Shneiderman Ben. 2022. _Human-Centered AI_ (1 ed.). Oxford University Press. 400 pages.
+\[2\] Snyder Caroline. 2003. Paper Prototyping: The Fast and Easy Way to Design and Refine user Interfaces. _Morgan Kaufmann Publishers, Burlington_
+(2003), 5–18. [https://www.abebooks.it/9781558608702/Paper-Prototyping-Fast-Easy-Way-1558608702/plp](https://www.abebooks.it/9781558608702/Paper-Prototyping-Fast-Easy-Way-1558608702/plp)
+\[3\] Allison Druin. 1999. The role of children in the design of new technology. _Behaviour & Information Technology_ 21, 1 (1999), 1–25.
+[https://doi.org/10.1080/01449290110108659](https://doi.org/10.1080/01449290110108659)
+\[4\] Sanders E.B.N. and Stappers P.J.S. 2008. Co-creation and the new landscapes of design. _International Journal of CoCreation in Design and the Arts_ 4,
+1 (2008), 5–18. [https://doi.org/10.1080/15710880701875068](https://doi.org/10.1080/15710880701875068)
+\[5\] Martyn Hammersley and Paul Atkinson. 2019. _Ethnography Principles in Practice_ (4 ed.). Imprint Routledge. 292 pages.
+[https://doi.org/10.4324/9781315146027](https://doi.org/10.4324/9781315146027)
+\[6\] Creswell J. and Creswell D. 2022. _Research Design Qualitative, Quantitative and Mixed Methods Approaches_ (6 ed.). SAGE Publications. 400 pages.
+\[7\] Schoenherr JR., Abbas R., Michael K., Rivas P., and Anderson T.D. 2023. Designing AI Using a Human-Centered Approach: Explainability and
+Accuracy Toward Trustworthiness. _IEEE Transactions on Technology and Society_ 4, 1 (2023), 9–23. [https://doi.org/10.1109/TTS.2023.3257627](https://doi.org/10.1109/TTS.2023.3257627)
+\[8\] Mahomed S., Aitken M., Atabey A., Wong J., and Briggs M. 2023. _AI, Children’s Rights, & Wellbeing: Transnational Frameworks: Mapping 13_ _Frameworks at the Intersections of Data-Intensive Technologies, Children’s Rights, and Wellbeing._ Technical Report 1. The Alan Turing Institute.
+[https://www.turing.ac.uk/sites/default/files/2023-11/ai-childrens\_rights-\_wellbeing-transnational\_frameworks\_report.pdf](https://www.turing.ac.uk/sites/default/files/2023-11/ai-childrens_rights-_wellbeing-transnational_frameworks_report.pdf)
 
-## https://doi.org/10.4324/9781315146027 https://doi.org/10.4324/9781315146027
+## [https://doi.org/10.4324/9781315146027](https://doi.org/10.4324/9781315146027) [https://doi.org/10.4324/9781315146027](https://doi.org/10.4324/9781315146027)
 
 Received 20 February 2024; revised 12 March 2024; accepted 30 March 2024
 
----
+* * *
 
 This figure "acm-jdslogo.png" is available in "png" format from:
 
-http://arxiv.org/ps/2404.14218v1
+[http://arxiv.org/ps/2404.14218v1](http://arxiv.org/ps/2404.14218v1)
 
----
+* * *
 
 This figure "sample-franklin.png" is available in "png" format from:
 
-http://arxiv.org/ps/2404.14218v1
+[http://arxiv.org/ps/2404.14218v1](http://arxiv.org/ps/2404.14218v1)

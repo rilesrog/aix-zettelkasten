@@ -1,12 +1,12 @@
 ---
 title: "Explainable PCGML via Game Design Patterns"
 source_url: "http://arxiv.org/pdf/1809.09419v1"
-doi: ""
+doi: "10.48550/arXiv.1809.09419"
 ingest_date: "2026-07-14"
 status: "publish"
 ---
 
-arXiv:1809.09419v1  [cs.AI]  25 Sep 2018
+arXiv:1809.09419v1 \[cs.AI\] 25 Sep 2018
 
 ## individual designer. Introduction
 
@@ -19,9 +19,9 @@ Georgia Institute of Technology¹
 Worcester Polytechnic Institute²
 
 Worcester Polytechnic Institute²
-mguzdial3, jreno, jonathanchen*g*@gatech.edu, gmsmith@wpi.edu, riedl@cc.gatech.edu
+mguzdial3, jreno, jonathanchen _g_@gatech.edu, [gmsmith@wpi.edu](mailto:gmsmith@wpi.edu), [riedl@cc.gatech.edu](mailto:riedl@cc.gatech.edu)
 
-*f*mguzdial3, jreno, jonathanchen*g*@gatech.edu, gmsmith@wpi.edu, riedl@cc.gatech.edu
+_f_ mguzdial3, jreno, jonathanchen _g_@gatech.edu, [gmsmith@wpi.edu](mailto:gmsmith@wpi.edu), [riedl@cc.gatech.edu](mailto:riedl@cc.gatech.edu)
 
 ## Abstract
 
@@ -51,13 +51,13 @@ significant amount of human-authored knowledge to generate content, such as rule
 extract this design knowledge from existing corpora of game
 content (Summerville et al. 2017). However, this approach
 has its own weaknesses; Applied naively, these models require machine learning literacy to understand and debug.
-arXiv:1809.09419v1  [cs.AI]  25 Sep 2018
+arXiv:1809.09419v1 \[cs.AI\] 25 Sep 2018
 Machine learning literacy is uncommon, especially among
 those designers who might most benefit from PCGML.
 Explainable AI represents a field of research into opening
 
 Copyright c 2018, Association for the Advancement of Artificial
-Intelligence (www.aaai.org). All rights reserved.
+Intelligence ( [www.aaai.org](http://www.aaai.org/)). All rights reserved.
 
 Design patterns (Bjork and Holopainen 2004) represent
 one popular way to represent game design knowledge. A design pattern is a category of game structure that serves a general design purpose across similar games. Researchers tend
@@ -82,7 +82,7 @@ be understood as labels on level structure, which allow our
 PCGML model to better represent and reflect the design values of an individual designer. This system has two major
 components: (1) a classification system that learns to classify level structures with the user-specified design pattern
 labels. This system ensures a user does not have to label all
-existing content to train (2) a level generation system that inarXiv:1809.09419v1  [cs.AI]  25 Sep 2018corporates the user’s level design patterns, and can use these
+existing content to train (2) a level generation system that inarXiv:1809.09419v1 \[cs.AI\] 25 Sep 2018corporates the user’s level design patterns, and can use these
 patterns as a vocabulary with which to interact with the user.
 For example, generating labels on level structure to represent
 the model’s interpretation of that structure to the user.
@@ -93,7 +93,7 @@ major components. Third, we discuss the three evaluations al. 2018). If we could
 
 AI to PCGML, the use of a random forest classifier to minimize user effort, and the results of our evaluations. Our re-
 
----
+* * *
 
 Figure 1: Network architecture for the Autoencoder.
 
@@ -108,8 +108,7 @@ majority of existing approaches have relied upon search
 or grammar-based approaches instead of machine learning,
 making it difficult to adapt to the needs of a particular designer over time (Liapis, Yannakakis, and Togelius 2013;
 Shaker, Shaker, and Togelius 2013; Baldwin et al. 2017). A
-final version of our system would focus on machine learning, adapting to the user, and *explaining and visualizing its*
-*inner model/process*.
+final version of our system would focus on machine learning, adapting to the user, and _explaining and visualizing its_ _inner model/process_.
 Procedural content generation via Machine Learning
 
 models to individual designers.
@@ -190,7 +189,7 @@ In total we identified thirty unique classes of level compo-
 
 parse images of each level for a richer representation.
 In total we identified thirty unique classes of level components, and make use of a matrix representation for each level
-section of size 8 8 30. The first two dimensions determine the tiles in the *x* and *y* axes, while the last dimension
+section of size 8 8 30. The first two dimensions determine the tiles in the _x_ and _y_ axes, while the last dimension
 represents a one-hot vector of length 30 expressing component class. This vector is all 0’s for any empty tile of a Super
 Mario Bros. level, and otherwise has 1’s at the index associated with that particular level component. Thus, we can
 represent all level components, including background decoration. We note that we treat palette swaps of the same component as equivalent in class.
@@ -231,9 +230,9 @@ new content. Further, we note that when two humans collaborate they must negotia
 
 The existing level generation system is based on an autoencoder, and we visualize its architecture in Figure 1. The input
 comes in the form of a chunk of level content and the associated design patterns label, such as “intro” in the figure. This
-chunk is represented as an eight by eight by thirty input tensor plus a tensor of size *n* where *n* indicates the total number
+chunk is represented as an eight by eight by thirty input tensor plus a tensor of size _n_ where _n_ indicates the total number
 of design pattern labels given by the user. This last vector of
-size *n* is a one-hot encoded vector of level design pattern
+size _n_ is a one-hot encoded vector of level design pattern
 labels.
 After input, the level structure and design pattern label
 
@@ -246,7 +245,7 @@ allow better generalization. After the CNN layers the output
 of this section and the design patterns vector recombine and
 pass through a fully connected layer with relu activation to
 an embedded vector of size 512. We note that, while large,
-this is much smaller than the 1920+*n* features of the input
+this is much smaller than the 1920+ _n_ features of the input
 layer. The decoder section is an inverse of the encoder section of the architecture, starting with a relu fully connected
 layer, then deconvolutional neural network layers with upsampling handling the level structure. We implemented this
 model with an adam optimizer and mean square loss. Note
@@ -277,7 +276,7 @@ Adam Le Doux: Le Doux is a game developer and de-
 
 ## Dataset Collection
 
----
+* * *
 
 | set | labels | total | top three |
 | --- | --- | --- | --- |
@@ -328,65 +327,65 @@ design pattern labels.
 | Snyder | CNN | 49.40±0.77 | 0.00±0.00 |
 
 $$
-\overline{{28.73{\pm}1.89}}
+\\overline{{28.73{\\pm}1.89}}
 $$
 
 $$
-\overline{{26.73\pm3.70}}
+\\overline{{26.73\\pm3.70}}
 $$
 
 $$
-\overline{{36.08{\pm}19.01}}
+\\overline{{36.08{\\pm}19.01}}
 $$
 
 $$
-{overline{{26.19{\pm5.02}}}}
+{overline{{26.19{\\pm5.02}}}}
 $$
 
 studio Finite Reflection, and an associate producer at Car-
 
 $$
-4 2. 3 1 \pm 2. 9 6
+4 2. 3 1 \\pm 2. 9 6
 $$
 
 $$
-\overline{{92.11{\pm}0.89}}
+\\overline{{92.11{\\pm}0.89}}
 $$
 
 $$
-\overline{{36.82{\pm}11.84}}
+\\overline{{36.82{\\pm}11.84}}
 $$
 
 $$
-\overline{{59.76{\pm}8.16}}
+\\overline{{59.76{\\pm}8.16}}
 $$
 
 $$
-\overline{{88.49{\pm}0.92}}
+\\overline{{88.49{\\pm}0.92}}
 $$
 
 $$
-\ overline{{41.93\{2\pm2.29}}
+\ overline{{41.93{2\\pm2.29}}
 $$
 
 $$
-\ {\overline{{99.19{\pm}0.69}}}
+\ {\\overline{{99.19{\\pm}0.69}}}
 $$
 
 $$
-2 9. 0 7 \pm 2. 1 3
+2 9. 0 7 \\pm 2. 1 3
 $$
 
 $$
-\overline{{44.32{\pm}2.89}}
+\\overline{{44.32{\\pm}2.89}}
 $$
 
 $$
-\overline{{1.85{\pm\mathfrak{5}}.56}}
+\\overline{{1.85{\\pm\\mathfrak{5}}.56}}
 $$
 
 $$
-\underline{{{86.72{\pm1}.62}}}
+\\underline{{{86.72{\\pm1}.62}}}
 $$
 
 44.32 2.89 29.07 2.13 previously a Technical Producer at Bungie.
@@ -394,7 +393,7 @@ All five of these experts were asked to label their choice
 guage/vocabulary that you’d use if you were designing lev-
 
 $$
-\ {overline{{49.44{\pm}00.77}}}
+\ {overline{{49.44{\\pm}00.77}}}
 $$
 
 Table 2: A table comparing the accuracy of our random forest label classifier compared to a CNN baseline.
@@ -413,7 +412,7 @@ converged. We make use of a three-fold cross validation on
 
 sorted by frequency and alphabetically, of each set. Each ex-
 
----
+* * *
 
 | set | No labels | No Auto Tag | Full |
 | --- | --- | --- | --- |
@@ -425,71 +424,71 @@ sorted by frequency and alphabetically, of each set. Each ex-
 | Snyder | 28.6±9.9 | 144.2±5.0 | 15.0±9.4 |
 
 $$
-\overline{{12.3{\pm}6.3}}
+\\overline{{12.3{\\pm}6.3}}
 $$
 
 $$
-\overline{{152.8{\pm}4.8}}
+\\overline{{152.8{\\pm}4.8}}
 $$
 
 $$
-\overline{{10.6{\pm\bf{5}}.6}}
+\\overline{{10.6{\\pm\\bf{5}}.6}}
 $$
 
 $$
-\overline{{{10.4\pm5.0}}}
+\\overline{{{10.4\\pm5.0}}}
 $$
 
 $$
-\overline{{135.7{\pm3.8}}}
+\\overline{{135.7{\\pm3.8}}}
 $$
 
 $$
-\overline{{\ 9\pm0.4\pm4.4}}
+\\overline{{\ 9\\pm0.4\\pm4.4}}
 $$
 
 $$
-1 1. 5 \pm 6. 1
+1 1. 5 \\pm 6. 1
 $$
 
 $$
-\overline{{157.2{\pm3.5}}}
+\\overline{{157.2{\\pm3.5}}}
 $$
 
 $$
-\overline{{10.4{\pm\bf{5}}.6}}
+\\overline{{10.4{\\pm\\bf{5}}.6}}
 $$
 
 $$
-\overline{{12.7{\pm\mathrm{4.8}}}}
+\\overline{{12.7{\\pm\\mathrm{4.8}}}}
 $$
 
 $$
-\overline{{11.5{\pm\mathrm{4.4}}}}
+\\overline{{11.5{\\pm\\mathrm{4.4}}}}
 $$
 
 $$
-{\overline{{167.6{\pm4.0}}}}
+{\\overline{{167.6{\\pm4.0}}}}
 $$
 
 $$
-\overline{{129.6{\pm3.6}}}
+\\overline{{129.6{\\pm3.6}}}
 $$
 
 $$
-\overline{{10.6{\pm}3.3}}
+\\overline{{10.6{\\pm}3.3}}
 $$
 
 $$
-\overline{{28.6{\pm}9.9}}
+\\overline{{28.6{\\pm}9.9}}
 $$
 
 $$
-\overline{{144.2\pm5.0}}
+\\overline{{144.2\\pm5.0}}
 $$
 
 $$
-\overline{{15.0\ \pm9.4}}
+\\overline{{15.0\ \\pm9.4}}
 $$
 
 Table 3: A table comparing the error in terms of incorrect
@@ -558,7 +557,7 @@ test sample.
 We give the average number and standard deviation of in-
 
 We give the average number and standard deviation of incorrect structural features/tiles over all three folds in Table
-2. We note that the minimum value here would be 0 errors
+2\. We note that the minimum value here would be 0 errors
 and the maximum value would be 8 8 30 or 1920 incorrect structural feature values. For every expert except for
 Kini, who authored the smallest number of labels, our full
 system outperformed both variations. While some of these
@@ -593,7 +592,7 @@ We present the results of this evaluation in Table 4. We
 note that, while the best performing variation did not change
 from the prior variation, in all cases except for the Kini
 
----
+* * *
 
 |  | Le Doux | Del Rosario | Smith | Smith-Naive | Kini | Snyder |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -603,83 +602,83 @@ from the prior variation, in all cases except for the Kini
 | Full | 10.6±5.6 | 9.0±4.4 | 10.4±5.6 | 11.5±4.4 | 10.6±3.3 | 15.0±9.4 |
 
 $$
-{{\ \overline{{{12.3\pm\mathrm{16}.3}}}}}\,
+{{\ \\overline{{{12.3\\pm\\mathrm{16}.3}}}}},
 $$
 
 $$
-\overline{{{10.4\pm5.0}}}
+\\overline{{{10.4\\pm5.0}}}
 $$
 
 $$
-\overline{{11.5\ \pm6.1}}
+\\overline{{11.5\ \\pm6.1}}
 $$
 
 $$
-\overline{{9.3{\pm4.4}}}
+\\overline{{9.3{\\pm4.4}}}
 $$
 
 $$
-\overline{{11.1\ {pm.8}}}
+\\overline{{11.1\ {pm.8}}}
 $$
 
 $$
-\overline{{28.6{\pm}9.9}}
+\\overline{{28.6{\\pm}9.9}}
 $$
 
 $$
-\overline{{{10.1\pm5.0}}}
+\\overline{{{10.1\\pm5.0}}}
 $$
 
 $$
-\overline{{{11.2\pm6.1}}}
+\\overline{{{11.2\\pm6.1}}}
 $$
 
 $$
-\overline{{10.8{\pm\bf{5}}.8}}
+\\overline{{10.8{\\pm\\bf{5}}.8}}
 $$
 
 $$
-1 1. 0 \pm 6. 0
+1 1. 0 \\pm 6. 0
 $$
 
 $$
-\overline{{9.3{\pm44.4}}}
+\\overline{{9.3{\\pm44.4}}}
 $$
 
 $$
-\overline{{{0.8\pm5.0}}}
+\\overline{{{0.8\\pm5.0}}}
 $$
 
 $$
-\overline{{16.7\ \pm9.8}}
+\\overline{{16.7\ \\pm9.8}}
 $$
 
 $$
-\overline{{10.3{\pm}4.2}}
+\\overline{{10.3{\\pm}4.2}}
 $$
 
 $$
-\overline{{10.6{\pm\bf{5}}.6}}
+\\overline{{10.6{\\pm\\bf{5}}.6}}
 $$
 
 $$
-\overline{{{16.1\pm9.6}}}
+\\overline{{{16.1\\pm9.6}}}
 $$
 
 $$
-\overline{{9.0{\pm4.4}}}
+\\overline{{9.0{\\pm4.4}}}
 $$
 
 $$
-\overline{{10.4{\pm\bf{5}}.6}}
+\\overline{{10.4{\\pm\\bf{5}}.6}}
 $$
 
 $$
-\overline {{1 5. 0 \pm 9. 4}}
+\\overline {{1 5. 0 \\pm 9. 4}}
 $$
 
 $$
-\overline{{11.5{\pm\mathrm{4.}4}}}
+\\overline{{11.5{\\pm\\mathrm{4.}4}}}
 $$
 
 Table 4: A table comparing the transfer learning approach structure errors to the full system structure errors.
@@ -745,119 +744,97 @@ rial is based upon work supported by the National Science
 Foundation under Grant No. IIS-1525967. We would also Qualitative Example
 like to thank the organizers and attendees of Dagstuhl Seminar 17471 on Artificial and Computational Intelligence in
 
-[Abadi et al. 2016]Abadi, M.; Barham, P.; Chen, J.; Chen,
+\[Abadi et al. 2016\]Abadi, M.; Barham, P.; Chen, J.; Chen,
 Z.; Davis, A.; Dean, J.; Devin, M.; Ghemawat, S.; Irving,
 
----
+* * *
 
-G.; Isard, M.; et al. 2016. Tensorflow: A system for largescale machine learning. In *OSDI*, volume 16, 265–283.
-[Baldwin et al. 2017]Baldwin, A.; Dahlskog, S.; Font, J. M.;
-and Holmberg, J. 2017. Mixed-initiative procedural generation of dungeons using game design patterns. In *Compu-*
-*tational Intelligence and Games (CIG), 2017 IEEE Confer-*
-*ence on*, 25–32. IEEE.
-[Biran and Cotton 2017]Biran, O., and Cotton, C. 2017. Explanation and justification in machine learning: A survey. In
-*IJCAI 2017 Workshop on Explainable AI (XAI)*.
-[Bjork and Holopainen 2004]Bjork, S., and Holopainen, J.
-2004. Patterns in game design. *ISBN:1584503548*.
-[Bradski and Kaehler 2000]Bradski, G., and Kaehler, A.
-2000. Opencv. *Dr. Dobbs journal of software tools* 3.
-[Codella et al. 2018]Codella, N. C.; Hind, M.; Ramamurthy,
+G.; Isard, M.; et al. 2016. Tensorflow: A system for largescale machine learning. In _OSDI_, volume 16, 265–283.
+\[Baldwin et al. 2017\]Baldwin, A.; Dahlskog, S.; Font, J. M.;
+and Holmberg, J. 2017. Mixed-initiative procedural generation of dungeons using game design patterns. In _Compu-_ _tational Intelligence and Games (CIG), 2017 IEEE Confer-_ _ence on_, 25–32. IEEE.
+\[Biran and Cotton 2017\]Biran, O., and Cotton, C. 2017. Explanation and justification in machine learning: A survey. In
+_IJCAI 2017 Workshop on Explainable AI (XAI)_.
+\[Bjork and Holopainen 2004\]Bjork, S., and Holopainen, J.
+2004\. Patterns in game design. _ISBN:1584503548_.
+\[Bradski and Kaehler 2000\]Bradski, G., and Kaehler, A.
+2000\. Opencv. _Dr. Dobbs journal of software tools_ 3.
+\[Codella et al. 2018\]Codella, N. C.; Hind, M.; Ramamurthy,
 K. N.; Campbell, M.; Dhurandhar, A.; Varshney, K. R.; Wei,
-D.; and Mojsilovic, A. 2018. Teaching meaningful explanations. *arXiv:1805.11648*.
-[Dahlskog and Togelius 2012]Dahlskog, S., and Togelius, J.
-2012. Patterns and procedural content generation: revisiting
-mario in world 1 level 1. In *Proceedings of the First Work-*
-*shop on Design Patterns in Games*, 1. ACM.
-[Deterding et al. 2017]Deterding, C. S.; Hook, J. D.;
+D.; and Mojsilovic, A. 2018. Teaching meaningful explanations. _arXiv:1805.11648_.
+\[Dahlskog and Togelius 2012\]Dahlskog, S., and Togelius, J.
+2012\. Patterns and procedural content generation: revisiting
+mario in world 1 level 1. In _Proceedings of the First Work-_ _shop on Design Patterns in Games_, 1\. ACM.
+\[Deterding et al. 2017\]Deterding, C. S.; Hook, J. D.;
 Fiebrink, R.; Gow, J.; Akten, M.; Smith, G.; Liapis, A.; and
 Compton, K. 2017. Mixed-initiative creative interfaces. In
-*CHI EA’17: Proceedings of the 2016 CHI Conference Ex-*
-*tended Abstracts on Human Factors in Computing Systems*.
+_CHI EA’17: Proceedings of the 2016 CHI Conference Ex-_ _tended Abstracts on Human Factors in Computing Systems_.
 ACM.
-[Ehsan et al. 2017]Ehsan, U.; Harrison, B.; Chan, L.; and
+\[Ehsan et al. 2017\]Ehsan, U.; Harrison, B.; Chan, L.; and
 Riedl, M. O. 2017. Rationalization: A neural machine translation approach to generating natural language explanations.
-*arXiv:1702.07826*.
-[Guzdial and Riedl 2016]Guzdial, M., and Riedl, M. 2016.
-Game level generation from gameplay videos. In *Twelfth*
-*Artificial Intelligence and Interactive Digital Entertainment*
-*Conference*.
-[Hullett and Whitehead 2010]Hullett, K., and Whitehead, J.
-2010. Design patterns in fps levels. In *FDG’10 Proceedings*
-*of the Fifth International Conference on the Foundations of*
-*Digital Games*. ACM.
-[Jain et al. 2016]Jain, R.; Isaksen, A.; Holmgard, C.; and To-˚
+_arXiv:1702.07826_.
+\[Guzdial and Riedl 2016\]Guzdial, M., and Riedl, M. 2016.
+Game level generation from gameplay videos. In _Twelfth_ _Artificial Intelligence and Interactive Digital Entertainment_ _Conference_.
+\[Hullett and Whitehead 2010\]Hullett, K., and Whitehead, J.
+2010\. Design patterns in fps levels. In _FDG’10 Proceedings_ _of the Fifth International Conference on the Foundations of_ _Digital Games_. ACM.
+\[Jain et al. 2016\]Jain, R.; Isaksen, A.; Holmgard, C.; and To-˚
 gelius, J. 2016. Autoencoders for level generation, repair,
-and recognition. In *Proceedings of the ICCC Workshop on*
-*Computational Creativity and Games*.
-[Jones, Oliphant, and Peterson 2014]Jones, E.; Oliphant, T.;
-and Peterson, P. 2014. *f*SciPy*g*: open source scientific tools
-for *f*Python*g*.
-[Kingma and Welling 2013]Kingma, D. P., and Welling, M.
-2013. Auto-encoding variational bayes. In *The 2nd Interna-*
-*tional Conference on Learning Representations (ICLR)*.
-[Lang 1988]Lang, K. J. 1988. A time-delay neural network
-architecture for speech recognition. *Technical Report CMU-*
-*CS-88-152*.
-[LeCun et al. 1989]LeCun, Y.; Boser, B.; Denker, J. S.; Henderson, D.; Howard, R. E.; Hubbard, W.; and Jackel, L. D.
+and recognition. In _Proceedings of the ICCC Workshop on_ _Computational Creativity and Games_.
+\[Jones, Oliphant, and Peterson 2014\]Jones, E.; Oliphant, T.;
+and Peterson, P. 2014. _f_ SciPy _g_: open source scientific tools
+for _f_ Python _g_.
+\[Kingma and Welling 2013\]Kingma, D. P., and Welling, M.
+2013\. Auto-encoding variational bayes. In _The 2nd Interna-_ _tional Conference on Learning Representations (ICLR)_.
+\[Lang 1988\]Lang, K. J. 1988. A time-delay neural network
+architecture for speech recognition. _Technical Report CMU-_ _CS-88-152_.
+\[LeCun et al. 1989\]LeCun, Y.; Boser, B.; Denker, J. S.; Henderson, D.; Howard, R. E.; Hubbard, W.; and Jackel, L. D.
 
 1989. Backpropagation applied to handwritten zip code
-recognition. *Neural computation* 1(4):541–551.
-[Liapis, Yannakakis, and Togelius 2013]Liapis, A.; Yannakakis, G. N.; and Togelius, J. 2013. Sentient sketchbook:
-Computer-aided game level authoring. In *Proceedings*
-*of ACM Conference on Foundations of Digital Games*,
-213–220. FDG.
-[Liaw, Wiener, and others 2002]Liaw, A.; Wiener, M.; et al.
-2002. Classification and regression by randomforest. *R news*
-2(3):18–22.
-[Michalski, Carbonell, and Mitchell 2013]Michalski, R. S.;
-Carbonell, J. G.; and Mitchell, T. M. 2013. *Machine learn-*
-*ing: An artificial intelligence approach*. Springer Science &
-Business Media.
-[Milam and El Nasr 2010]Milam, D., and El Nasr, M. S.
-2010. Design patterns to guide player movement in 3d
-games. In *Proceedings of the 5th ACM SIGGRAPH Sym-*
-*posium on Video Games*, 37–42. ACM.
-[Olah et al. 2018]Olah, C.; Satyanarayan, A.; Johnson, I.;
-Carter, S.; Schubert, L.; Ye, K.; and Mordvintsev, A. 2018.
-The building blocks of interpretability. *Distill* 3(3):e10.
-[Shaker, Shaker, and Togelius 2013]Shaker, N.; Shaker, M.;
-and Togelius, J. 2013. Ropossum: An authoring tool for
-designing, optimizing and solving cut the rope levels. In
-*Proceedings of the Ninth AAAI Conference on Artificial In-*
-*telligence and Interactive Digital Entertainment*.
-[Smith, Whitehead, and Mateas 2011]Smith, G.; Whitehead, J.; and Mateas, M. 2011. Tanagra: Reactive planning
-and constraint solving for mixed-initiative level design.
-*IEEE Transactions on Computational Intelligence and AI in*
-*Games* 3(3):201–215.
-[Snodgrass and Ontanon 2017] ´ Snodgrass, S., and Ontanon, ´
-S. 2017. Learning to generate video game maps using
-markov models. *IEEE Transactions on Computational In-*
-*telligence and AI in Games* 9(4):410–422.
-[Summerville and Mateas 2016]Summerville, A., and
-Mateas, M. 2016. Super mario as a string: Platformer level
-generation via lstms. In *The 1st International Conference of*
-*DiGRA and FDG*.
-[Summerville et al. 2016a]Summerville, A.; Guzdial, M.;
-Mateas, M.; and Riedl, M. O. 2016a. Learning player tailored content from observation: Platformer level generation
-from video traces using lstms. In *Twelfth Artificial Intelli-*
-*gence and Interactive Digital Entertainment Conference*.
-[Summerville et al. 2016b]Summerville, A. J.; Snodgrass,
-S.; Mateas, M.; and Ontanon, S. 2016b. The vglc: The video ´
-game level corpus. In *Procedural Content Generation Work-*
-*shop at DiGRA/FDG*.
-[Summerville et al. 2017]Summerville, A.; Snodgrass, S.;
-Guzdial, M.; Holmgard, ˚ C.; Hoover, A. K.; Isaksen, A.;
-Nealen, A.; and Togelius, J. 2017. Procedural content
-generation via machine learning (pcgml). *arXiv preprint*
-*arXiv:1702.00539*.
-[Szegedy et al. 2016]Szegedy, C.; Vanhoucke, V.; Ioffe, S.;
-Shlens, J.; and Wojna, Z. 2016. Rethinking the inception
-architecture for computer vision. In *Proceedings of the IEEE*
+      recognition. _Neural computation_ 1(4):541–551.
+      \[Liapis, Yannakakis, and Togelius 2013\]Liapis, A.; Yannakakis, G. N.; and Togelius, J. 2013. Sentient sketchbook:
+      Computer-aided game level authoring. In _Proceedings_ _of ACM Conference on Foundations of Digital Games_,
+      213–220. FDG.
+      \[Liaw, Wiener, and others 2002\]Liaw, A.; Wiener, M.; et al.
+1990. Classification and regression by randomforest. _R news_
+      2(3):18–22.
+      \[Michalski, Carbonell, and Mitchell 2013\]Michalski, R. S.;
+      Carbonell, J. G.; and Mitchell, T. M. 2013. _Machine learn-_ _ing: An artificial intelligence approach_. Springer Science &
+      Business Media.
+      \[Milam and El Nasr 2010\]Milam, D., and El Nasr, M. S.
+1991. Design patterns to guide player movement in 3d
+      games. In _Proceedings of the 5th ACM SIGGRAPH Sym-_ _posium on Video Games_, 37–42. ACM.
+      \[Olah et al. 2018\]Olah, C.; Satyanarayan, A.; Johnson, I.;
+      Carter, S.; Schubert, L.; Ye, K.; and Mordvintsev, A. 2018.
+      The building blocks of interpretability. _Distill_ 3(3):e10.
+      \[Shaker, Shaker, and Togelius 2013\]Shaker, N.; Shaker, M.;
+      and Togelius, J. 2013. Ropossum: An authoring tool for
+      designing, optimizing and solving cut the rope levels. In
+      _Proceedings of the Ninth AAAI Conference on Artificial In-_ _telligence and Interactive Digital Entertainment_.
+      \[Smith, Whitehead, and Mateas 2011\]Smith, G.; Whitehead, J.; and Mateas, M. 2011. Tanagra: Reactive planning
+      and constraint solving for mixed-initiative level design.
+      _IEEE Transactions on Computational Intelligence and AI in_ _Games_ 3(3):201–215.
+      \[Snodgrass and Ontanon 2017\] ´ Snodgrass, S., and Ontanon, ´
+      S. 2017. Learning to generate video game maps using
+      markov models. _IEEE Transactions on Computational In-_ _telligence and AI in Games_ 9(4):410–422.
+      \[Summerville and Mateas 2016\]Summerville, A., and
+      Mateas, M. 2016. Super mario as a string: Platformer level
+      generation via lstms. In _The 1st International Conference of_ _DiGRA and FDG_.
+      \[Summerville et al. 2016a\]Summerville, A.; Guzdial, M.;
+      Mateas, M.; and Riedl, M. O. 2016a. Learning player tailored content from observation: Platformer level generation
+      from video traces using lstms. In _Twelfth Artificial Intelli-_ _gence and Interactive Digital Entertainment Conference_.
+      \[Summerville et al. 2016b\]Summerville, A. J.; Snodgrass,
+      S.; Mateas, M.; and Ontanon, S. 2016b. The vglc: The video ´
+      game level corpus. In _Procedural Content Generation Work-_ _shop at DiGRA/FDG_.
+      \[Summerville et al. 2017\]Summerville, A.; Snodgrass, S.;
+      Guzdial, M.; Holmgard, ˚ C.; Hoover, A. K.; Isaksen, A.;
+      Nealen, A.; and Togelius, J. 2017. Procedural content
+      generation via machine learning (pcgml). _arXiv preprint_ _arXiv:1702.00539_.
+      \[Szegedy et al. 2016\]Szegedy, C.; Vanhoucke, V.; Ioffe, S.;
+      Shlens, J.; and Wojna, Z. 2016. Rethinking the inception
+      architecture for computer vision. In _Proceedings of the IEEE_
 
----
+* * *
 
-*Conference on Computer Vision and Pattern Recognition*,
+_Conference on Computer Vision and Pattern Recognition_,
 2818–2826.
-[Yannakakis, Liapis, and Alexopoulos 2014]Yannakakis,
-G. N.; Liapis, A.; and Alexopoulos, C. 2014. Mixedinitiative co-creativity. In *Proceedings of the 9th Con-*
-*ference on the Foundations of Digital Games*. FDG.
+\[Yannakakis, Liapis, and Alexopoulos 2014\]Yannakakis,
+G. N.; Liapis, A.; and Alexopoulos, C. 2014. Mixedinitiative co-creativity. In _Proceedings of the 9th Con-_ _ference on the Foundations of Digital Games_. FDG.
