@@ -73,6 +73,7 @@ relevance_agent = Agent(
         "You are an academic reviewer. You evaluate incoming UX x HAII educational text. "
         "Your job is to decide whether content is rigorous (PUBLISH) or informal/speculative (HOLD)."
     ),
+    llm="gpt-4o-mini",  # <--- WE ADDED THIS LINE!
     verbose=True
 )
 
