@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from pyzotero import zotero
 from firecrawl import FirecrawlApp
 from crewai import Agent, Task, Crew, Process
+from langchain_community.chat_models import ChatOpenAI
 
 # Load environment variables (for local runs)
 load_dotenv()
@@ -73,7 +74,7 @@ relevance_agent = Agent(
         "You are an academic reviewer. You evaluate incoming UX x HAII educational text. "
         "Your job is to decide whether content is rigorous (PUBLISH) or informal/speculative (HOLD)."
     ),
-    llm="gpt-4o-mini",  # <--- WE ADDED THIS LINE!
+    llm=ChatOpenAI(model_name="gpt-4o-mini"),  # <--- WE WRAPPED IT IN ChatOpenAI!
     verbose=True
 )
 
