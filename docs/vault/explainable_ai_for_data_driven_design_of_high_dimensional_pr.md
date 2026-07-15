@@ -2,7 +2,7 @@
 title: "Explainable AI for Data-Driven Design of High-Dimensional Predictive Studies"
 source_url: "http://arxiv.org/pdf/2605.22243v1"
 doi: ""
-ingest_date: "2026-07-14"
+ingest_date: "2026-07-15"
 status: "publish"
 ---
 

@@ -2,7 +2,7 @@
 title: "Designing Safe and Engaging AI Experiences for Children: Towards the Definition of Best Practices in UI/UX Design"
 source_url: "http://arxiv.org/pdf/2404.14218v1"
 doi: "https://doi.org/XXXXXXX.XXXXXXX"
-ingest_date: "2026-07-14"
+ingest_date: "2026-07-15"
 status: "publish"
 ---
 

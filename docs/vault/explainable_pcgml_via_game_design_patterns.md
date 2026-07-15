@@ -1,8 +1,8 @@
 ---
 title: "Explainable PCGML via Game Design Patterns"
 source_url: "http://arxiv.org/pdf/1809.09419v1"
-doi: "10.48550/arXiv.1809.09419"
-ingest_date: "2026-07-14"
+doi: ""
+ingest_date: "2026-07-15"
 status: "publish"
 ---
 

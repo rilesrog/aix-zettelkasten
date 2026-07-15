@@ -2,7 +2,7 @@
 title: "A 'User Experience 3.0 (UX3.0)' Paradigm Framework: User Experience Design for Human-Centered AI Systems"
 source_url: "http://arxiv.org/pdf/2403.01609v2"
 doi: "2403.01609"
-ingest_date: "2026-07-14"
+ingest_date: "2026-07-15"
 status: "publish"
 ---
 

@@ -2,7 +2,7 @@
 title: "Feature Visualization within an Automated Design Assessment leveraging Explainable Artificial Intelligence Methods"
 source_url: "http://arxiv.org/pdf/2201.12107v1"
 doi: ""
-ingest_date: "2026-07-14"
+ingest_date: "2026-07-15"
 status: "publish"
 ---
 
