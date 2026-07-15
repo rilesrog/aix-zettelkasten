@@ -3,7 +3,7 @@ title: "AI Design, Design AI, Human-Centred AI and the Theatre of the Absurd –
 source_url: "http://arxiv.org/pdf/2304.10878v1"
 doi: ""
 ingest_date: "2026-07-14"
-status: "hold"
+status: "publish"
 ---
 
 # AI Design, Design AI, Human-Centred AI and the Theatre of the Absurd – the language, life and times of a UX designer
