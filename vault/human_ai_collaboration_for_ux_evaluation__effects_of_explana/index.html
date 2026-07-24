@@ -1,0 +1,2293 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Deep educational truth layer on Human-AI Interaction.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Human-AI Collaboration for UX Evaluation: Effects of Explanations and Synchronization - AIX UX x HAII Knowledge Vault</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#human-ai-collaboration-for-ux-evaluation-effects-of-explanations-and-synchronization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AIX UX x HAII Knowledge Vault" class="md-header__button md-logo" aria-label="AIX UX x HAII Knowledge Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AIX UX x HAII Knowledge Vault
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Human-AI Collaboration for UX Evaluation: Effects of Explanations and Synchronization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AIX UX x HAII Knowledge Vault" class="md-nav__button md-logo" aria-label="AIX UX x HAII Knowledge Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    AIX UX x HAII Knowledge Vault
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/vault/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verified Vault
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/hold_review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pending Review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xianyou-yang-rochester-institute-of-technology-usa" class="md-nav__link">
+    <span class="md-ellipsis">
+      † XIANYOU YANG, Rochester Institute of Technology, USA †
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tsz-tung-yu-university-of-waterloo-canada" class="md-nav__link">
+    <span class="md-ellipsis">
+      † TSZ TUNG YU, University of Waterloo, Canada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-vera-liao-microsoft-research-canada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q. VERA LIAO, Microsoft Research, Canada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jian-zhao-university-of-waterloo-canada" class="md-nav__link">
+    <span class="md-ellipsis">
+      JIAN ZHAO, University of Waterloo, Canada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acm-reference-format-mingming-fan-xianyou-yang-tsz-tung-yu-q-vera-liao-and-jian-zhao-2022-human-ai-collaboration-for-ux-evaluation-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      ACM Reference Format: Mingming Fan, Xianyou Yang, Tsz Tung Yu, Q. Vera Liao, and Jian Zhao. 2022. Human-AI Collaboration for UX Evaluation: Effects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 INTRODUCTION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-background-and-related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 BACKGROUND AND RELATED WORK
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-ai-forusabilityproblems-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 AI forUsabilityProblems Detection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-human-ai-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Human-AI Collaboration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-collaborative-analysis-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Collaborative Analysis Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 METHOD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-research-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Research Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ai-assistant-for-usability-test-video-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 AI Assistant for Usability Test Video Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-task-videos-and-woz-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Task Videos and WoZ AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#332-wizard-of-oz-woz-ai-we-introduce-the-details-of-our-hybrid-woz-ai-and-discuss-potential-technical-feasibility-below-we-will-reflect-on-the-limitations-of-woz-and-future-work-in-sec64-there-are-two-pieces-of-information-that-the-woz-ai-would-offer-to-ux-evaluators-ai-suggested-problems-and-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.2 Wizard-of-Oz (WoZ) AI. We introduce the details of our hybrid WoZ AI and discuss potential technical feasibility below. We will reflect on the limitations of WoZ and future work in Sec.6.4. There are two pieces of information that the WoZ AI would offer to UX evaluators: AI-suggested problems and AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-design-for-synchronization-and-explanations" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Design for Synchronization and Explanations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-user-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 USER STUDY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Procedure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Measurements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-analysis-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Analysis Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 RESULTS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-quantitative-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Quantitative Results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-qualitative-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Qualitative Results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-discussion" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 DISCUSSION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#61-design-implications-explanations-and-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Design Implications: Explanations and Synchronization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62human-agencyand-timing-of-human-ai-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2Human Agencyand Timing of Human-AI Collaboration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-ai-for-ux-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 AI for UX Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-limitations-and-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Limitations and Future Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 CONCLUSION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      REFERENCES
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>arXiv:2112.12387v1 [cs.HC] 23 Dec 2021</p>
+<h1 id="human-ai-collaboration-for-ux-evaluation-effects-of-explanations-and-synchronization">Human-AI Collaboration for UX Evaluation: Effects of Explanations and Synchronization</h1>
+<p>∗
+MINGMING FAN, The Hong Kong University of Science and Technology, China
+†</p>
+<h2 id="xianyou-yang-rochester-institute-of-technology-usa">† XIANYOU YANG, Rochester Institute of Technology, USA †</h2>
+<h2 id="tsz-tung-yu-university-of-waterloo-canada">† TSZ TUNG YU, University of Waterloo, Canada</h2>
+<p>$$
+\mathrm{Y U}^{\dagger}
+$$</p>
+<h2 id="q-vera-liao-microsoft-research-canada">Q. VERA LIAO, Microsoft Research, Canada</h2>
+<h2 id="jian-zhao-university-of-waterloo-canada">JIAN ZHAO, University of Waterloo, Canada</h2>
+<p>Analyzing usability test videos is arduous. Although recent research showed the promise of AI in assisting with such tasks, it remains
+largely unknown how AI should be designed to facilitate effective collaboration between user experience (UX) evaluators and AI.
+Inspired by the concepts of <em>agency</em> and <em>work context</em> in human and AI collaboration literature, we studied two corresponding design
+factors for AI-assisted UX evaluation: <em>explanations</em> and <em>synchronization</em>. Explanations allow AI to further inform humans how it
+identifies UX problems from a usability test session; synchronization refers to the two ways humans and AI collaborate: <em>synchronously</em>
+and <em>asynchronously</em>. We iteratively designed a tool—AI Assistant—with four versions of UIs corresponding to the two levels of
+explanations (with/without) and synchronization (sync/async). By adopting a hybrid wizard-of-oz approach to simulating an AI with
+reasonable performance, we conducted a mixed-method study with 24 UX evaluators identifying UX problems from usability test
+videos using AI Assistant. Our quantitative and qualitative results show that AI with explanations, regardless of being presented
+synchronously or asynchronously, provided better support for UX evaluators’ analysis and was perceived more positively; when
+without explanations, synchronous AI better improved UX evaluators’ performance and engagement compared to theasynchronous
+AI. Lastly, we present the design implications for AI-assisted UX evaluation and facilitating more effective human-AI collaboration.</p>
+<p>CCS Concepts: • Human-centered computing → Usability testing; Empirical studies in HCI.</p>
+<p>Additional Key Words and Phrases: human-AIcollaboration, user experience (UX), AI-assisted UX evaluation, explainable AI, intelligent
+user interface design, synchronization, explanations, think-aloud usability test</p>
+<h2 id="acm-reference-format-mingming-fan-xianyou-yang-tsz-tung-yu-q-vera-liao-and-jian-zhao-2022-human-ai-collaboration-for-ux-evaluation-effects">ACM Reference Format: Mingming Fan, Xianyou Yang, Tsz Tung Yu, Q. Vera Liao, and Jian Zhao. 2022. Human-AI Collaboration for UX Evaluation: Effects</h2>
+<p>Mingming Fan, Xianyou Yang, Tsz Tung Yu, Q. Vera Liao, and Jian Zhao. 2022. Human-AI Collaboration for UX Evaluation: Effects
+of Explanations and Synchronization. *Proc. ACM Hum.-Comput. Interact.*00, 00, Article 00 ( 2022),31pages. <a href="https://doi.org/10.1145/">https://doi.org/10.1145/</a>
+nnnnnnn.nnnnnnn</p>
+<p>nnnnnnn.nnnnnnn</p>
+<p>∗Corresponding author
+†equal contribution</p>
+<p>Authors’ addresses: Mingming Fan, <a href="mailto:mingmingfan@ust.hk">mingmingfan@ust.hk</a>, The Hong Kong University of Science and Technology, China; Xianyou Yang, <a href="mailto:xy1258@rit.edu">xy1258@rit.edu</a>,
+Rochester Institute of Technology, USA; Tsz Tung Yu, <a href="mailto:tt3yu@uwaterloo.ca">tt3yu@uwaterloo.ca</a>, University of Waterloo, Canada; Q. Vera Liao, <a href="mailto:veraliao@microsoft.com">veraliao@microsoft.com</a>,
+Microsoft Research, Montreal, Canada; Jian Zhao, <a href="mailto:jianzhao@uwaterloo.ca">jianzhao@uwaterloo.ca</a>, University of Waterloo, Canada.
+arXiv:2112.12387v1 [cs.HC] 23 Dec 2021</p>
+<p>Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not
+arXiv:2112.12387v1 [cs.HC] 23 Dec 2021
+made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components
+of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to
+redistribute to lists, requires prior specific permission and/or a fee. Request permissions from <a href="mailto:permissions@acm.org">permissions@acm.org</a>.
+© 2022 Association for Computing Machinery.</p>
+<p>© 2022 Association for Computing Machinery.
+Manuscript submitted to ACM</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<h2 id="1-introduction">1 INTRODUCTION</h2>
+<p>Usability testing has been widely adopted in both industry and academia to identify user experience (UX) problems
+when developing interfaces and systems [25, 58]. With the convenience and easy access to diverse users, remote
+usability testing, by conducting and recording the tests through video conferencing tools and analyzing the recorded
+sessions afterwards, has become increasingly popular [3, 16, 25]. However, analyzing recorded usability test sessions is
+labor-intensive and time-consuming, as UX evaluators have to listen to what users verbalize while watching their actions
+to catch sporadic problems in an often lengthy video. In practice, UX evaluators often have to complete the analysis in
+a short period [27]and tend to perform quick rather than thorough analysis.What’s more, UX evaluators who analyze
+the same usability test sessions have been found to identify substantially different sets of usability problems, which
+is known as the “evaluator effect” [38].One important way to cope with the “evaluator effect” is to involve multiple
+evaluators to analyze the same test session.However, due to practical constraints (e.g., limited company resources), few
+evaluators (23%) had a chance to gain a different perspective from other <em>human</em> evaluators on the same usability test
+session [27].One possible solution, in light of recent advancement in AI, is to investigate whether an AI agent could be
+designed to analyze the same usability test session and provide a different perspective to the human evaluator.
+Toward this goal, recentlyresearchers began to explore human-AI collaborative approaches, in which AIplays the</p>
+<p>Toward this goal, recentlyresearchers began to explore human-AI collaborative approaches, in which AIplays the
+role of another evaluator andsuggests potentialusabilityproblems to the UX evaluator.For example, VisTA [26] is an
+analytical tool that visualizes AI predicted problems before a UX evaluator starts their analysis; thus, the collaboration
+between the AI and the evaluator is <em>asynchronous</em>. Such asynchronous human-AI collaboration was also explored in
+other contexts [36, 75, 76, 80, 88, 90, 92, 97]. In human-human collaboration, synchronization, whether the collaboration
+happens <em>asynchronously</em> and <em>synchronously</em>, is considered a key dimension that impacts the user requirements and
+design of CSCW systems, as seen in the <em>Time</em> dimension of Johansen’s Time-Space Matrix [45]. To our knowledge,
+<em>synchronous</em> collaboration between humans and AI is relatively understudied in knowledge-rich domains; What’s more,
+no research has compared asynchronous and synchronous collaboration in the context of usability evaluation. We took
+a first step to investigate how synchronization between the AI and UX evaluators might affect their collaboration
+experiences.
+Furthermore, when analyzing a usability test video, UX evaluators care about not only where in the video the</p>
+<p>Furthermore, when analyzing a usability test video, UX evaluators care about not only <em>where</em> in the video the
+AI believes the user encounters a problem but also <em>why</em> it believes so–the explanations of AI’s judgment. Such an
+explanation could allow evaluators to better assess whether to incorporate or reject AI’s judgement [26]. On the other
+hand, recent work on “agency divide” between human and AI [49, 50] suggests that providing explanations could affect
+human’s perceived agency. Specifically, humans perceive full agency of their work when there is no AI assistance, and
+decreasing agency as the amount of information and assistance provided by the AI increases, including explanations. A
+decreased human agency could negatively affect the engagement and outcome of usability video analysis. Given these
+potential effects, we empirically investigated howaccessingAI’s explanation, and how explanation and synchronization
+working together, affect human-AI collaboration in the context of usability test video analysis.
+Towards these study goals, we iteratively designed AI Assistant, a tool assisting UX evaluators with analyzing</p>
+<p>Towards these study goals, we iteratively designed <em>AI Assistant</em>, a tool assisting UX evaluators with analyzing
+usability test videos. As it is still challenging to develop an AI that could detect UX problems of any given usability test
+video with consistent accuracy, we adopted a wizard-of-oz (WoZ) approach to simulating an AI that could detect UX
+problems with reasonable precision and recall.We also designed WoZ explanations based on both what matters in
+analyzing usability test video [26] and what is potentially feasible with state-of-the-art explainable AI (XAI) techniques.
+We designed AI Assistant with four different versions of user interfaces (UIs), which present the AI-suggestedusability problems <em>synchronously</em> or <em>asynchronously</em> and <em>with</em> or <em>without</em> explanations. We conducted a mixed-methods study with
+24 UX evaluators, in which they analyzed two usability test videos with AI Assistant and were interviewed afterwards
+regarding their experiences, perceptions, and preferences of AI Assistant.
+Our results showed that both synchronization and explanations positively affected human-AI collaboration. Compared</p>
+<p>Our results showed that both synchronization and explanations positively affected human-AI collaboration. Compared
+to the asynchronous AI without explanations, AI with explanations, regardless of being presented asynchronously or
+synchronously, helped to improve UX evaluators’ performance of (e.g., the number of identified UX problems) and
+engagement (e.g., time spent) in their analysis, and their perception of AI Assistant (e.g., understanding of AI). When
+without explanations, the synchronous AI helped to improve UX evaluators’ performance and engagement more than
+the asynchronous AI. Our qualitative results from semi-structured interviews provide further insights into the effects of
+the two factors. Based on the findings, we discuss the design implications of explanations and synchronization for UX
+evaluation and effective human-AI collaboration.</p>
+<h2 id="2-background-and-related-work">2 BACKGROUND AND RELATED WORK</h2>
+<h2 id="21-ai-forusabilityproblems-detection">2.1 AI forUsabilityProblems Detection</h2>
+<p>Analyzing usability test video to identify problems that participants encountered is a common task for UX evaluators.
+They need to attend to multiple behavioral signals of the participant from both visual and audio channels of the test
+video. More importantly, they need to leverage their domain expertise to determine whether there is indeed a usability
+problem or whether it is just typical efforts (e.g., trial-and-error) that the participant had to make when using the
+product.To help UX evaluators better analyze usability test videos,recent research began to develop AI methods to
+predict the overall UX of interfaces [65] or detect specificusabilityproblems [32, 35, 44, 67]. For example, Grigera et al.
+proposed a rule-based classifier to detect a predefined set of usability smells—the hints of bad designs that could cause
+usability problems—by analyzing users’ interaction logs [32]. Similar rule-based classification approaches have been
+used to detect usability smells in mobile websites [67] and in virtual reality applications [35]. Jeong et al. proposed a
+graph-based AI method to model and measure the similarity of users’ interactions with a mobile application to detect
+potential usability problems [44]. Although such automatic methods show the promise of detecting simpleusability
+problems for specific user interfaces based on structured data (e.g., interaction logs) and empirical rules, detecting
+usabilityproblems directly from a usability test video, which is a primary task of UX practitioners, is still challenging to
+be fully automated as it requiresanunderstanding of the functions and designs of the test product, the test tasks, and
+the test subject’s behaviors.
+To address the limitation of fully automated methods, researchers began to investigate human-AI collaboration</p>
+<p>To address the limitation of fully automated methods, researchers began to investigate human-AI collaboration
+tools to support UX evaluators rather than replacing them. One representative work is VisTA, a visual analytical tool
+that integrates visualization and machine learning (ML) to detect and highlight segments of a usability test video
+containing potentialusabilityproblems [26].Such human-AI collaboration was shown to helpUX evaluators identify
+more problemsthan they worked alone [26].As a first step to experiment human-AI collaboration for usability test
+video analysis, VisTA was limited in two ways. First, the collaboration between the AI and the UX evaluator was
+<em>asynchronous</em>. The evaluator was shown with the AI’s predictions before they started their analysis, which might have
+affected the evaluator’s independent analysis. Alternatively, the AI’s predictions could be shown <em>synchronously</em>, creating
+a perception that the evaluator and the AI are analyzing a usability test video simultaneously, which might allow the
+evaluator to perform more independent analysis while still being able to access the second perspective from the AI.</p>
+<hr />
+<p>The second limitation, based on their study participants’ feedback, was that VisTA remained an “opaque box” and
+did not allow an understanding of how the AI worked. Although VisTA visualizes the input features to show <em>what</em>
+went into the AI’s analysis, it was deemed insufficient withouthavingaccess to the meaning of these input features or
+the rationales on which the judgments were based. Thus, it is necessary to explore explanations that could answer the
+<em>why</em> questionin identifying usability problems in a video, such as what design principles or usability heuristics were
+violated [26].
+Our work seeks to understand how synchronization (i.e., synchronous and asynchronous collaboration) and explana-</p>
+<p>Our work seeks to understand how synchronization (i.e., synchronous and asynchronous collaboration) and explanations (i.e., with and without) would affect UX evaluators’ collaboration with the AI in the context of usability test video
+analysis.To overcome the technical limitations of AI in detecting UX problems, we opt for a hybrid Wizard-of-Oz (WoZ)
+approach in order to focus on evaluating different ways to present the AI’s suggestions with a controlled experiment.
+Our approach simulates a reliably performing AI system but is grounded in the technical feasibility of ML technologies.
+Specifically, we assume the system works with a supervised ML classifier, which takes a segment of a usability test
+video as input and predicts whether the test subject encounters a problem in that video segment. The design of our
+WOZ AI’s functionalities, including the AI explanations, will be discussed in Section3.3.2.</p>
+<h2 id="22-human-ai-collaboration">2.2 Human-AI Collaboration</h2>
+<p>The term “human-AI collaboration” has emerged in recent research studying the usage of AI systems [5, 14, 87]. There
+is a shift from an “automation” perspective of AI to recognizing that AI systems should be used to support, instead of
+replacing, the decisions and tasks of domain workers. For example, an “algorithm-in-the-loop” process [31] is adopted
+in many high-stakes decision-making contexts, where ML models are used to inform people its assessment or to alert
+cases falling in a targeted category. Ultimately, people have to decide whether to accept the AI’s recommendations
+or discount them [95]. Following this collaborative perspective, researchers studied how people perceive algorithmic
+decision assistance [10, 52], how they use AI systems for decision-making [13, 14], often in unexpected or suboptimal
+ways [18,93], and how to improve the human-AI joint decision-making outcomes [8,89,95].
+While research has only begun to define and study different types of human-AI partnership, it would be advisable to</p>
+<p>ways [18,93], and how to improve the human-AI joint decision-making outcomes [8,89,95].
+While research has only begun to define and study different types of human-AI partnership, it would be advisable to
+draw on theories and insights from human-human collaboration research. CSCW research has identified a number of
+core dimensions to characterize different collaborative tasks. One is the division of work and labor between parties [82].
+Recent work by Lai et al. [49, 50] proposed a notion of “divide of agency” between human and AI with a spectrum from
+full human agency to full automation. In particular, AI that provides <em>explanations</em> for its predictions is considered to
+allow lower human agencythan one that offers predictions only. On the other hand, explanations not only could affect
+the perception of AI’s competence [73, 74], but also provide additional assistance for decision-making, for example, by
+highlighting important factors in the decision or illuminating useful rationales [50, 54].However, such improvements
+from explanations were typically observed with the AI that outperformed the human. Bansal et al. recently examined
+how the explanations of the AI with human-comparable performance affect human-AI collaboration [9]. Our work
+extends theirs in two aspects. First, in Bansal et al.’s studies, AI’s explanations were presented to human participants
+upfront before they started their own analysis. Such asynchronous collaboration, as they acknowledged, made it
+almost impossible for the participants to reason independently. In contrast, our work studies the potential effects of
+synchronization between humans and the AI. Second, Bansal’s studies used tasks amenable to crowdsourcing, and the
+findings might not be generalizable to experts in high-stake scenarios. In contrast, our tasks require domain expertise
+in user experience (UX) research. Thus, the type of human-AI collaboration in our work is between AI and domain
+experts, and the findings are complementary to those of Bansal et al.’s.
+Manuscript submitted to ACM</p>
+<hr />
+<p>The WoZ explanations of AI assistant in this research is informed by the methods developed in the field of Explainable
+AI (XAI); A full review of prior work on this topic is beyond the scope of this paper but can be found in many recent
+survey papers [1, 6, 15, 30, 34]. Explanations could be generally categorized into <em>global</em> and <em>local</em> explanations. While
+global explanations describe how a model makes a decision in general, such as how it weighs different features and
+what rules it follows, local explanations focus on justifying a decision made for a particular instance, for example, by
+highlighting important features of the instance that contributed to the AI’s decision [6, 34]. The explanations presented
+in our AI assistant is an example of local explanations, which highlights exceptional features in the usability test
+video that AI assistant considers as the indicators of ausabilityproblem.To make AI explanations more accessible to
+laypeople, an emerging area of XAI work explored <em>explanation generation</em> using domain-specific semantics [39, 46] or
+rationales [21], enabled by additional human supervision or training data. For example, trained, on human explanation
+data, rationale generation [21] translates AI’s internal representation into natural-language rationales.
+Another pivotal dimension to characterize collaborative tasks is the Time dimensionof the well-known Time-Space</p>
+<p>Another pivotal dimension to characterize collaborative tasks is the <em>Time</em> dimensionof the well-known Time-Space
+matrix of human-human collaboration [45]. The Matrix characterizes collaborative tasks and computing tools to
+support workers by a <em>Time</em> dimension—whether individuals collaborate <em>synchronously</em> or <em>asynchronously</em>, and a <em>Space</em>
+dimension—whether collaboration is co-located or geographically distributed.While the Space dimension is irrelevant
+to human-AI collaboration, the Time dimension is pertinent.However, to our knowledge, little is understood about how
+human-AI collaboration is impacted by the Time dimension. However, these factors could produce distinct interaction
+experiences that may impact how one perceives and interacts with AI, and ultimately the collaborative outcomes. While
+our current research is carried out in the context of UX evaluation, <em>synchronization</em> is broadly applicable to AI-assisted
+decision tasks.</p>
+<h2 id="23-collaborative-analysis-tools">2.3 Collaborative Analysis Tools</h2>
+<p>Previous research has investigated ways to support collaboration between humans, including design principles (e.g.,
+time and space model [42, 45] and information scent [70]), collaborative data analysis and sensemaking [19, 42, 68]
+as well as collaborative infrastructures and tools. Examples of collaborative infrastructures include ManyEyes [86]
+for sharing and commenting on data charts, Polychrome [7] for collaborative web visualizations, and BEMViewer
+[59] for supporting branch-explore-merge protocol in data exploration. Collaborative tools support human-human
+collaborations for synchronous and asynchronous tasks. Synchronous collaborative tools focus primarily on increasing
+coworkers’ awareness [96], building common ground [57], and sharing/constraining personal workspaces [43, 84].
+Asynchronous collaborative tools often address the design challenges in facilitating communication [36, 88], supporting
+handoff [97], reasoning actions [90], and viewing analysis histories [75,76,92].
+Previous research has primarily focused on supporting collaboration between humans in non-UX domains. In this</p>
+<h2 id="3-method">3 METHOD</h2>
+<p>The goal of this research is to understand the effect of synchronization and explanations on human-AI collaboration for
+UX research in the context of analyzing usability test videos. The findings would provide design implications for the
+two factors in human-AI collaboration.
+Manuscript submitted to ACM</p>
+<hr />
+<h2 id="31-research-questions">3.1 Research Questions</h2>
+<p>To achieve the above overarching goal, we seek to answer three research questions (RQs):</p>
+<p>RQ1: How would the <em>explanations</em> of AI affect UX evaluators’ performance and perception in analyzing usability test
+videos?</p>
+<p>RQ2: How would the <em>synchronization</em> of AI affect UX evaluators’ performance and perception in analyzing usability
+test videos?</p>
+<p>RQ3: What are UX evaluators’ preferencesthat can inform the design ofAI tools assisting UX evaluation?</p>
+<h2 id="32-ai-assistant-for-usability-test-video-analysis">3.2 AI Assistant for Usability Test Video Analysis</h2>
+<p>Usability test video analysis requires UX evaluators to review the video recordings of test sessions to identify UX
+problems. We designed a tool— <em>AI Assistant</em>—to support the task by suggesting potential UX problems in the video. It
+supports watching a usability test video, identifying and annotating UX problems, and viewing AI assistance in one
+place, with the following UI components:
+Video Player. AI Assistant includes a basic video player, with which UX evaluators can play, pause, rewind, and</p>
+<p>Video Player. AI Assistant includes a basic video player, with which UX evaluators can play, pause, rewind, and
+jump forward a video (Figure1a).</p>
+<p>Annotation Panel. After identifying a usability problem from watching the test video, UX evaluators often need to
+describe the problem for reporting purpose or future reference. AI Assistant includes an annotation function, which
+shows the current timestamp of the video and contains a text field for writing problem description. Since the annotation
+function would be used frequently, we position it side-by-side with the video (Figure1b).
+Problem Table. To allow UX evaluators to view the problems that they have identified, AI Assistant shows all the</p>
+<p>Problem Table. To allow UX evaluators to view the problems that they have identified, AI Assistant shows all the
+problems and the corresponding descriptions in a table (Figure1c).
+AI-Suggested Problems Timeline. One key function of AI Assistant is introducing AI to assist UX evaluators with</p>
+<p>AI-Suggested Problems Timeline. One key function of AI Assistant is introducing AI to assist UX evaluators with
+their analysis. Specifically, the AI analyzes the video and infers whether and when (i.e., a time duration) the user in the
+video is encountering a usability problem. The AI-suggested UX problems are visualized as a horizontal timeline chart,
+with the value 1 representing a problem being encountered and the value 0 representing no problem being encountered
+(Figure1d). The timeline is positioned below the video to facilitate UX evaluators to glance at it during their analysis.
+Detailed design of the timeline will be introduced in Section3.4.
+AI Explanations Panel. For the versions of AI Assistant with explanations, the tool features a separate panel to</p>
+<p>AI Explanations Panel. For the versions of AI Assistant with explanations, the tool features a separate panel to
+show the explanations of why the AI infers there is a UX problem in a given time duration. The explanations is shown
+below the timeline (Figure1e). The content and design of the explanations will be described in Sections3.3and3.4.
+As discussed, given the technical challenge to train an ML model that maintains consistently satisfying performance</p>
+<h2 id="33-task-videos-and-woz-ai">3.3 Task Videos and WoZ AI</h2>
+<p>selected two recorded videos with audio from a dataset curated in our previous studies [24]. To create the dataset, we
+recruited eight native-English speakers (four females and four males, aged 19-26) to participate in usability test sessions,
+in which they performed tasks on two websites and two physical devices while thinking aloud. All test sessions were
+Manuscript submitted to ACM</p>
+<p>below the timeline (Figure1e). The content and design of the explanations will be described in Sections3.3and3.4.
+As discussed, given the technical challenge to train an ML model that maintains consistently satisfying performance
+for different usability test videos, we utilized a <em>wizard-of-oz (WoZ)</em> approach to generating AI-suggested problems,
+serving as the back-end AI of the tool. An WoZ approach also allowed us to control the content of explanations to make
+them consumable for UX evaluators.</p>
+<hr />
+<p>Manuscript submitted to ACM</p>
+<p>e</p>
+<p>The user interface of AI Assistant that presents the AI-suggested problems
+table; (d) timeline of the AI-suggested problems; (e) explanations of the AI-suggested problems.</p>
+<hr />
+<p>video and audio recorded. One of the selected videos was about a participant browsing a website of a national science
+museum. The task was to find a photo of the instructions to operate an early telescope. The other selected video was
+about a participant using a multi-function coffee machine, and the task was to program the machine to make two cups
+of strong-flavored drip coffee at seven thirty in the morning. The website video lasted 214 seconds, and the coffee
+machine video lasted 682 seconds. We intentionally selected videos with different interfaces (virtual and physical) as
+well as different lengths (short and long) to cover a range of scenarios. Each video was seen by participants as one
+evaluation task, presented in the video player panel in Figure1.</p>
+<h2 id="332-wizard-of-oz-woz-ai-we-introduce-the-details-of-our-hybrid-woz-ai-and-discuss-potential-technical-feasibility-below-we-will-reflect-on-the-limitations-of-woz-and-future-work-in-sec64-there-are-two-pieces-of-information-that-the-woz-ai-would-offer-to-ux-evaluators-ai-suggested-problems-and-ai">3.3.2 Wizard-of-Oz (WoZ) AI. We introduce the details of our hybrid WoZ AI and discuss potential technical feasibility below. We will reflect on the limitations of WoZ and future work in Sec.6.4. There are two pieces of information that the WoZ AI would offer to UX evaluators: AI-suggested problems and AI</h2>
+<p>There are two pieces of information that the WoZ AI would offer to UX evaluators: <em>AI-suggested problems</em> and <em>AI</em> <em>explanations</em> to these problems. To generate AI-suggested problems, we first needed to find the <em>ground-truth problems</em>
+in the usability test videos.</p>
+<p>Ground-truth Problems. To identify the ground-truth UX problems that users encountered in the two selected
+usability test videos, nine UX evaluators were recruited to independently review the videos, identify segments in the
+videos where users encountered problems, and write descriptions for the problems. Next, two other UX researchers
+reviewed the identified problems and their descriptions, discussed and consolidated a final list of ground-truth problems
+and descriptions. In total, there were 20 UX problems in the coffee machine video, and 8 in the website video.
+Supervised ML Predicting Usability Problems in Video Segments Our WoZ system was assumed to work with</p>
+<p>Supervised ML Predicting Usability Problems in Video Segments Our WoZ system was assumed to work with
+a supervised ML classifier trained on video data with labels of whether a segment contains a usability problem. Typically,
+the input features of a video-based supervised ML classifier include acoustic features (e.g., pitch) from the audio
+track, textual features from the transcription, and visual features from the video. To allow more human-consumable
+explanations, we also assume that more high-level semantic features, such as user actions and sentiments in the texts,
+can be obtained by either automatic recognition techniques or additional supervision
+It is common sense that AI would hardly be perfect, especially in knowledge-rich domains, such as usability testing.</p>
+<p>It is common sense that AI would hardly be perfect, especially in knowledge-rich domains, such as usability testing.
+Thus, it would be inappropriate to have the WoZ AI suggest all the ground-truth problems. To make the WoZ AI more
+realistic, we randomly added 5 (18%) false problems (false positives) and removed 4 (14%) true problems (false negatives)
+in the two selected videos in total.
+AI Explanations. Our design of AI explanations is based on the potential technical feasibility of explainable AI, and</p>
+<p>informed by howusabilityproblems are identified and explained in UX practices [25, 27, 58]. Two forms of explanations
+are often generated by XAI techniques to explain an AI’s decision for a particular instance [1, 6, 15, 30, 34]: rule-based —
+the decision rules that this instance violates or complies with; feature-based —the features of this instance that are strong</p>
+<p><em>UX Design Heuristics.</em> UX literature has offered heuristics and principles for designing good user interfaces and
+identifying bad ones, such as Nielsen’s heuristics [63], Norman’s design principles [64], and Gerhardt-Powals’s cognitive
+engineering principles [28]. As these principles and heuristics are largely overlapped, we employed Nielsen’s heuristics
+as they are commonly used in industry. The original Nielsen’s heuristics are abstract and require explanations to
+understand properly. As a result, we revamped the heuristics to make them more self-explainable while still keeping them short by referring to the explanations given by the Nielsen and Norman Group [33]. For example, the fourth
+heuristic is “consistency and standards.” The explanations of the violation of this heuristic is “Using inconsistent words,
+visuals, or actions.” To identify the violated heuristics for AI-suggested problems, we consulted the problem descriptions
+consolidated for the ground-truth problems and mapped them to the closest usability heuristics.
+There are several potential ways to implement such explanations. The heuristics themselves can be included as</p>
+<p>There are several potential ways to implement such explanations. The heuristics themselves can be included as
+high-level features in the usability problem detection model and then directly provided as explanations. We can train
+additional supervised models to recognize these heuristics features. Recent research also began to investigateways to
+automatically detect the violations of usability heuristics. For example, Ponce et al. [71] proposed a convolution neural
+network model to detect the violation of three of the Nielsen’s heuristics [63]. Alternatively, one can leverage rationale
+or explanation generation techniques trained on human explanation data [21,39] to generate these design heuristics.
+Behavioral Features. The AI explanations also include the following behavioral features as indicators of the UX</p>
+<p><em>Behavioral Features.</em> The AI explanations also include the following behavioral features as indicators of the UX
+problems: <em>speech rate</em>, <em>tone (i.e., pitch)</em>, <em>speech sentiment</em>, <em>speech content</em>, <em>what the user did in the video</em>. These features are
+chosen for two reasons. First, previous research suggests that UX evaluators should pay attention to what and how
+the user verbalizes and what the user does on the test product to identify UX problems [25, 58]. For example, when
+encountering problems, users may slow down their speech, raise their tones, or use words with negative sentiments
+more often [22, 24, 48, 69, 81]. Second, it is possible for current or near-future sensing and AI technologies to capture
+these behavioral features from usability test videos.For example, there is a rich body of literature and commercially
+available solutions for <em>emotion</em> (e.g., confusion) and <em>sentiment</em> analysis (e.g., iMotions [41]). Computer vision techniques,
+especially work on natural language video description [4, 85], can be used to identify and describe <em>what the user did</em> in
+video segments.
+For WoZ AI, we adopted a hybrid approach to generate the behavioral features to explain the suggestion of a UX</p>
+<p>For WoZ AI, we adopted a hybrid approach to generate the behavioral features to explain the suggestion of a UX
+problem. The feature categories of <em>speech rate</em>, <em>tone</em>, and <em>sentiment</em> were automatically extracted with the following
+algorithm. The audio track of each usability test video was divided into small segments based on silences in the user’s
+think-aloud verbalizations and then transcribed into texts. For each segment, we calculated the speech rate by dividing
+the number of words spoken in the segment by its duration. We calculated the tone (i.e., pitch) of the user by computing
+the fundamental frequency F0 (Hz) at the sampling rate of 100 Hz using the praatUtil library [37]. For the sentiment,
+we analyzed the transcript using the VADER library [40] and then discretized it into three levels: negative, neutral, and
+positive. For the category of <em>what user did</em>, we manually reviewed the videos and created a description.</p>
+<h2 id="34-design-for-synchronization-and-explanations">3.4 Design for Synchronization and Explanations</h2>
+<p>As we were interested in studying the synchronization and explanations factors of AI, we designed AI Assistant
+with four alternative UIs to assist UX evaluators through an iterative design process. The four versions include: (a)
+synchronously presenting the AI-suggested problems <em>with</em> explanations ( <em>w/, sync</em>), (b) synchronously presenting the
+AI-suggested problems <em>without</em> explanations ( <em>w/o, sync</em>), (c) asynchronously presenting the AI-suggested problems
+with explanations ( <em>w/, async</em>), and (d) asynchronously presenting the AI-suggested problems without explanations ( <em>w/o,</em> <em>async</em>). Figure1shows the entire interface of the <em>(w/, sync)</em> version of the AI Assistant. Figure2shows the differences
+(in the bottom left part of Figure1de) among the four versions. The ( <em>w/o, async</em>) condition (Figure2d) is the <em>baseline</em>
+since it is the simplest way of presenting UX problems among the four conditions.</p>
+<p><em>3.4.1 Design for Synchronization.</em> The difference between the <em>async</em> and the <em>sync</em> versions of AI Assistant lies in how
+the AI-suggested problems are revealed to UX evaluators.</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>Fig. 2. Comparison of the four different versions of AI Assistant (the bottom-left part of the user interface, as shown in Figure1de):
+(a) synchronously presenting the AI-suggested problems <em>with</em> explanations ( <em>w/, sync</em>), (b) synchronously presenting the AI-suggested
+problems <em>without</em> explanations ( <em>w/o, sync</em>), (c) asynchronously presenting the AI-suggested problems with explanations ( <em>w/, async</em>),
+and (d) asynchronously presenting the AI-suggested problems without explanations ( <em>w/o, async</em>), which is the baseline.</p>
+<p>In the <em>async</em> way of presenting the AI, the AI-suggested problems are revealed to UX evaluators all at once at
+the beginning of their analysis and are always available during their analysis (Figure2cd). This design simulates an
+<em>asynchronous</em> workflow in which the AI completed its analysis before the UX evaluator. A similar timeline was used in
+the literature [26].</p>
+<p>the literature [26].
+In the <em>sync</em> way of presenting the AI, the AI-suggested problems are revealed to UX evaluators progressively as they
+play the video. This design simulates a <em>synchronous</em> workflow in which the AI and the UX evaluator work through
+the video together at the same time (Figure2ab). UX evaluators are able to see the AI’s suggestions up to the point
+where the video has been playing to, and cannot see the AI’s suggestions for the rest of the video. In cases where
+UX evaluators skip a portion of the video and start to play the video from a later timestamp, the AI’s suggestions for
+the skipped portion are not revealed to them. But the AI’s suggestions from that future timestamp onward will be
+progressively revealed to the UX evaluators as they continue playing the video. We made this design choice to avoid
+UX evaluators from gaming the system by jumping to a very late timestamp of the video with the hope of revealing all
+the AI’s suggestions.</p>
+<p><em>3.4.2 Design for Explanations.</em> For the <em>w/</em> problem explanations versions of AI Assistant, the AI explanations Panel
+(Figure2ac) contains two types of information: the UX design heuristics that are violated and the behavioral features
+that suggest UX problems, as described in Section3.3.2. The key design consideration for presenting the explanations content is to ensure it is <em>light-weight</em> and <em>scannable</em>. UX evaluators need to attend to different types of information—the
+video to be analyzed and the AI-suggested problems—while writing their own problem descriptions using the annotation
+function. Thus, the visual representation of the explanations should minimize the attention needed and be scannable
+without extensive reading.
+Following the design consideration, we minimized the amount of text by using visual icons that conveyed information</p>
+<p>Following the design consideration, we minimized the amount of text by using visual icons that conveyed information
+effectively and organized the features in a consistent and scannable format.</p>
+<h2 id="35-implementation">3.5 Implementation</h2>
+<p>We implemented the four versions of AI Assistant as a web application, which would allow for recruiting a broad set of
+UX evaluators to participate in the study. We deployed the tool on Google Firebase and the videos on Amazon Web
+service (AWS) to allow UX evaluators to access the tool remotely and robustly.
+The tool includes a back-end NodeJS server and a front-end UI that is built on top of React and Mobx libraries.</p>
+<p>The tool includes a back-end NodeJS server and a front-end UI that is built on top of React and Mobx libraries.
+The NodeJS server provides an application programming interface (API) to serve the links of the usability test videos
+from Amazon S3 to our front-end UI seamlessly. The AI-suggested problems and the corresponding explanations for
+each usability test video are stored into a JSON file, which is visualized on the front-end UI in real-time depending
+on the experimental condition. The front-end UI has been revamped by utilizing React Router into the application,
+which allows us to control the experimental conditions that UX evaluators have access to by sharing them with the
+corresponding URLs. By using Mobx, the activity history of the video player (e.g., how the video is played, paused,
+rewind) and the usability problems identified by UX evaluators are stored in the state during the user study and saved
+into the JSON format log data, which will be analyzed as part of the quantitative data of the study.</p>
+<h2 id="4-user-study">4 USER STUDY</h2>
+<p>To answer the RQs, we used a mixed-method, which included a controlled user study, questionnaires, and interviews. In
+the controlled study, UX evaluators analyzed two usability test videos with AI Assistant and answered questionnaires
+regarding their use of AI Assistant. Post-study interviews offered more insights into their preferences of AI Assistant.</p>
+<p>We recruited participants from industry and local universities via electronic flyers with two inclusion criteria: having
+at least one year’s experience in UX and having experience of analyzing think-aloud usability test sessions. We first
+conducted a pilot study with two participants, who had 1-2 years of UX/HCI experience. The two pilot study sessions
+helped us to adjust the whole study procedure and duration, ensuring that the study design was appropriate.
+We then recruited 24 participants as UX evaluators for the actual user study. Among the 24 participants, sixteen were</p>
+<p>females and eight were males; thirteen were at the age of 25-34 and eleven at the age of 18-24. In terms of educational
+backgrounds, fifteen had Bachelor’s degrees, four had Master’s degrees, two had Doctoral degrees, and three had some</p>
+<p>We employed a 2-by-2 mixed design, with the <em>explanations</em> as the between-subjects factor and the <em>synchronization</em> as the
+within-subject factor. This means each participant was randomly assigned to use AI Assistant either <em>w/</em> explanations or
+<em>w/o</em> and to complete two usability video analysis tasks, one of which was with the <em>sync</em> AI Assistant and the other was
+Manuscript submitted to ACM</p>
+<hr />
+<p>Table 1. Participant information and the study design. For trust in AI, higher score indicates more trust; for experimental conditions,
+video-1 is the physical device video and video-2 is the digital website video.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Knowledge Nielsen's UX Heuristics[63]</th>
+<th>about design</th>
+<th>Knowledge about AI</th>
+<th>Trust in AI</th>
+<th>Experimental conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/,async,video-1),(w/,sync,video-2)</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, sync, video-1),(w/o, async, video-2)</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, async, video-1),(w/o, sync, video-2)</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>5</td>
+<td>(w/, sync, video-2),(w/, async, video-1)</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>5</td>
+<td>(w/, async, video-2),(w/, sync, video-1)</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, sync, video-2),(w/o, async, video-1)</td>
+</tr>
+<tr>
+<td>P7</td>
+<td>Some</td>
+<td></td>
+<td>No knowledge</td>
+<td>4</td>
+<td>(w/o, async, video-2),(w/o, sync, video-1)</td>
+</tr>
+<tr>
+<td>P8</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/, sync, video-1),(w/, async, video-2)</td>
+</tr>
+<tr>
+<td>P9</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/, async, video-1),(w/, sync, video-2)</td>
+</tr>
+<tr>
+<td>P10</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/o, sync, video-1),(w/o, async, video-2)</td>
+</tr>
+<tr>
+<td>P11</td>
+<td>Some</td>
+<td></td>
+<td>No knowledge</td>
+<td>2</td>
+<td>(w/o, async, video-1),(w/o, sync, video-2)</td>
+</tr>
+<tr>
+<td>P12</td>
+<td>A lot</td>
+<td></td>
+<td>Some</td>
+<td>4</td>
+<td>(w/, sync, video-2),(w/, async, video-1)</td>
+</tr>
+<tr>
+<td>P13</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/, async, video-2),(w/, sync, video-1)</td>
+</tr>
+<tr>
+<td>P14</td>
+<td>Some</td>
+<td></td>
+<td>Some</td>
+<td>3</td>
+<td>(w/o, sync, video-2),(w/o, async, video-1)</td>
+</tr>
+<tr>
+<td>P15</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, async, video-2),(w/o, sync, video-1)</td>
+</tr>
+<tr>
+<td>P16</td>
+<td>Some</td>
+<td></td>
+<td>Some</td>
+<td>4</td>
+<td>(w/, sync, video-1),(w/, async, video-2)</td>
+</tr>
+<tr>
+<td>P17</td>
+<td>A lot</td>
+<td></td>
+<td>Some</td>
+<td>3</td>
+<td>(w/, sync, video-1),(w/, async, video-2)</td>
+</tr>
+<tr>
+<td>P18</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/, async, video-1),(w/, sync, video-2)</td>
+</tr>
+<tr>
+<td>P19</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, sync, video-1),(w/o, async, video-2)</td>
+</tr>
+<tr>
+<td>P20</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/o, async, video-1),(w/o, sync, video-2)</td>
+</tr>
+<tr>
+<td>P21</td>
+<td>A little</td>
+<td></td>
+<td>Some</td>
+<td>2</td>
+<td>(w/, sync, video-2),(w/, async, video-1)</td>
+</tr>
+<tr>
+<td>P22</td>
+<td>Some</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/, async, video-2),(w/, sync, video-1)</td>
+</tr>
+<tr>
+<td>P23</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>3</td>
+<td>(w/o, sync, video-2),(w/o, async, video-1)</td>
+</tr>
+<tr>
+<td>P24</td>
+<td>A lot</td>
+<td></td>
+<td>A little</td>
+<td>4</td>
+<td>(w/o, async, video-2),(w/o, sync, video-1)</td>
+</tr>
+</tbody>
+</table>
+<p>with the <em>async</em>. We counter-balanced the order of the <em>sync</em> and <em>async</em> AI Assistants and randomized the order of the two
+videos.</p>
+<p>We chose this mixed design for the following reasons. First, there is a potential learning effect for explanations. After
+participants see the explanations for the first test video, they might be primed to use similar information when analyzing
+the second video even if they are not given explanations. Thus, we set the explanations as the between-subjects factor.
+Second, there is no foreseen learning effect for synchronization so it can be set as the within-subject factor. Doing so
+also allows each participant to compare their experiences with <em>sync</em> and <em>async</em> human-AI collaboration.</p>
+<h2 id="43-procedure">4.3 Procedure</h2>
+<p>The study was divided into the following phases: <em>set-up</em>, <em>pre-test questionnaire</em>, <em>training session</em>, <em>two formal-task sessions</em>
+(each including one formal task and one post-task questionnaire), and <em>post-test questionnaire and interview</em>. All studies,
+including the pilot studies, were conducted online. The study took 75 minutes on average to finish, and each participant
+was compensated with $15.</p>
+<p>Set-up. Participants were asked to enter our ZOOM room, check their microphone, speaker and camera, and to
+share their screen with the moderator.</p>
+<p>Pre-test Questionnaire. The moderator sent participants the URL to the online questionnaire via ZOOM chat.
+In the pre-test questionnaire, participants were asked to fill in their basic demographic questions (e.g., age, gender,
+education backgrounds), years of UX/HCI work experience, and their experience of conducting usability testing sessions.
+Manuscript submitted to ACM</p>
+<hr />
+<p>Since they would analyze the usability test videos with the AI, they were also asked about their knowledge of AI and
+ML (four levels from no knowledge to a lot of knowledge). Moreover, they were also asked to rate their general trust in
+AI and ML on a 5-point Likert scale.
+Training Session. We asked participants to learn and practice using the AI assistant to analyze a usability test video</p>
+<p>Training Session. We asked participants to learn and practice using the AI assistant to analyze a usability test video
+different from the ones used in the formal task phase. We first introduced to participants how to play the video and
+write problem descriptions. We then explained the visualization of the AI’s inferences. For the participants in <em>(w/, sync)</em>
+and <em>(w/, async)</em> conditions that showed the AI’s explanations, we explained to them that the explanations consisted
+of 1) the UX design heuristics that were violated; and 2) the input features that the AI considered when making its
+predictions. We kept the introduction consistent for all participants in these conditions. We informed participants that
+they could decide whether to use the AI or not. We then showed them with an example of how to find and record a
+usability problem. Next, we asked participants to practice using the tool to find and record one usability problem on the
+practicing video.
+Formal Task Sessions. Participants used two versions of AI Assistant to review the two usability test videos</p>
+<p>Formal Task Sessions. Participants used two versions of AI Assistant to review the two usability test videos
+(described in Section3.3) to identify problems and write problem descriptions. As discussed in the previous section, one
+task was with the <em>sync</em> AI Assistant and the other with the <em>async</em> AI Assistant, and the order of the two versions of AI
+Assistant was counter-balanced. For each usability test video, the moderator suggested (but not enforced) participants
+spend no more than about two times of the video length to keep the study on time. After completing each task, the
+participants were asked to complete a post-task questionnaire.
+Post-test Questionnaire and Interview. After finishing reviewing each of the two usability test videos, the</p>
+<p>Post-test Questionnaire and Interview. After finishing reviewing each of the two usability test videos, the
+participants were asked to complete a post-task questionnaire reporting their satisfaction, understanding, and trust in
+AI Assistant (details in Section4.4). After completing both tasks, we conducted semi-structured interviews for 10-20
+minutes regarding participants’ experiences (e.g., how did you use AI Assistant? what did you like and dislike about
+AI Assistant? why?) and preferences (e.g., which version of AI Assistant did you prefer more? what other features
+of AI Assistant would you want? why?) of using AI Assistant, as well as other customized questions regarding the
+moderator’s observations of their behaviors in the study.</p>
+<h2 id="44-measurements">4.4 Measurements</h2>
+<p>From the experiment, we captured three types of measurements, including task performance metrics related to identified
+UX problems, behavioral metrics reflecting interaction patterns, and subjective perception of AI Assistant measured by
+survey responses.
+Task Performance. This type of measures focused on the number of UX problems found by each participant. Given</p>
+<p>Task Performance. This type of measures focused on the number of UX problems found by each participant. Given
+the ground truth of UX problems in the two usability tasks and the problems identified by a participant, we calculated
+the <em>precision</em>—the percentage of correct problems among all problems identified by the participant, and <em>recall</em>—the
+percentage of correct problems identified by the participant among all correct problems existed in the ground truth.
+To further verify the effect of AI Assistant on participants’ task performance, we also analyzed the <em>overlap</em> between a
+participant’s identified problems and AI Assistant’s suggestions. We also looked at the content of <em>problem descriptions</em>
+written by participants as a secondary measurement of task performance.
+Behavioral Metrics. These were calculated from the tool’s log data, including the total time spent on an analysis, the</p>
+<p>a pause when a participant paused the video for 3 seconds or more, to avoid counting any unintentional actions. A</p>
+<p>Manuscript submitted to ACM seconds apart from the current video time. Similarly, a rewind was counted when a participant went back in the video
+time by 2 seconds or more.
+Subjective Perception. We relied on questionnaire responses to measure participants’ satisfaction, understanding,</p>
+<p>Subjective Perception. We relied on questionnaire responses to measure participants’ <em>satisfaction</em>, <em>understanding</em>,
+and <em>trust</em> of AI Assistant. Specifically, satisfaction was measured by a three-item scale based on the After-Scenario
+Questionnaire [53] (Cronbach’s alpha = 0*. <em>72). Understanding was measured by two self-reported items: “I felt that I</em>
+<em>had a good understanding of how AI Assistant works” and “I felt that I had a good understanding of why AI Assistant</em>
+<em>detects UX problems” (Cronbach’s alpha = 0</em>. <em>86). Trust was measured by a three-item scale (e.g. “I feel like I can count</em>
+<em>on AI Assistant to provide reliable suggestions for analysis of think-aloud sessions”) adapted from “trust intention” in</em>
+<em>McKnight’s framework on Trust [60, 61] (Cronbach’s alpha = 0</em>.*72). All items were rated on a 7-point Likert scale. The
+Cronbach’s alpha values, as indicated above, showed high internal consistency in the questionnaire responses.</p>
+<h2 id="45-analysis-methods">4.5 Analysis Methods</h2>
+<p>For quantitative data, we computed descriptive statistics of the corresponding measures in Section4.4and performed
+mixed-effects regression models, which will be described in detail in Section5.1. For qualitative data, the interview
+recordings were first transcribed into texts, and two researchers of the team performed thematic analysis on the
+texts independently and discussed the common themes that emerged from the texts. Finally, the themes were further
+discussed with two additional researchers of the team and consolidated into the key findings, which will be described
+in detail in Section5.2.</p>
+<h2 id="5-results">5 RESULTS</h2>
+<p>We first present quantitative results from the experiment and then qualitative results from the interviews. We also
+annotate each subsection regarding the RQs that they primarily answer.</p>
+<h2 id="51-quantitative-results">5.1 Quantitative Results</h2>
+<p>Statistical method overview. We conducted quantitative analysis on various dependant variables related to participants’ task performance, behavioral patterns interacting with AI Assistant and subjective perception of the tool. We
+normalized the measurements that were likely impacted by either the video length or the number of ground-truth
+UX problems, detailed in each analysis below. For each dependant variable, we performed a separate mixed-effects
+regression with <em>explanations</em> ( <em>w/</em> or <em>w/o</em>) and <em>synchronization</em> ( <em>sync</em> or <em>async</em>) as the fixed effects and <em>participants</em> as the
+random effects. The regression model also included the interaction effect between explanations and synchronization.
+The regression model further included the <em>usability test videos</em> (website or coffee machine), participants’ self-reported <em>UX</em> <em>experience</em>, <em>knowledge of AI</em> and general <em>trust in AI</em>, <em>age group</em>, and <em>gender</em> as control variables. All tests were performed
+with the <em>nlme</em> package in R. For each test, we checked for outliers with the dependant variable as outside 1.5 times the
+interquartile range(we will only mention below if a test had outliers identified and removed), and made sure there was
+no multicollinearity (all 𝑉𝐼𝐹 &lt; 3). Below we report the descriptive statistics (mean values and standard division) for
+each of the quantitative measures and significant results from the regression analysis.
+Technical breakdowns happened for three participants: both tasks for P2 (w/o explanations) and P12 (w/ explanations),</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>Table 2. The mean and standard deviation (in parenthesis) of task performance measures: the number of UX problems identified by
+participants (N Problems) normalized by the number of ground-truth problems in each video, the precision and recall of the identified
+problems, and the length of problem description for each entry of UX problem (Desc. Len.)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>N Problems (normalized)</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Desc. Len.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>0.69</td>
+<td>.860</td>
+<td>.560</td>
+<td>11.4</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>(0.09)</td>
+<td>(.049)</td>
+<td>(.055)</td>
+<td>(2.2)</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>sync</td>
+<td>0.56(0.06)</td>
+<td>0.865(.039)</td>
+<td>.475(.047)</td>
+<td>10.2(1.9)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>0.50(0.07)</td>
+<td>.939(.037)</td>
+<td>.448(.047)</td>
+<td>11.3(1.8)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>0.66(0.08)</td>
+<td>.894(.051)</td>
+<td>.589(.068)</td>
+<td>13.5(2.1)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>5.1.1 Task Performance (RQ1, RQ2).</em> Overall performance measurements. We started by analyzing the measurements reflecting how well participants performed the tasks as described in Section4.4, specifically the total numbers of
+UX problems identified, the Precision and Recall of their identified problems based on the ground truth problems. Given
+the difference between the two usability tasks (20 UX problems in the coffee machine video, 8 in the website video), we
+normalized the total number of UX problems found by the number of ground-truth problems in each video. Descriptive
+statistics, including means and standard deviations, are presented in Table2(Columns N Problems, Precision, and
+Recall).
+We performed a mixed-effects regression model, as described above, on the number of identified problems (normalized</p>
+<p>We performed a mixed-effects regression model, as described above, on the number of identified problems (normalized
+by number of ground-truth problems), Precision, and Recall respectively. For the number of identified problems
+(normalized), we found a significant two-way interaction between the presence of explanations and synchronization
+(𝛽 = −0.29,𝑆𝐸 = 0.13,𝐹 (2,18) = 4.54,𝑝 &lt; 0.05).Post-hoc analysis using emmeans package of R found the contrast
+1
+between <em>async</em> and <em>sync</em> marginally significant for AI Assistant <em>w/o explanations</em> ( <em>𝑝</em> = 0*. <em>10), but not significant for</em>
+<em>AI Assistant w/ explanations (𝑝 = 0</em>.*22), suggesting that the interactive effect was mainly caused by the difference of
+synchronization made for participants interacting with AI Assistant <em>w/o explanations</em>.
+While we did not find any significant effect on Precision, we found the same significant two-way interaction between</p>
+<p>$$
+(\beta,=,-0.29,S E,=,0.13,F(2,18),=,4.54,p,&lt;,0.05)
+$$</p>
+<p>$$
+\ p=0.10)^{1}
+$$</p>
+<p>$$
+(p=0.22)
+$$</p>
+<p>While we did not find any significant effect on Precision, we found the same significant two-way interaction between
+the presence of explanations and synchronization on Recall ( <em>𝛽</em> = −0*. <em>23</em>,𝑆𝐸\<em> = 0*. <em>09</em>,𝐹\</em> (2*, <em>18) = 6</em>. <em>52</em>,𝑝\* = 0*. <em>02; post-hoc</em>
+<em>analysis found the contrast between async and sync significant for AI w/o explanations (𝑝 = 0</em>. <em>04), but not significant for</em>
+<em>AI w/ explanations (𝑝 = 0</em>.*17)). No main effect was found. These two-way interactions on total number of problems and
+Recall are illustrated in Figure3: when interacting with AI Assistant <em>w/o explanations</em>, participants found significantly
+more UX problems from the ground truth, in the <em>sync</em> than the <em>async</em> condition. For those interacting with AI
+Assistant <em>w/ explanations</em>, they did not show such difference in the <em>sync</em> than the <em>async</em> condition.
+Overlaps with AI. We further examined how the AI influenced participants’ analysis by the percentage of their</p>
+<p>$$
+(\beta=-0.23,S E=0.09,F(2,18)=6.52,p=0.02;
+$$</p>
+<p>$$
+\left(p=0.17\right).
+$$</p>
+<p>Overlaps with AI. We further examined how the AI influenced participants’ analysis by the percentage of their
+identified UX problems overlapped with AI’s suggestions, as divided by the total number of AI suggested problems (Pct.
+AI suggestions Confirmed), as well as overlap percentages over AI’s false positive suggestions (Pct. AI FP Confirmed)
+and false negative suggestions (Pct. AI FN Found). Specifically, Pct. AI suggestions Confirmed indicates participants’
+propensity to confirm AI’s suggestions. Pct. AI FP Confirmed indicates participants’ tendency to be misled by AI’s
+suggestions when there were no UX problems; and Pct. AI FN Found indicates participants’ ability to identify a correct
+UX problem when AI failed to make a suggestion. Descriptive statistics of these measurements are presented in Table3.
+1Given the relatively small sample size, we consider 𝑝 &lt; 0.05 as significant, and 0.05 ≤ 𝑝 &lt; 0.10 as marginally significant, following statistical</p>
+<p>1Given the relatively small sample size, we consider 𝑝 &lt; 0.05 as significant, and 0.05 ≤ 𝑝 &lt; 0.10 as marginally significant, following statistical
+convention [20]</p>
+<p>$$
+0.05,\leq,p,&lt;,0.10
+$$</p>
+<hr />
+<p>Fig. 3. Two-way interaction between explanations and synchronization on the number of UX problems found (normalized by the
+number of problems in ground truth), and Recall, as shown by means and standard divisions across conditions. All error bars represent
++/- one standard error.</p>
+<p>Table 3. The mean and standard deviation (in parenthesis) of measurements on overlaps with AI’s suggestions and mistakes: the
+percentage of identified UX problems overlapped with AI’s suggestions over the total number of AI suggested problems (Pct. AI
+suggestions Confirmed), overlap percentages over AI’s true positive suggestions (Pct. AI TP Confirmed), overlap percentages over AI’s
+false positive suggestions (Pct. AI FP Confirmed), and overlap percentages over AI’s false negative suggestions (Pct. AI FN Found).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Pct. AI suggestions Confirmed</th>
+<th>Pct. AI TP Confirmed</th>
+<th>Pct. AI FP Confirmed</th>
+<th>Pct. AI Found</th>
+<th>FN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>53.2%(6.3%)</td>
+<td>55.4%(20.8%)</td>
+<td>21.7%(9.3%)</td>
+<td>23.3%(10.0%)</td>
+<td></td>
+</tr>
+<tr>
+<td>w/</td>
+<td>sync</td>
+<td>47.5%(4.7%)</td>
+<td>60.5%(20.1%)</td>
+<td>19.7%(7.0%)</td>
+<td>12.1%(5.1%)</td>
+<td></td>
+</tr>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>40.6%(4.2%)</td>
+<td>52.6%(19.7%)</td>
+<td>3.0%(3.0%)</td>
+<td>12.1%(9.3%)</td>
+<td></td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>sync</td>
+<td>56.5%(6.0%)</td>
+<td>62.0%(24.9%)</td>
+<td>19.7%(7.4%)</td>
+<td>21.2%(10.3%)</td>
+<td></td>
+</tr>
+<tr>
+<td>w/o</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>$$
+w/0
+$$</p>
+<p>Fig. 4. Two-way interaction between explanations and synchronization on the percentage of AI suggestions confirmed, and percentage
+of AI’s false negative suggestions confirmed, as shown by means and standard divisions across conditions. All error bars represent +/-
+one standard error.</p>
+<p>$$
++/-
+$$</p>
+<hr />
+<p>We performed separate mixed-effects regression analysis as described earlier on each of the three measurements. We
+found the two-way interaction between the presence of explanations and synchronization to be significant for Pct. AI
+suggestions Confirmed ( <em>𝛽</em> = −0*. <em>22</em>,𝑆𝐸\<em> = 0*. <em>09</em>,𝐹\</em> (2*, <em>18) = 6</em>. <em>94</em>,𝑝\<em> = 0*. <em>02; post-hoc analysis found the contrast between</em>
+<em>async and sync significant for AI w/o explanations (𝑝 = 0</em>. <em>02), but not significant for AI w/ explanations (𝑝 = 0</em>. <em>26))</em>
+<em>and marginally significant for Pct. AI FP Confirmed (𝛽 = −0</em>. <em>18</em>,𝑆𝐸\</em> = 0*. <em>10</em>,𝐹\<em> (2*, <em>18) = 3</em>. <em>43</em>,𝑝\</em> = 0*. <em>08; post-hoc analysis</em>
+<em>found the contrast between async and sync significant for AI w/o explanations (𝑝 = 0</em>. <em>03), but not significant for AI w/explanations (𝑝 = 0</em>.*76)) . No main effect was found. As illustrated in Figure4, these interaction effects show that for
+participants interacted with AI Assistant <em>w/o explanations</em>, they accepted more AI’s suggestions and more false
+positive AI suggestions in the <em>sync</em> than <em>async</em> condition. This difference, however, was not found for participants
+interacting with AI Assistant <em>w/ explanations</em>.Figure4also suggests participants interacting with AI <em>w/ explanations</em>
+generally accepted more AI suggestions, in both <em>sync</em> and <em>async</em>, than the baseline condition ( <em>w/o, async</em>).
+What’s more, Table3also suggests that AI’s FPs and FNs had different effects on participants’ analysis. In all conditions,</p>
+<p>$$
+(\beta=-0.22,S E=0.09,F(2,18)=6.94,p=0.02
+$$</p>
+<p>$$
+(p,=,0.26))
+$$</p>
+<p>$$
+\mathsf{I}\left(\beta=-0.18,S E=0.10,F(2,18))=3.43,p=0.08;\right.
+$$</p>
+<p>$$
+(p=0.76))
+$$</p>
+<p>What’s more, Table3also suggests that AI’s FPs and FNs had different effects on participants’ analysis. In all conditions,
+the percentages of FPs leading to confirmed UX problems were low; this means that in most cases participants were
+able to recognize and reject AI’s false suggestions. The percentages of FNs leading to confirmed UX problems were also
+low; this suggests that participants tended to neglect a UX problem if they were not reminded by the AI. These patterns
+reveal that in the context of identifying UX problems, FNs seem to be more harmful than FPs. The implication is that
+when designing a human-AI collaboration tool for UX evaluators, it would be desirable to minimize FNs (i.e., the
+AI does not highlight the problem but it was actually there) over FPs (i.e., the AI highlights a problem but
+it was actually not there) if trade-off between the two have to be made, for example by setting the classification
+threshold to have high recall.
+Interestingly, after removing 3 outlier data points, we found that for Pct. AI FN Found, there is a marginally significant</p>
+<p>Interestingly, after removing 3 outlier data points, we found that for Pct. AI FN Found, there is a marginally significant
+positive main effect of explanations ( <em>𝛽</em> = 0*. <em>16</em>,𝑆𝐸\<em> = 0*. <em>08</em>,𝐹\</em> (1*, <em>15) = 4</em>. <em>18</em>,𝑝\* = 0*.*06; M( <em>w explanations</em>)=13.3%; M( <em>w/o</em> <em>explanations</em>)=8.3%). This implies that participants interacted with AI Assistant <em>w/ explanations</em> were able to find UX
+problemsmore effectively even if AI failed to remind them.</p>
+<p><em>5.1.2 Behavioral Patterns (RQ1, RQ2).</em> We examined behavioral metrics that reflected how participants interacted with
+the tool, including the time spent analyzing a video, number of times they jumped forward in the video, rewound,
+paused, and the average time of each pause. Since the length of video might impact these behaviors, we normalized all
+metrics, except the average time per pause, by the length of the video (3.57 minutes for the website video and 11.37
+minutes for the coffee machine video). That is, a normalized metric represents a participant’ frequency of engagement
+in a corresponding behavior per every minute of a video. Table4shows descriptive statistics of these metrics.
+We performed a separate mixed-effects regression on each of these behavioral metrics. We found a significant</p>
+<p>We performed a separate mixed-effects regression on each of these behavioral metrics. We found a significant
+interaction effect between the presence of explanations and synchronization on the normalized total time spent
+( <em>𝛽</em> = −0*. <em>99</em>,𝑆𝐸\<em> = 0*. <em>40</em>,𝐹\</em> (2*, <em>18) = 6</em>. <em>03</em>,𝑝\* = 0*. <em>02; post-hoc analysis found the contrast between async and sync significant</em>
+<em>for AI w/o explanations (𝑝 = 0</em>. <em>01), but not significant for AI w/ explanations (𝑝 = 0</em>. <em>48))), and a marginally significant</em>
+<em>effect on the average pause time (after removing an outlier) (𝛽 = −7.12,𝑆𝐸 = 4.05,𝐹 (2,17) = 3.09,𝑝 &lt; 0.10; post-hoc</em>
+<em>analysis found the contrast between async and sync marginally significant for AI w/o explanations (𝑝 = 0</em>. <em>10), but not</em>
+<em>significant for AI w/ explanations (𝑝 = 0</em>.*38))). As shown in Figure5, these interaction effects are consistent with the
+trend of the identified UX problems, Recall, and percentage of AI suggestions confirmed described in the last subsections:
+When interacting with AI Assistant <em>w/o explanations</em>, participants spent more time and paused longer in the <em>sync</em>
+than the <em>async</em> condition. Such a difference did not appear for participants interacting with AI assistant <em>w/ explanations</em>.</p>
+<p>$$
+(\beta=-0.99,8E=0.40,F(2,18)=6.03,p=
+$$</p>
+<p>$$
+(\beta=-7.12,S E=4.05,F(2,17)=3.09,p&lt;0.10;
+$$</p>
+<hr />
+<p>Table 4. The behavioral metrics reflecting participants’ interactions with AI Assistant (with means and standard deviation in
+parenthesis), including the total time spent, number of jump forwards, rewinds, and pauses, all of which are normalized by the length
+of the video (in minutes); and average duration of a pause (in seconds).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Total time(normalized)</th>
+<th>N Jump Forward(normalized)</th>
+<th>N Rewind(normalized)</th>
+<th>N Pause(normalized)</th>
+<th>M Pause time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>2.68</td>
+<td>0.57</td>
+<td>1.67</td>
+<td>2.13</td>
+<td>21.7</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>(0.24)</td>
+<td>(0.26)</td>
+<td>(0.44)</td>
+<td>(0.38)</td>
+<td>(2.85)</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>sync</td>
+<td>2.21(0.23)</td>
+<td>0.16(0.09)</td>
+<td>1.25(0.43)</td>
+<td>1.61(0.30)</td>
+<td>18.1(2.34)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>2.15(0.32)</td>
+<td>0.18(0.09)</td>
+<td>1.02(0.34)</td>
+<td>1.78(0.40)</td>
+<td>13.7(2.49)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>2.83(0.41)</td>
+<td>0.30(0.09)</td>
+<td>1.51(0.43)</td>
+<td>1.70(0.32)</td>
+<td>17.6(2.71)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Although not statistically significant, the same trend of interaction effect was observed for the number of forward
+jumps and rewinds as shown in Table4.
+Taken altogether, these behavioral patterns suggest that when interacting with AI Assistant,</p>
+<p>Taken altogether, these behavioral patterns suggest that when interacting with AI Assistant <em>w/o explanations</em>,
+participants appeared to be more engaged and examined the usability test videos more actively in the <em>sync</em> than the
+<em>async</em> condition. As a result, they found more UX problems in the <em>sync</em> than the <em>async</em> condition. For those interacting
+with AI Assistant <em>w/ explanations</em>, their engagement and performance did not show significant difference between
+the <em>sync</em> and <em>async</em> conditions.Figure5suggests participants interacting with AI <em>w/ explanations</em> were generallymore
+engaged(spent more time and paused longer) than the baseline condition <em>(w/o, async)</em>.</p>
+<p>Fig. 5. Two-way interaction between explanations and synchronization on the time spent on analysis (normalized by video length,
+and average pause time, as shown by means and standard divisions across conditions. All error bars represent +/- one standard error.</p>
+<p><em>5.1.3 Subjective Perceptions (RQ1-3).</em> We analyzed the measurements of the subjective perceptions of the tool from
+questionnaire responses. After analyzing videos with each version of AI Assistant ( <em>sync</em> or <em>async</em>), participants completed
+a questionnaire rating their <em>Satisfaction</em>, <em>Understanding</em> and <em>Trust</em> in AI Assistant, as described in Section4.4. Table5
+shows the descriptive statistics of these questionnaire responses.
+Separate mixed-effects regression models on the three subjective perceptions found a main effect of explanations</p>
+<p>Separate mixed-effects regression models on the three subjective perceptions found a main effect of explanations
+on perceived Understanding ( <em>𝛽</em> = 0*. <em>92</em>,𝑆𝐸\<em> = 0*. <em>44</em>,𝐹\</em> (1*, <em>15) = 4</em>. <em>35</em>,𝑝\* = 0*.*05), suggesting that participants found the
+explanations helpful for them to better understand how AI Assistant worked. While not statistically significant, the
+Manuscript submitted to ACM</p>
+<p>$$
+\mathrm{ ~~g~~}(\beta,=,0.92,S E,=,0.44,F(1,15),=,4.35,p,=,0.05),,\mathrm{s}
+$$</p>
+<hr />
+<p>Table 5. The subjective perceptions (e.g., satisfaction, understanding, and trust) of AI Assistant reported in the post-test questionnaire,
+with mean values and standard errors in parenthesis</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Satisfaction</th>
+<th>Understanding</th>
+<th>Trust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>5.53</td>
+<td>5.90</td>
+<td>4.80</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>async</td>
+<td>(0.23)</td>
+<td>(0.22)</td>
+<td>(0.40)</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>sync</td>
+<td>5.48</td>
+<td>5.77</td>
+<td>4.94</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>sync</td>
+<td>(0.36)</td>
+<td>(0.26)</td>
+<td>(0.38)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>4.88</td>
+<td>4.64</td>
+<td>4.55</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>async</td>
+<td>(0.42)</td>
+<td>(0.47)</td>
+<td>(0.40)</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>sync</td>
+<td>5.39</td>
+<td>4.82</td>
+<td>4.88</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>sync</td>
+<td>(0.25)</td>
+<td>(0.44)</td>
+<td>(0.29)</td>
+</tr>
+</tbody>
+</table>
+<p>measure of satisfaction exhibits a consistent trend with the results of task performance and behavioral patterns as
+indicated in previous subsections ( <em>𝛽</em> = −0*. <em>55</em>,𝑆𝐸\<em> = 0*. <em>47</em>,𝐹\</em> (2*, <em>18) = 1</em>. <em>36</em>,𝑝\<em> = 0*. <em>26). The main effect of explanations is</em>
+<em>also trending significant (𝛽 = 0</em>. <em>68</em>,𝑆𝐸\</em> = 0*. <em>52</em>,𝐹\<em> (2*, <em>15) = 1</em>. <em>73</em>,𝑝\</em> = 0*.*20). That is, for participants interacting with AI
+Assistant <em>w/o explanations</em>, they felt somewhatmore satisfied in the <em>sync</em> than the <em>async</em> condition. For participants
+interacting with AI Assistant <em>w/ explanations</em>, they felt they understood the AI better, and were somewhat more
+satisfied with the tool, in both the <em>sync</em> and <em>async</em> conditions, than the baseline condition <em>(w/o, async)</em>.
+It is worth noting that as controlled variables in regression models, we found a main effect of general Trust in AI in</p>
+<p>$$
+(\beta=-0.55,S E=0.47,F(2,18)=1.36,p=0.26)
+$$</p>
+<p>$$
+(\beta=0.68,S E=0.52,F(2,15)=1.73,p=0.20)
+$$</p>
+<p>It is worth noting that as controlled variables in regression models, we found a main effect of general Trust in AI in
+increasing Satisfaction ( <em>𝛽</em> = 0*. <em>65</em>,𝑆𝐸\<em> = 0*. <em>36</em>,𝐹\</em> (1*, <em>15) = 0</em>. <em>09</em>,𝑝\<em> = 0*. <em>09), Understanding (𝛽 = 0</em>. <em>99</em>,𝑆𝐸\</em> = 0*. <em>36</em>,𝐹\<em> (1*, <em>15) =</em>
+<em>7</em>. <em>93</em>,𝑝\</em> = 0*. <em>01) and Trust (𝛽 = 0</em>. <em>97</em>,𝑆𝐸\<em> = 0*. <em>39</em>,𝐹\</em> (1*, <em>15) = 6</em>. <em>09</em>,𝑝\* = 0*.*03). This indicates that participants with a generally
+positive attitude towards AI also had more positive perceptions of AI Assistant.
+In summary, we found that synchronization had a significant effect for participants interacting with AI Assistant <em>w/o</em></p>
+<p>$$
+(\beta=0.65,S E=0.36,F(1,15)=0.09,p=0.09)
+$$</p>
+<p>$$
+(\beta=0.99,\S E=0.36,F(1,15)=
+$$</p>
+<p>$$
+7.93,p=0.01)
+$$</p>
+<p>$$
+\ (\beta=0.97,S E=0.39,F(1,15)=6.09,p=0.03)
+$$</p>
+<p>In summary, we found that synchronization had a significant effect for participants interacting with AI Assistant <em>w/o</em> <em>explanations</em>: <em>sync</em> AI led to higher engagement (more time spent and longer pause), more acceptance of AI suggestions,
+better performance of finding UX problems, and somewhat higher satisfaction with the AI Assistant. Such difference
+from synchronization was not found for the group interacting AI Assistant <em>w/ explanations</em>, who were also found to
+have a better perceived understanding of AI Assistant, higher ability to detect usability problems from the video even if
+the AI Assistant failed to remind them. . The latter group also exhibited a tendency of higher engagement and more
+acceptance of AI suggestions compared to the baseline condition <em>(w/o, async)</em>.</p>
+<h2 id="52-qualitative-results">5.2 Qualitative Results</h2>
+<p>Based on the quantitative results above, we first discuss insights from qualitative data to further unpack the benefits of
+AI explanations and synchronization, and how they might have worked together to create the interactive effect on
+participants’ engagement and performance.We will also discuss themes on the general perception of AI Assistantto
+support UX evaluators to perform usability test video analysis(Section5.2.3) andsuggestways to improve the design
+(Section5.2.4). We will highlight the themes identified from the thematic analysis in bold and support them with
+selected quotes.To help readers contextualize the quotes, we annotated them with their corresponding Explanation
+conditions <em>(w vs. w/o)</em> since Explanation was a between-subjects factor and each participant experienced only one of
+the two conditions. In contrast, since Synchronization was a within-subject factor and all participants experienced two
+conditions <em>(sync vs. async)</em>, we only annotated ones that were clear which synchronization condition they referred to.
+<em>5.2.1Benefits ofExplanations (RQ1).</em> First, we found further support consistent with the quantitative results that</p>
+<p><em>5.2.1Benefits ofExplanations (RQ1).</em> First, we found further support consistent with the quantitative results that
+having access to AI’s explanations led to a perceived better understanding of how the AI works.</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>“ <em>I felt that I could rely on it more than half of the time. It detected what the participant said and did. By</em> <em>combing these two factors, I felt it often generated reasonable suggestions.-P18, w/</em>”</p>
+<p>Despite a lack of significant survey results on user trust, we found some evidence that, by having explanations,
+the improved user understanding can potentially improve trust in AI Assistant. This is illustrated by the lower
+frequency of mentioning a lack of trust among participants who used the AI <em>with</em> explanations (3 out of 12) than those
+who used the AI <em>without</em> explanations (9 out of 12), for example:</p>
+<p>“ <em>Maybe after I work with the AI for a while and really feel it helps me identify problems, I will build trust</em> <em>with it. But for now, since I feel I don’t know enough about the AI and I don’t know how it works, I am not</em> <em>sure I can 100% trust it.-P23, w/o</em>”</p>
+<p>Second, participants felt the explanations had utility for UX evaluation tasks, which could help them make more
+informed judgments of UX problems:</p>
+<p>“ <em>I trust myself more than the AI. For example, while the AI thought the user encountered an issue when</em> <em>searching for the instruction picture, I think it was just a typical searching process and was not necessarily an</em> <em>issue. But I think it is valuable to review what the AI says and why and then make my own decision.-P23, w/o</em>”</p>
+<p>Consistent with the observations that participants exhibited better ability to detect UX problems and higher engagement when explanations were presented, many commented on attending to the explanation contents:</p>
+<p>“ <em>I like the tool was able to catch some very detailed stuff because I was not able to divide my attention to</em> <em>multiple parts of the whole video like both the participant face video and the screen capture.-P17, w/</em>”
+“I was bad at detecting the uncertainty in the user’s tone and hoped that the tool was able to pick that up.-P20,</p>
+<p>“ <em>I was bad at detecting the uncertainty in the user’s tone and hoped that the tool was able to pick that up.-P20,</em> <em>w/o</em>”</p>
+<p>$$
+w/o^{*}
+$$</p>
+<p>This utilization of explanations content is also demonstrated by participants’ tendency to incorporate the content in
+AI’s explanations in their submitted UX problem descriptions, as discussed in the quantitative analysis shown in the
+last column of Table3.
+The above qualitative findings highlight the benefits of providing AI explanations in assisting usability video analysis.</p>
+<p>The above qualitative findings highlight the benefits of providing AI explanations in assisting usability video analysis.
+Not only did they help users better understand the AI, but also provided additional task support to help identify
+usability problems. These benefits may explain participants’ improved analysis, especially their ability to identify more
+false-negative problems, even when the AI did not explicitly suggest. Interestingly, we did not find a compromise of
+human agency by providing explanations, as suggested by the notion of human-AI agency divide [49, 50], but instead
+found improved human engagement in analyzing the video as compared to the baseline condition.</p>
+<p>were provided synchronously than asynchronously. Our qualitative data revealed four main reasons how the sync AI</p>
+<p>the amount and places of UX problems in a video, as illustrated by the following quote from a participant interacting</p>
+<p>“ <em>I don’t prefer it (the async AI) showing me many indications of problems before I make my own judgment. I</em> <em>don’t want to be biased.-P24, (w/o, async)</em>”</p>
+<hr />
+<p>Second, compared to the <em>async</em> AI, which showed the AI’s suggestions all at once since the beginning of their analysis,
+the <em>sync</em> AI was less overwhelming.</p>
+<p>“ <em>Async [AI] is a bit overwhelming with the problems revealed all at once. It could bias me before I am able to</em> <em>look into the video and have my judgments.-P20, (w/, async)</em>”</p>
+<p>Relatedly, participants found the <em>sync</em> AI allowed them to better focus on their current analysis without being
+distracted by AI’s suggestions for the forthcoming portion of the video.</p>
+<p>“ <em>[With] the sync [AI] I can pay more attention to what’s going on right now. But the async [AI] also tells you</em> <em>the next usability problem that is going to happen. In that case, I found myself tend to focus more on what’s</em> <em>going to happen next instead of finding the issue that is happening now. So it distracted me from my current</em> <em>analysis.-P19, (w/o, sync)</em>”</p>
+<p>Last but not least, the <em>sync</em> AI created a stronger sense of social presence, with the perception of analyzing the
+video with another “evaluator” simultaneously.</p>
+<p>“ <em>It feels like another person is doing this [analysis] with me.-P1, (w/, sync)</em>”</p>
+<p>Although the above results suggest <em>the async AI allowed lower human agency</em>, participants also pointed out two
+potential benefits. First, the <em>async</em> AI allowed them to get an overview of the distribution of the potential UX problems
+in the video. Second, the <em>async</em> AI resulted in less frequent visual updates on the interface than the <em>sync</em> AI, therefore
+was less demanding on their attention and cognitive resources.</p>
+<p>“ <em>I really like the AI highlighted all the problems at the beginning so that way I could pay attention to certain</em> <em>parts of the video. In that way, I could get things done much faster.-P15, (w/o, async)</em>”</p>
+<p><em>The observations in the last two sub-sections can help interpret the interactive effect between synchronization and</em> <em>explanations</em>. For the AI Agent <em>w/o explanations</em>, participants repeatedly expressed a level of mistrust in its capability.
+The synchronous AI, which progressively reveals its suggestions as the evaluator examines the video, validating their
+analysis rather than dictating the job, might have been a better match than the asynchronous AI to support a desired
+level of human agency. As a result, UX evaluators had better engagement in analyzing the video and better analysis
+outcomes.</p>
+<p>This mismatch between the asynchronous AI and UX evaluators’ desired human agency might have been mitigated
+with the explanations provided by the AI Assistant, which could have been perceived to be more capable and trustworthy.
+Perhaps more importantly, the content of explanations provided additional information and utility for evaluators to
+analyze the video, which could have helped them better identify usability problems and stay more engaged regardless
+of the synchronization, as the quantitative results showed.</p>
+<p><em>5.2.3Perceived Valuesof AI Assistantfor Usability Video Analysis(RQ3).</em> To answer RQ3, we summarize the key values
+that participants saw from the WoZ AI Assistant to inform effective forms of human-AI collaboration for usability
+video analysis.First,participants appreciatedAI to provide a second opinion to verify their analysis, which UX
+practitioners oftendesire but would be expensive to obtain from another human evaluatorsince most times they
+perform usability analysis alone [25,27].
+“I can compare what I think is a problem to what the AI thinks is a problem. It gave me a second opinion</p>
+<p>“ <em>I can compare what I think is a problem to what the AI thinks is a problem. It gave me a second opinion</em> <em>without calling for a second designer for help.-P11, w/o</em>”</p>
+<hr />
+<p>“ <em>Oftentimes one researcher has to cover several projects, so it’s certainly nice to have a second opinion and also</em> <em>it can correct me and identify something I miss.-P23, w/o</em>”</p>
+<p>$$
+w/o^{\ }
+$$</p>
+<p>Interestingly, some felt that the AI Assistant was like a “junior colleague”or <em>“a new intern who needs to be monitored</em> <em>and costs time and energy”</em> (P17). Given the performance limitation of AI and subjectivity of usability video analysis,
+this could be a proper mental model to design for effective human-AI collaboration in this context. We may argue that
+<em>sync</em> AI, without dominating the analysis, is a better fit for such a mental model. It would also be interesting to explore
+retrospective AI that reveals its suggestions after the evaluators’ judgment.
+Second, participants desired for the AI to accelerate their analysis by suggesting where to focus on in the video,</p>
+<p>Second, participants desired for the AI to accelerate their analysis by suggesting where to focus on in the video,
+especially when the video is long or when UX evaluators work under time constraints.</p>
+<p>“ <em>The AI might speed up the whole evaluation, especially with time constraints. I can use it, to some degree, to</em> <em>accelerate my analysis by finding which parts I should go a little deeper.-P20, w/o</em>”</p>
+<p>However, our quantitative analysis revealed the risk of being misled by AI’s false negatives by following AI’s
+suggestions to navigate the video. Future work should balance the efficiency aspect and users’ engagement with
+analyzing video content.
+Third, the AI could complement participants’ analysis by identifying issues that they might otherwise miss. As</p>
+<p>Third, the AI could complement participants’ analysis by identifying issues that they might otherwise miss. As
+discussedin Sec.5.2.1, many participants found the explanations particularly helpful for directing their attention to
+details that they did not recognize.</p>
+<p>“ <em>It gave me suggestions before I found issues and also reminds me of the places that I did not recognize the</em> <em>issue.-P12, w/</em>”</p>
+<p>Finally,some participants used AI’s suggestions, such as the timeline feature, as anchor for further analysis or to
+know where to replay the video.</p>
+<p>“ <em>When I went back to watch the video for the second time, I knew where to pay attention to with the</em> <em>visualization of the problems.-P15, w/o</em>”
+“When I double-checked my analysis by playing the video back and forth, it helped me locate the portions</p>
+<p>“ <em>When I double-checked my analysis by playing the video back and forth, it helped me locate the portions</em> <em>where usability problems might exist.-P13, w/</em>”</p>
+<p><em>5.2.4 Ways to Improve the Collaboration between UX Evaluators and AI (RQ1-3).</em> Participants also expressed ways in
+which the AI could be improved to better assist them with their analysis.
+Explanations. The current AI Assistant describes five behavioral features in the visual and audio of a usability test</p>
+<p>Explanations. The current AI Assistant describes five behavioral features in the visual and audio of a usability test
+video to explain the AI’s suggestions. However, participants had different individual preferences for the importance of
+these features, and desired for ways to personalize the rank and types of features provided.</p>
+<p>“ <em>I would rank the five features in this way: what the user said, what the user did, sentiment, tone, and speech</em> <em>rate because i felt tone and speech rate were not as important as the other three.-P13, w/</em>”</p>
+<p><em>rate because i felt tone and speech rate were not as important as the other three.-P13, w/</em>”
+“ I would suggest making speech rate optional. It’s not critical for decision making.-P24, w/o</p>
+<p>Participants also had different preferences for when the explanations should be shown. While some suggested
+the explanations to be shown only when they request them, others prefer seeing the explanations all the time instead of
+just the times when the AI detects problems.</p>
+<p>“ <em>I hope the AI can show the information when I need it instead of providing information to me all the time.-P13,</em> <em>w/</em>”</p>
+<p>“ <em>I would suggest making speech rate optional. It’s not critical for decision making.-P24, w/o</em>”</p>
+<p>$$
+w/^{22}
+$$</p>
+<hr />
+<p>“ <em>Instead of presenting this dialogue of information only during the time when the AI thinks there is a usability</em> <em>problem, maybe just show it through the video, which would be easier for me to analyze the problems.-P16,</em> <em>w/</em>”</p>
+<p>$$
+w/^{22}
+$$</p>
+<p>Synchronization. Participants suggested three alternative designs to consider the timing to reveal AI suggestions.
+The first approach is to allow UX evaluators to analyze the video by themselves first, and then the AI reveals its
+suggestions to help verify judgments in the second pass.</p>
+<p>“ <em>I prefer analyzing the video by myself first and then take a second look at it, and that is when the AI can</em> <em>show me the result because I do want to get a different perspective on what’s going on in the video.-P24, w/o</em>”</p>
+<p>Second, some participants suggestedretrospective AI, by revealingits suggestions immediately after the UX
+evaluator indicates their judgment, for example, by showing agreement or flagging missed problems. Such designs
+would further avoid biasing the UX evaluator’s judgments.</p>
+<p>“ <em>I think it would be more helpful if the AI can analyze with me at the exact same time. For example, it shows</em> <em>me its inference at the exact same time when I find an issue.-P12, w/</em>”</p>
+<p>The third approach is to let the AI analyze a video asynchronously but flag suggestions that the AI is uncertain
+about. In this way, UX evaluators could save time on the problems that AI is confident about and focus their attentions
+on the ones that AI would likely make mistakes.</p>
+<p>Additional Features and Functions. Participants also suggested additional features and functions. First, participants expressed the desire to know richer information about AI, such as the accuracy of the AI and the principles
+that the AI uses. Moreover, they wanted to see more information about UX problems, such as the type, frequency, and
+severity of the suggested problems, and perhaps even recommendations for fixing the problems.</p>
+<p>“ <em>I don’t know the authenticity of the AI, such as its accuracy...It’s nice to have many types of principles, not</em> <em>only Nielsen’s, for the AI to apply and have an option to select a set of principles for the AI, which might</em> <em>generate different results.-P11, w/o</em>”
+“Instead of presenting this dialogue of information only during the time when the AI thinks there is a usability</p>
+<p>“ <em>Instead of presenting this dialogue of information only during the time when the AI thinks there is a usability</em> <em>problem, maybe just show it through the video, which would be easier for me to analyze the problems.-P16,</em> <em>w/</em>”</p>
+<p>Second, they hoped that the AI could adapt its inferences by learning from human guidance. For example, UX
+evaluators could analyze a few usability test sessions first, and then the AI learns their analysis and automatically
+analyzes the remaining sessions. A different approach is to let UX evaluators review and edit the AI’s suggestions for the
+AI to learn from. These active learning approaches could allow the AI to be better customized to detect UX problems in
+specific technology domains. Furthermore, they suggested another way to improve AI is to allow for choosing different
+UX design principles, other than Nielsen’s heuristics [63] as used in this work, for the AI to consider.
+Last, participants also hoped the AI could generate a report of UX problems. For example, the AI could generate</p>
+<p>Last, participants also hoped the AI could generate a report of UX problems. For example, the AI could generate
+the description for each problem, which UX evaluators could either directly use or edit further if needed when they
+create their UX analysis report.</p>
+<p><em>having to type the descriptions all by ourselves. It might make the analysis much faster.-P12, w/</em>”</p>
+<hr />
+<h2 id="6-discussion">6 DISCUSSION</h2>
+<p>To summarize, we started from the baseline design of AI Assistant, which was the asynchronous AI without explanations <em>(w/o, async)</em>, and extended it into three additional designs of AI by changing two factors–explanations and
+synchronization. We found that:</p>
+<p>• Explanations:When the AI Assistant provided explanations, participants performed equally well regardless
+of synchronization, and exhibited higher engagement and more acceptance of AI suggestions compared to the
+baseline AI <em>(w/o, async)</em>. Explanations also improved participants’ self-reported understanding of the AI, ability
+to detect usability problems even if the AI Assistant failed to remind them.
+• Synchronization: When without explanations, Synchronous AI improved UX evaluators’ performance and</p>
+<p>• Synchronization: When without explanations, <em>Synchronous</em> AI improved UX evaluators’ performance and
+engagement with AI’s suggestions more than the baseline AI <em>(w/o, async)</em>.</p>
+<p>Next, we first elaborate on these findings and their implications for designing AI explanations and synchronization,
+and then discuss high-level takeaways regarding human-AI collaboration and AI for UX work.</p>
+<h2 id="61-design-implications-explanations-and-synchronization">6.1 Design Implications: Explanations and Synchronization</h2>
+<p>While our quantitative results suggest both explanations and synchronization could benefit human-AI collaboration in
+the context of UX evaluation, our qualitative data further reveal the underlying reasons and suggest design implications
+Explanations. Consistent with prior work [12, 17, 47], we found that providing explanations could robustly improve</p>
+<p>Explanations. Consistent with prior work [12, 17, 47], we found that providing explanations could robustly improve
+users’ perceived understanding of AI. More importantly, participants appreciated the additional support enabled by
+explanations, to better direct their attention to the parts of the video likely associated with UX problems, and to remind
+them of the indicators of UX problems that they might have otherwise missed. Some participants even wished to have
+constant access to the explanation of the AI’s input features, suggesting that they did not merely view these features as
+supporting AI’s suggestions, but also utilized them in their own analysis of the videos.
+Our WoZ design of AI explanations provided two pieces of information to support UX evaluation: violations of</p>
+<p>Our WoZ design of AI explanations provided two pieces of information to support UX evaluation: violations of
+design principles or heuristics [63] (rule-based explanations), and behavioral features of the test subjects that are
+potential indicators of UX problems [24] (feature-based explanations). Future work could explore technical approaches
+to generating such explanations in a robust way.</p>
+<p>Further, our qualitative data reveal varying individual preferences for the types and ranks of AI’s features to be
+shown, and a desire to customize the explanations. It is worth exploring ways to balance two perspectives of using
+explanations: as <em>justification</em> of AI’s decisions to better understand the AI and as <em>additional information</em> to better support
+the UX evaluation task. Current XAI methods usually adopt the former perspective. A fixed set rules or features are
+shown as explanations based on how the AI actually arrives at its decisions. There is a growing criticism that this
+algorithm-centric view may miss great opportunities to support a primary motivation why people seek explanations [62]:
+a joint sense-making process where both the explainer and explainee supply information or constraints to build common
+ground. We believe knowledge-rich domains where experts and AI collaborate, such as the usability video analysis task
+we studied, provide interesting test grounds to explore novel interactive explanation techniques that allow experts
+to set preferences or constraints, even provide feedback or critique, for AI to improve its explanations so as to better
+support the experts’ tasks.
+Lastly, we should point out that recent works warned that explanations could lead to unwarranted trust [9, 29, 72, 95]</p>
+<p>and over-reliance on AI, if a user simply associates explanability with AI capability without engaging analytically with</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>AI technologies should be mindful about such a risk. For example, recent studies suggested adaptive explanations—only
+providing explanations for suggestions that the AI is confident about [8,95].
+Synchronization. In current AI-mediated decision support systems, it is common to adopt an asynchronous user</p>
+<p>Synchronization. In current AI-mediated decision support systems, it is common to adopt an asynchronous user
+mental model, in which the AI finishes the analysis first and presents its analysis to domain experts (e.g., [26]). Our
+study, however, reveals valuable benefits of providing synchronous AI support, unfolding in real time as the user
+performs the task. With the synchronous AI, our participants particularly welcomed their ability to retain high human
+agency, not get biased or distracted by AI’s suggestions beyond the portion of the video that they have analyzed, and get
+a second opinion to verify or complement their judgment, which is often lacking in UX practice [25, 27] but important
+for overcoming the “evaluator effect” [38].
+Furthermore, the synchronous AI also helped to create a stronger “social presence,” the feeling of working together</p>
+<p>Furthermore, the synchronous AI also helped to create a stronger “social presence,” the feeling of working together
+with a colleague, than the asynchronous AI. In CSCW literature, studies repeatedly found that workers exhibit higher
+engagement, creativity and social interactions in synchronous than asynchronous collaboration contexts[11, 78], while
+asynchronous collaboration may incite social loafing, with which an individual exerts less effort working with others.
+This risk could possibly extend to human-AI collaboration, as we observed less engagement and lower task performance
+in the baseline asynchronous condition than the synchronous conditions.
+It is interesting that the comparative disadvantages of the asynchronous AI Assistant were mitigated if it provided</p>
+<p>It is interesting that the comparative disadvantages of the asynchronous AI Assistant were mitigated if it provided
+explanations. We suspect that it may relate to users’ mental model of the capability of AI Assistant. In the qualitative
+data, participants repeatedly mentioned that they did not place high confidence on the AI’s capability to detect all UX
+problems in the videos, seeing it as a “junior colleague,” and preferred to rely on themselves and only utilized the AI’s
+suggestions as verification or reminders. Thus, without dictating the analysis or distracting from their own judgment,
+the synchronous AI was a better fit for such a mental model than the asynchronous AI, which pushed all its judgements
+to them before they even started their own analysis. When the explanations panel was added ( <em>AI w/ explanations</em>),
+participants viewed the explanations as an additional utility feature to guide them better navigate and observe the
+actions in the videos, which may explain their equal engagement in both the synch and asynch AI conditions.
+It is worth noting that the takeaway message is not that synchronous AI should always be preferred over asynchronous</p>
+<p>It is worth noting that the takeaway message is not that synchronous AI should always be preferred over asynchronous
+AI. Instead, this design decision should depend on the AI agency and the type of support that the AI can provide. It was
+the mismatch between the collaboration timing, where the AI dictates the analysis in the asynchronous condition, and
+the AI’s limited range of support (i.e., without explanations) that led to the undesirable outcome. In knowledge-rich
+domains, such as UX evaluation, it is not uncommon that users place more faith in their domain expertise and judgments
+than the current AI and prefer to have a synchronous AI assistant. However, as users grow their trust in the AI, they
+might enjoy an asynchronous AI assistant that can provide an overview of the problems in the entire video as indicated
+in the last paragraph in Sec5.2.2.Alternatively, users might prefer the flexibility to toggle between synchronous and
+asynchronous collaboration with AI.</p>
+<h2 id="62human-agencyand-timing-of-human-ai-collaboration">6.2Human Agencyand Timing of Human-AI Collaboration</h2>
+<p>We would like to extend the point of designing for different Human-AI agency divide and matching the timing of
+Human-AI collaboration further. First, providing explanations is not the only way to increase the level of AI assistance, in
+terms of the quality and scope of support it can provide. Lai et al.’s [49, 50] work suggested another type of information
+to increase AI agency–performance information to give users confidence and relieve them from the cognitive effort in
+judging the AI’s recommendations. We found similar suggestions from participants to see richer information about
+the AI’s performance and confidence as indicated in Sec.5.2.4. The implication is that designers need to consider
+Manuscript submitted to ACM more nuanced designs for the timing factor of human-AI collaboration, for example, by allowing the AI to work
+asynchronously for high-confidence cases but synchronously for low-confidence cases.
+There are several other frameworks on different levels of AI assistance for both broader automated systems [56, 66]</p>
+<p>There are several other frameworks on different levels of AI assistance for both broader automated systems [56, 66]
+and specific AI applications [51, 94]. Mackeprang et al. suggested a 10-level framework for different configurations of
+machine assistance, ranging from offering no assistance, to offering a set of suggestions, to automatically confirming
+with different ways for humans to intervene, to acting autonomously [56]. Our current designs of AI Assistant were at
+the lower end of this automation spectrum, with the AI only offering suggestions, so the synchronous collaboration was
+more suitable than the asynchronous one. In the future, if the AI becomes more competent and could be confidently
+tasked with auto-detection and report-generation for usability video analysis, the timing factor should be reconsidered
+accordingly. For example, some participants suggested letting the AI perform the analysis asynchronously and then flag
+the decisions that it is uncertain about for human evaluators to double check.
+Last but not least, AI agency and human agency are not necessarily a dichotomous trade-off.On the one hand, we</p>
+<p>Last but not least, AI agency and human agency are not necessarily a dichotomous trade-off.On the one hand, we
+found some evidence that providing explanations improved participants’ perceived AI capability, even trust. On the
+other hand, we did not find a compromise of human agency. To the contrary, explanations seemed to have “slowed
+down” the evaluators and improved their ability to detect usability problems even if the AI failed to suggest. Recent
+work by Shneiderman [79] highlights that human-AI agency is not necessarily a dichotomous trade-off. Instead reliable
+and safe AI design should strive for both high AI and high human agency to exercise effective control. Our results
+suggest that providing explanation could be a possible way to achieve this goal.</p>
+<h2 id="63-ai-for-ux-evaluation">6.3 AI for UX Evaluation</h2>
+<p>Our work provides empirical insights into UX professionals’ attitudes, needs and preferences for AI technologies to</p>
+<p>and complement their work, especially given that UX professionals often analyze a test session alone under time
+pressure [25, 27, 58]. They especially welcomed the idea of relieving them from tedious or mechanic part of their tasks,
+such as maintaining close attention to lengthy usability test videos or writing up usability reports.</p>
+<p>On the other hand, participants expressed doubt about AI’s capabilities to perform usability analysis. One possible
+reason is that detecting usability problems requires the understanding of the test subject’s various behavioral signals
+and the contexts of the test products and tasks, which was viewed by many participants as too complicated for the AI
+to fully comprehend.
+As a result, participants suggested guiding or training the AI to be more similar to how they perform usability</p>
+<p>analysis. This suggestion hints that adaptability or customizability might be a promising area of technical and design</p>
+<p>learning [2,23] provide examples of techniques and systems that allow domain experts without ML expertise to train</p>
+<p>learning [29, 83] elicits experts’ feedback on AI’s explanations and incorporates it to train an AI better aligned with
+how experts make judgments in the task domain. This seems to be a viable approach, as our participants expressed
+a strong desire to tune the AI, and UX practitioners in general tend to accumulate rich expertise in recognizing the
+violations of design principles or heuristics that are still too abstract for the AI to pick up from behavioral data alone.</p>
+<p>Meanwhile, one should be cautious about the common pitfalls of active or interactive machine learning systems [2, 91],
+one of which is overfitting, i.e., an AI that fits precisely with expert-provided examples or rules but does not generalize.
+This is especially problematic as a primary benefit of AI Assistant recognized by our participants was providing a
+Manuscript submitted to ACM second perspective on their analysis. However, an overfitted AI would reinforce their confirmation bias and further
+trap them in the “evaluator effect” [38]. One possible remedy is to explore ensemble approaches with diverse models
+trained by multiple UX professionals to jointly identify UX problems in usability test videos.</p>
+<h2 id="64-limitations-and-future-work">6.4 Limitations and Future Work</h2>
+<p>WoZ. While we discussed technical feasibility of implementing different pieces of information in the WoZ AI’s
+explanations in Sec.3.3.2, it remains an open question of how to implement such an AI that could generate explanations
+as good as the WoZ AI. The implication is two-fold. On the one hand, if UX evaluators tend to include AI’s explanations
+into their personal justification, then poor quality or invalidate explanations from such a practical AI could reduce their
+task performance. On the other hand, we might expect to see lower satisfaction and trust in the AI among participants,
+who eventually would disengage with it.
+Our study found that UX evaluators wanted to access more information about AI, such as accuracy and uncertainty.</p>
+<p>Our study found that UX evaluators wanted to access more information about AI, such as accuracy and uncertainty.
+While exposing such information to users might help them understand AI’s inferences, it might have downside too. For
+example, Lim and Dey found that participants could lose their trust in an intelligent agent that shows high uncertainty
+even if it has a high intelligibility (e.g., being able to explain its reasoning well) [55]. However, their study was conducted
+with participants using context-aware applications. It remains unknown how exposing uncertainty and accuracy of AI
+to UX evaluators would affect their collaboration with the AI.
+We simulated the AI with reasonable precision and recall to match the expectation of an imperfect AI in practice.</p>
+<p>We simulated the AI with reasonable precision and recall to match the expectation of an imperfect AI in practice.
+Recent research has suggested that the precision and recall of an AI might affect its users’ perceptions [47]. Therefore,
+itremains an open question of how accessing precision and recall of the AI might affect UX evaluators’ collaboration
+with the AI.
+In-the-Wild Studies. As a controlled lab study, we could only include a limited set of UX evaluators and usability</p>
+<p>In-the-Wild Studies. As a controlled lab study, we could only include a limited set of UX evaluators and usability
+test videos. However, the diversity of the products on the market and the diverse backgrounds and experiences of UX
+evaluators might also play a role in how they use and perceive the AI when they analyze usability test videos. More
+in-the-wild studies with a broader set of products and UX evaluators are needed to further validate the findings.
+Task Domains Beyond Usability Video Analysis.We have studied theeffectsof explanations and synchronization</p>
+<p>Task Domains Beyond Usability Video Analysis.We have studied theeffectsof explanations and synchronization
+on human-AI collaboration in the context of UX analysis with tasks of analyzing usability test videos.One should be
+cautious about generalizing the findings to other task domains. The tasks used in our studies (i.e, identifying usability
+problems) require expertise in UX research. As a result, our participants were domain experts. Our research and prior
+work (e.g., [26, 80]) suggested that expert users tended to be confident in their judgements and might have adopted
+different strategies in human-AI collaboration compared to the crowdworkers or non-experters widely used in human-AI
+collaboration research. In addition to expertise requirements, the stake of tasks could be another factor affecting the
+generalization of the findings. While our tasks may be of higher stake than many crowdsourced tasks, much higher
+stake tasks (e.g., cancer diagnosis) exist.Thus, although our findings show the positive benefits of explanations and
+synchronization in fostering an engaging human-AI collaboration, more research is warrant to validate and extend our
+findings in other task domains(e.g., tasks requiring expertise vs. tasks without special expertise requirement; high-stake
+vs low-stake tasks).</p>
+<h2 id="7-conclusion">7 CONCLUSION</h2>
+<p>We have studied how two factors of human-AI collaboration—explanations and synchronization—would affect the
+performance and perception of UX evaluators in the context of analyzing usability test videos. We iteratively designed
+Manuscript submitted to ACM a tool—AI Assistant—with four versions of UIs corresponding to the two levels of explanations (with/without) and
+synchronization (sync/async). We conducted a mixed-methods study with 24 UX evaluators identifying UX problems
+from usability test videos with AI Assistant.
+Our quantitative results show that both explanations and synchronization have positive effects on UX evaluators’</p>
+<p>Our quantitative results show that both explanations and synchronization have positive effects on UX evaluators’
+performance (e.g., the number of identified UX problems) and engagement (e.g., time spent analyzing the video).
+Specifically, AI with explanations, regardless of being presented synchronously or asynchronously, helped to improve
+UX evaluators’ performance of and engagement in their analysis, as well as perception of the tool (e.g., understanding
+and satisfaction), compared to the baseline AI (i.e., asynchronous AI without explanations); when without explanations,
+synchronous AI improved UX evaluators’ performance and engagement more than the asynchronous baseline AI.
+Our qualitative results further reveal the ways how explanations and synchronization helped UX evaluators. Specifi-</p>
+<p>Our qualitative results further reveal the ways how explanations and synchronization helped UX evaluators. Specifically, explanations helped them better understand how the AI works, increased their trust in AI, and provided them
+with additional utility for UX evaluation tasks; and synchronization helped them better perform independent analysis,
+feel less overwhelmed by the AI’s suggestions, and create a stronger sense of “social presence”—the feeling of working
+together with a “colleague.”
+Based on our findings, we have shown ways to improve the design of explanations and synchronization aspects of</p>
+<p>Based on our findings, we have shown ways to improve the design of explanations and synchronization aspects of
+human-AI collaboration, such as matching the AI’s agency with the type of support it can provide (i.e., AI’s capability),
+balancing between human agency and AI agency, and supporting the adaptability and customizability by allowing UX
+practitioners to guide the AI, such as by offering their expertise. Finally, we have presented the design implications for
+AI agency and timing of human-AI collaboration in general and for AI-Assisted tools for UX evaluation.</p>
+<h2 id="references">REFERENCES</h2>
+<p>[1] Amina Adadi and Mohammed Berrada. 2018. Peeking inside the black-box: A survey on Explainable Artificial Intelligence (XAI). <em>IEEE Access</em> 6
+(2018), 52138–52160.
+[2] Saleema Amershi, Maya Cakmak, William Bradley Knox, and Todd Kulesza. 2014. Power to the people: The role of humans in interactive machine
+learning. <em>Ai Magazine</em> 35, 4 (2014), 105–120.
+[3] Morten Sieker Andreasen, Henrik Villemann Nielsen, Simon Ormholt Schrøder, and Jan Stage. 2007. What happened to remote usability testing? An
+empirical study of three methods. In <em>Proceedings of the SIGCHI conference on Human factors in computing systems</em>. 1405–1414.
+[4] Lisa Anne Hendricks, Oliver Wang, Eli Shechtman, Josef Sivic, Trevor Darrell, and Bryan Russell. 2017. Localizing moments in video with natural
+language. In <em>Proceedings of the IEEE international conference on computer vision</em>. 5803–5812.
+[5] Ines Arous, Jie Yang, Mourad Khayati, and Philippe Cudré-Mauroux. 2020. OpenCrowd: A Human-AI Collaborative Approach for Finding Social
+Influencers via Open-Ended Answers Aggregation. In <em>Proceedings of The Web Conference 2020</em>. 1851–1862.
+[6] Vijay Arya, Rachel KE Bellamy, Pin-Yu Chen, Amit Dhurandhar, Michael Hind, Samuel C Hoffman, Stephanie Houde, Q Vera Liao, Ronny Luss,
+Aleksandra Mojsilović, et al. 2019. One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. <em>arXiv preprint</em> <em>arXiv:1909.03012</em> (2019).
+[7] Sriram Karthik Badam and Niklas Elmqvist. 2014. Polychrome: A cross-device framework for collaborative web visualization. In <em>Proceedings of the</em> <em>ACM International Conference on Interactive Tabletops and Surfaces</em>. ACM, 109–118.
+[8] Gagan Bansal, Besmira Nushi, Ece Kamar, Daniel S Weld, Walter S Lasecki, and Eric Horvitz. 2019. Updates in human-ai teams: Understanding and
+addressing the performance/compatibility tradeoff. In <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>, Vol. 33. 2429–2437.
+[9] Gagan Bansal, Tongshuang Wu, Joyce Zhou, Raymond Fok, Besmira Nushi, Ece Kamar, Marco Tulio Ribeiro, and Daniel Weld. 2021. Does the whole
+exceed its parts? the effect of ai explanations on complementary team performance. In <em>Proceedings of the 2021 CHI Conference on Human Factors in</em> <em>Computing Systems</em>. 1–16.
+[10] Reuben Binns, Max Van Kleek, Michael Veale, Ulrik Lyngs, Jun Zhao, and Nigel Shadbolt. 2018. ’It’s Reducing a Human Being to a Percentage’
+Perceptions of Justice in Algorithmic Decisions. In <em>Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems</em>. 1–14.
+[11] Jeremy Birnholtz and Steven Ibara. 2012. Tracking changes in collaborative writing: edits, visibility and group maintenance. In <em>Proceedings of the</em> <em>ACM 2012 conference on Computer Supported Cooperative Work</em>. 809–818.
+[12] Zana Buçinca, Phoebe Lin, Krzysztof Z Gajos, and Elena L Glassman. 2020. Proxy tasks and subjective measures can be misleading in evaluating
+explainable AI systems. In <em>Proceedings of the 25th International Conference on Intelligent User Interfaces</em>. 454–464.</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>[13] Carrie J Cai, Emily Reif, Narayan Hegde, Jason Hipp, Been Kim, Daniel Smilkov, Martin Wattenberg, Fernanda Viegas, Greg S Corrado, Martin C
+Stumpe, et al. 2019. Human-centered tools for coping with imperfect algorithms during medical decision-making. In <em>Proceedings of the 2019 CHI</em> <em>Conference on Human Factors in Computing Systems</em>. 1–14.
+[14]Carrie J Cai, Samantha Winter, David Steiner, Lauren Wilcox, and Michael Terry. 2019. " Hello AI": Uncovering the Onboarding Needs of Medical
+Practitioners for Human-AI Collaborative Decision-Making. <em>Proceedings of the ACM on Human-Computer Interaction</em> 3, CSCW (2019), 1–24.
+[15] Diogo V Carvalho, Eduardo M Pereira, and Jaime S Cardoso. 2019. Machine Learning Interpretability: A Survey on Methods and Metrics. <em>Electronics</em>
+8, 8 (2019), 832.
+[16] José C Castillo, H Rex Hartson, and Deborah Hix. 1998. Remote usability evaluation: can users report their own critical incidents?. In <em>CHI 98</em> <em>conference summary on Human factors in computing systems</em>. 253–254.
+[17] Hao-Fei Cheng, Ruotong Wang, Zheng Zhang, Fiona O’Connell, Terrance Gray, F Maxwell Harper, and Haiyi Zhu. 2019. Explaining Decision-Making
+Algorithms through UI: Strategies to Help Non-Expert Stakeholders. In <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing</em> <em>Systems</em>. ACM, 559.
+[18] Angèle Christin. 2017. Algorithms in practice: Comparing web journalism and criminal justice. <em>Big Data &amp; Society</em> 4, 2 (2017), 2053951717718855.
+[19] Kristin A Cook and James J Thomas. 2005. <em>Illuminating the path: The research and development agenda for visual analytics</em>. National Visualization
+and Analytics Ctr.
+[20]Duncan Cramer and Dennis Laurence Howitt. 2004. <em>The Sage dictionary of statistics: a practical resource for students in the social sciences</em>. Sage.
+[21] Upol Ehsan, Pradyumna Tambwekar, Larry Chan, Brent Harrison, and Mark O Riedl. 2019. Automated rationale generation: a technique for
+explainable AI and its effects on human perceptions. In <em>Proceedings of the 24th International Conference on Intelligent User Interfaces</em>. 263–274.
+[22]K Anders Ericsson and Herbert A Simon. 1984. <em>Protocol analysis: Verbal reports as data.</em> the MIT Press.
+[23] Jerry Alan Fails and Dan R Olsen Jr. 2003. Interactive machine learning. In <em>Proceedings of the 8th international conference on Intelligent user interfaces</em>.
+39–45.
+[24] Mingming Fan, Jinglan Lin, Christina Chung, and Khai N. Truong. 2019. Concurrent Think-Aloud Verbalizations and Usability Problems. <em>ACM</em> <em>Transactions on Computer-Human Interaction</em> 26, 5, Article 28 (July 2019), 35 pages. <a href="https://doi.org/10.1145/3325281">https://doi.org/10.1145/3325281</a>
+[25] Mingming Fan, Serina Shi, and Khai N Truong. 2020. Practices and Challenges of Using Think-Aloud Protocols in Industry. <em>Journal of Usability</em> <em>Studies</em> 15, 4 (2020).
+[26] Mingming Fan, Ke Wu, Jian Zhao, Yue Li, Winter Wei, and Khai N Truong. 2020. VisTA: Integrating Machine Intelligence with Visualization to
+Support the Investigation of Think-Aloud Sessions. <em>IEEE Transactions on Visualization and Computer Graphics</em> 26, 1 (2020), 343–352.
+[27] Asbjørn Følstad, Effie Law, and Kasper Hornbæk. 2012. Analysis in practical usability evaluation: a survey study. In <em>Proceedings of the SIGCHI</em> <em>Conference on Human Factors in Computing Systems</em>. 2127–2136.
+[28] Jill Gerhardt-Powals. 1996. Cognitive engineering principles for enhancing human-computer performance. <em>International Journal of Human-Computer</em> <em>Interaction</em> 8, 2 (1996), 189–211.
+[29] Bhavya Ghai, Q Vera Liao, Yunfeng Zhang, Rachel Bellamy, and Klaus Mueller. 2021. Explainable Active Learning (XAL): Toward AI Explanations as
+Interfaces for Machine Teachers. <em>Proceedings of the ACM on Human-Computer Interaction</em> CSCW (2021).
+[30] Leilani H Gilpin, David Bau, Ben Z Yuan, Ayesha Bajwa, Michael Specter, and Lalana Kagal. 2018. Explaining explanations: An overview of
+interpretability of machine learning. In <em>2018 IEEE 5th International Conference on data science and advanced analytics (DSAA)</em>. IEEE, 80–89.
+[31] Ben Green and Yiling Chen. 2019. The principles and limits of algorithm-in-the-loop decision making. <em>Proceedings of the ACM on Human-Computer</em> <em>Interaction</em> 3, CSCW (2019), 1–24.
+[32] Julián Grigera, Alejandra Garrido, José Matías Rivero, and Gustavo Rossi. 2017. Automatic detection of usability smells in web applications.
+<em>International Journal of Human-Computer Studies</em> 97 (2017), 129–148.
+[33] Nielson Norman Group. [n.d.]. 10 Heuristics for User Interface Design: Article by Jakob Nielsen. <a href="https://www.nngroup.com/articles/ten-usabilityheuristics/">https://www.nngroup.com/articles/ten-usabilityheuristics/</a>
+[34] Riccardo Guidotti, Anna Monreale, Salvatore Ruggieri, Franco Turini, Fosca Giannotti, and Dino Pedreschi. 2018. A survey of methods for explaining
+black box models. <em>ACM computing surveys (CSUR)</em> 51, 5 (2018), 1–42.
+[35] Patrick Harms. 2019. Automated usability evaluation of virtual reality applications. <em>ACM Transactions on Computer-Human Interaction (TOCHI)</em> 26,
+3 (2019), 1–36.
+[36] Jeffrey Heer, Fernanda B Viégas, and Martin Wattenberg. 2007. Voyagers and voyeurs: supporting asynchronous collaborative information
+visualization. In <em>Proceedings of the SIGCHI conference on Human factors in computing systems</em>. ACM, 1029–1038.
+[37] Christian Herbst. [n.d.]. Christian’s Python Library :: A Python library for voice analysis. <a href="https://homepage.univie.ac.at/christian.herbst/python/">https://homepage.univie.ac.at/christian.herbst/python/</a>
+namespacepraat_util.html
+[38] Morten Hertzum and Niels Ebbe Jacobsen. 2001. The evaluator effect: A chilling fact about usability evaluation methods. <em>International journal of</em> <em>human-computer interaction</em> 13, 4 (2001), 421–443.
+[39] Michael Hind, Dennis Wei, Murray Campbell, Noel CF Codella, Amit Dhurandhar, Aleksandra Mojsilović, Karthikeyan Natesan Ramamurthy,
+and Kush R Varshney. 2019. TED: Teaching AI to explain its decisions. In <em>Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society</em>.
+123–129.
+[40] Clayton J Hutto and Eric Gilbert. 2014. Vader: A parsimonious rule-based model for sentiment analysis of social media text. In <em>Eighth international</em> <em>AAAI conference on weblogs and social media</em>.
+Manuscript submitted to ACM</p>
+<hr />
+<p>[41]iMotions. 2021. iMotions. <a href="https://imotions.com/biosensor/fea-facial-expression-analysis/">https://imotions.com/biosensor/fea-facial-expression-analysis/</a>.
+[42] Petra Isenberg, Niklas Elmqvist, Jean Scholtz, Daniel Cernea, Kwan-Liu Ma, and Hans Hagen. 2011. Collaborative visualization: definition, challenges,
+and research agenda. <em>Information Visualization</em> 10, 4 (2011), 310–326.
+[43] Petra Isenberg, Danyel Fisher, Meredith Ringel Morris, Kori Inkpen, and Mary Czerwinski. 2010. An exploratory study of co-located collaborative
+visual analytics around a tabletop display. In <em>IEEE Symposium on Visual Analytics Science and Technology</em>. IEEE, 179–186.
+[44] JongWook Jeong, NeungHoe Kim, and Hoh Peter In. 2020. Detecting usability problems in mobile applications on the basis of dissimilarity in user
+behavior. <em>International Journal of Human-Computer Studies</em> 139 (2020), 102364.
+[45]Robert Johansen. 1988. <em>Groupware: Computer support for business teams</em>. The Free Press.
+[46] Been Kim, Martin Wattenberg, Justin Gilmer, Carrie Cai, James Wexler, Fernanda Viegas, et al. 2018. Interpretability beyond feature attribution:
+Quantitative testing with concept activation vectors (tcav). In <em>International conference on machine learning</em>. PMLR, 2668–2677.
+[47] Rafal Kocielnik, Saleema Amershi, and Paul N Bennett. 2019. Will you accept an imperfect ai? exploring designs for adjusting end-user expectations
+of ai systems. In <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</em>. 1–14.
+[48] Oh-Wook Kwon, Kwokleung Chan, Jiucang Hao, and Te-Won Lee. 2003. Emotion recognition by speech signals. In <em>Eighth European Conference on</em> <em>Speech Communication and Technology</em>.
+[49] Vivian Lai, Han Liu, and Chenhao Tan. 2020. “Why is ‘Chicago’ Deceptive?” Towards Building Model-Driven Tutorials for Humans. In <em>Proceedings</em> <em>of the 2020 CHI Conference on Human Factors in Computing Systems</em> (Honolulu, HI, USA) <em>(CHI ’20)</em>. Association for Computing Machinery, New York,
+NY, USA, 1–13. <a href="https://doi.org/10.1145/3313831.3376873">https://doi.org/10.1145/3313831.3376873</a>
+[50] Vivian Lai and Chenhao Tan. 2019. On human predictions with explanations and predictions of machine learning models: A case study on deception
+detection. In <em>Proceedings of the Conference on Fairness, Accountability, and Transparency</em>. 29–38.
+[51] Doris Jung-Lin Lee, Stephen Macke, Doris Xin, Angela Lee, Silu Huang, and Aditya Parameswaran. 2019. A Human-in-the-loop Perspective on
+AutoML: Milestones and the Road Ahead. <em>Data Engineering</em> (2019), 58.
+[52] Min Kyung Lee. 2018. Understanding perception of algorithmic decisions: Fairness, trust, and emotion in response to algorithmic management. <em>Big</em> <em>Data &amp; Society</em> 5, 1 (2018), 2053951718756684.
+[53] JR Lewis. 1995. Computer usability satisfaction questionnaires: Psychometric evaluation and instructions for use. <em>International Journal of</em> <em>Human-Computer Interaction</em> 7, 1 (1995), 57–78.
+[54] Q. Vera Liao, Daniel Gruen, and Sarah Miller. 2020. Questioning the AI: Informing Design Practices for Explainable AI User Experiences. In
+<em>Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems</em> (Honolulu, HI, USA) <em>(CHI ’20)</em>. Association for Computing Machinery,
+New York, NY, USA, 1–15. <a href="https://doi.org/10.1145/3313831.3376590">https://doi.org/10.1145/3313831.3376590</a>
+[55] Brian Y Lim and Anind K Dey. 2011. Investigating intelligibility for uncertain context-aware applications. In <em>Proceedings of the 13th international</em> <em>conference on Ubiquitous computing</em>. 415–424.
+[56] Maximilian Mackeprang, Claudia Müller-Birn, and Maximilian Timo Stauss. 2019. Discovering the Sweet Spot of Human-Computer Configurations:
+A Case Study in Information Extraction. <em>Proceedings of the ACM on Human-Computer Interaction</em> 3, CSCW (2019), 1–30.
+[57] N. Mahyar and M. Tory. 2014. Supporting Communication and Coordination in Collaborative Sensemaking. <em>IEEE Transactions on Visualization and</em> <em>Computer Graphics</em> 20, 12 (2014), 1633–1642. <a href="https://doi.org/10.1109/TVCG.2014.2346573">https://doi.org/10.1109/TVCG.2014.2346573</a>
+[58] Sharon McDonald, Helen M Edwards, and Tingting Zhao. 2012. Exploring think-alouds in usability testing: An international survey. <em>IEEE Transactions</em> <em>on Professional Communication</em> 55, 1 (2012), 2–19.
+[59] Will McGrath, Brian Bowman, David McCallum, Juan David Hincapié-Ramos, Niklas Elmqvist, and Pourang Irani. 2012. Branch-explore-merge:
+facilitating real-time revision control in collaborative visual exploration. In <em>Proceedings of the ACM International Conference on Interactive Tabletops</em> <em>and Surfaces</em>. ACM, 235–244.
+[60] D Harrison McKnight, Vivek Choudhury, and Charles Kacmar. 2002. Developing and validating trust measures for e-commerce: An integrative
+typology. <em>Information systems research</em> 13, 3 (2002), 334–359.
+[61] D Harrison McKnight, Larry L Cummings, and Norman L Chervany. 1998. Initial trust formation in new organizational relationships. <em>Academy of</em> <em>Management review</em> 23, 3 (1998), 473–490.
+[62]Tim Miller. 2019. Explanation in artificial intelligence: Insights from the social sciences. <em>Artificial Intelligence</em> 267 (2019), 1–38.
+[63]Jakob Nielsen. 2005. Ten usability heuristics. <a href="https://www.nngroup.com/articles/ten-usability-heuristics">https://www.nngroup.com/articles/ten-usability-heuristics</a>
+[64]Don Norman. 2013. <em>The design of everyday things: Revised and expanded edition</em>. Basic books.
+[65] Asil Oztekin, Dursun Delen, Ali Turkyilmaz, and Selim Zaim. 2013. A machine learning-based usability evaluation method for eLearning systems.
+<em>Decision Support Systems</em> 56 (2013), 63–73.
+[66] Raja Parasuraman, Thomas B Sheridan, and Christopher D Wickens. 2000. A model for types and levels of human interaction with automation.
+<em>IEEE Transactions on systems, man, and cybernetics-Part A: Systems and Humans</em> 30, 3 (2000), 286–297.
+[67] Fabio Paternò, Antonio Giovanni Schiavone, and Antonio Conti. 2017. Customizable automatic detection of bad usability smells in mobile accessed
+web applications. In <em>Proceedings of the 19th International Conference on Human-Computer Interaction with Mobile Devices and Services</em>. 1–11.
+[68] Sharoda A. Paul and Madhu C. Reddy. 2010. Understanding Together: Sensemaking in Collaborative Information Seeking. In <em>Proceedings of the</em> <em>2010 ACM Conference on Computer Supported Cooperative Work (CSCW ’10)</em>. Association for Computing Machinery, New York, NY, USA, 321–330.
+<a href="https://doi.org/10.1145/1718918.1718976">https://doi.org/10.1145/1718918.1718976</a>
+[69]Lloyd R Peterson. 1969. Concurrent verbal activity. <em>Psychological Review</em> 76, 4 (1969), 376.
+Manuscript submitted to ACM</p>
+<p>Manuscript submitted to ACM</p>
+<hr />
+<p>[70] Peter Pirolli and Stuart Card. 1999. Information foraging. <em>Psychological Review</em> 106, 4 (Oct. 1999), 643–675. <a href="https://doi.org/10.1037/0033-295X.106.4.643">https://doi.org/10.1037/0033-295X.106.4.643</a>
+[71] Pedro Ponce, David Balderas, Therese Peffer, and Arturo Molina. 2018. Deep learning for automatic usability evaluations based on images: A case
+study of the usability heuristics of thermostats. <em>Energy and Buildings</em> 163 (2018), 111–120.
+[72] Forough Poursabzi-Sangdeh, Daniel G Goldstein, Jake M Hofman, Jennifer Wortman Vaughan, and Hanna Wallach. 2018. Manipulating and
+measuring model interpretability. <em>arXiv preprint arXiv:1802.07810</em> (2018).
+[73] Pearl Pu and Li Chen. 2006. Trust building with explanation interfaces. In <em>Proceedings of the 11th international conference on Intelligent user interfaces</em>.
+93–100.
+[74] Marco Tulio Ribeiro, Sameer Singh, and Carlos Guestrin. 2016. " Why should i trust you?" Explaining the predictions of any classifier. In <em>Proceedings</em> <em>of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining</em>. 1135–1144.
+[75] Ali Sarvghad and Melanie Tory. 2015. Exploiting analysis history to support collaborative data analysis. In <em>Proceedings of Graphics Interface</em> <em>Conference</em>. Canadian Information Processing Society, 123–130.
+[76] Ali Sarvghad, Melanie Tory, and Narges Mahyar. 2016. Visualizing dimension coverage to support exploratory analysis. <em>IEEE transactions on</em> <em>visualization and computer graphics</em> 23, 1 (2016), 21–30.
+[77]Burr Settles. 2009. <em>Active learning literature survey</em>. Technical Report. University of Wisconsin-Madison Department of Computer Sciences.
+[78] Ashraf I Shirani, Mohammed HA Tafti, and John F Affisco. 1999. Task and technology fit: a comparison of two technologies for synchronous and
+asynchronous group communication. <em>Information &amp; Management</em> 36, 3 (1999), 139–150.
+[79] Ben Shneiderman. 2020. Human-centered artificial intelligence: Reliable, safe &amp; trustworthy. <em>International Journal of Human–Computer Interaction</em>
+36, 6 (2020), 495–504.
+[80] Ehsan Jahangirzadeh Soure, Emily Kuang, Mingming Fan, and Jian Zhao. 2021. CoUX: Collaborative Visual Analysis of Think-Aloud Usability Test
+Videos for Digital Interfaces. <em>IEEE Transactions on Visualization and Computer Graphics</em> (2021), 1–1. <a href="https://doi.org/10.1109/TVCG.2021.3114822">https://doi.org/10.1109/TVCG.2021.3114822</a>
+[81] Siegfried Ludwig Sporer and Barbara Schwandt. 2006. Paraverbal indicators of deception: A meta-analytic synthesis. <em>Applied Cognitive Psychology:</em> <em>The Official Journal of the Society for Applied Research in Memory and Cognition</em> 20, 4 (2006), 421–446.
+[82]Anselm Strauss. 1985. Work and the division of labor. <em>Sociological quarterly</em> 26, 1 (1985), 1–19.
+[83] Stefano Teso and Kristian Kersting. 2019. Explanatory interactive machine learning. In <em>Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics,</em> <em>and Society</em>. 239–245.
+[84] Matthew Tobiasz, Petra Isenberg, and Sheelagh Carpendale. 2009. Lark: Coordinating co-located collaboration with information visualization. <em>IEEE</em> <em>Transactions on Visualization and Computer Graphics</em> 15, 6 (2009), 1065–1072.
+[85] Subhashini Venugopalan, Huijuan Xu, Jeff Donahue, Marcus Rohrbach, Raymond Mooney, and Kate Saenko. 2014. Translating videos to natural
+language using deep recurrent neural networks. <em>arXiv preprint arXiv:1412.4729</em> (2014).
+[86] Fernanda B Viegas, Martin Wattenberg, Frank Van Ham, Jesse Kriss, and Matt McKeon. 2007. Manyeyes: a site for visualization at internet scale.
+<em>IEEE transactions on visualization and computer graphics</em> 13, 6 (2007).
+[87] Dakuo Wang, Justin D Weisz, Michael Muller, Parikshit Ram, Werner Geyer, Casey Dugan, Yla Tausczik, Horst Samulowitz, and Alexander Gray.
+2019. Human-AI Collaboration in Data Science: Exploring Data Scientists’ Perceptions of Automated AI. <em>Proceedings of the ACM on Human-Computer</em> <em>Interaction</em> 3, CSCW (2019), 1–24.
+[88] Martin Wattenberg and Jesse Kriss. 2006. Designing for social data analysis. <em>IEEE Transactions on Visualization and Computer Graphics</em> 12, 4 (2006),
+549–557.
+[89]Bryan Wilder, Eric Horvitz, and Ece Kamar. 2020. Learning to Complement Humans. <em>arXiv preprint arXiv:2005.00582</em> (2020).
+[90] Wesley Willett, Jeffrey Heer, Joseph Hellerstein, and Maneesh Agrawala. 2011. CommentSpace: Structured support for collaborative visual analysis.
+In <em>Proceedings of the Conference on Human Factors in Computing Systems (CHI)</em>. ACM, 3131–3140. <a href="https://doi.org/10.1145/1978942.1979407">https://doi.org/10.1145/1978942.1979407</a>
+[91] Tongshuang Wu, Daniel S Weld, and Jeffrey Heer. 2019. Local decision pitfalls in interactive machine learning: An investigation into feature
+selection in sentiment analysis. <em>ACM Transactions on Computer-Human Interaction (TOCHI)</em> 26, 4 (2019), 1–27.
+[92] Shenyu Xu, Chris Bryan, Jianping Kelvin Li, Jian Zhao, and Kwan-Liu Ma. 2018. Chart Constellations: Effective Chart Summarization for Collaborative
+and Multi-User Analyses. <em>Computer Graphics Forum</em> 37, 3 (2018), 75–86. <a href="https://doi.org/10.1111/cgf.13402">https://doi.org/10.1111/cgf.13402</a>
+[93] Qian Yang, Aaron Steinfeld, and John Zimmerman. 2019. Unremarkable ai: Fitting intelligent decision support into critical, clinical decision-making
+processes. In <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</em>. 1–11.
+[94] Mark S Young, Neville A Stanton, and Don Harris. 2007. Driving automation: learning from aviation about design philosophies. <em>International</em> <em>Journal of Vehicle Design</em> 45, 3 (2007), 323–338.
+[95] Yunfeng Zhang, Q. Vera Liao, and Rachel K. E. Bellamy. 2020. Effect of Confidence and Explanation on Accuracy and Trust Calibration in AI-Assisted
+Decision Making. In <em>Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency</em> (Barcelona, Spain) <em>(FAT</em> ’20)*. Association for
+Computing Machinery, New York, NY, USA, 295–305. <a href="https://doi.org/10.1145/3351095.3372852">https://doi.org/10.1145/3351095.3372852</a>
+[96] Jian Zhao, Michael Glueck, Simon Breslav, Fanny Chevalier, and Azam Khan. 2016. Annotation graphs: A graph-based visualization for meta-analysis
+of data based on user-authored annotations. <em>IEEE transactions on visualization and computer graphics</em> 23, 1 (2016), 261–270.
+[97] Jian Zhao, Michael Glueck, Petra Isenberg, Fanny Chevalier, and Azam Khan. 2017. Supporting Handoff in Asynchronous Collaborative Sensemaking
+Using Knowledge-Transfer Graphs. <em>IEEE Transactions on Visualization and Computer Graphics</em> 24, 1 (2017), 340–350.</p>
+<p>Manuscript submitted to ACM</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

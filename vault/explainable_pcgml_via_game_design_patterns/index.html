@@ -1,0 +1,1373 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Deep educational truth layer on Human-AI Interaction.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Explainable PCGML via Game Design Patterns - AIX UX x HAII Knowledge Vault</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#individual-designer-introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AIX UX x HAII Knowledge Vault" class="md-header__button md-logo" aria-label="AIX UX x HAII Knowledge Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AIX UX x HAII Knowledge Vault
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Explainable PCGML via Game Design Patterns
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AIX UX x HAII Knowledge Vault" class="md-nav__button md-logo" aria-label="AIX UX x HAII Knowledge Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    AIX UX x HAII Knowledge Vault
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/vault/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verified Vault
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/hold_review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pending Review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#individual-designer-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      individual designer. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explainable-pcgml-via-game-design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explainable PCGML via Game Design Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explainable PCGML via Game Design Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstract
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-pattern-label-classifier-our-goal-for-the-design-pattern-label-classifier-is-to-minimize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Pattern Label Classifier Our goal for the design pattern label classifier is to minimize
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoencoder-structure-evaluation-we-hypothesize-that-the-inclusion-of-design-pattern-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autoencoder Structure Evaluation We hypothesize that the inclusion of design pattern labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer-evaluation-a-major-concern-for-any-co-creative-tool-based-on-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transfer Evaluation A major concern for any co-creative tool based on Machine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualitative-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualitative Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusions-that-label-and-its-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusions that label and its output.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acknowledgements-we-want-to-thank-our-five-expert-volunteers-this-mate-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgements We want to thank our five expert volunteers. This mate-
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>arXiv:1809.09419v1 [cs.AI] 25 Sep 2018</p>
+<h2 id="individual-designer-introduction">individual designer. Introduction</h2>
+<h1 id="explainable-pcgml-via-game-design-patterns">Explainable PCGML via Game Design Patterns</h1>
+<p><strong>Matthew Guzdial¹, Joshua Reno¹, Jonathan Chen¹, Gillian Smith², and Mark Riedl¹</strong>
+Georgia Institute of Technology¹</p>
+<p>Georgia Institute of Technology¹
+Worcester Polytechnic Institute²</p>
+<p>Worcester Polytechnic Institute²
+mguzdial3, jreno, jonathanchen <em>g</em>@gatech.edu, <a href="mailto:gmsmith@wpi.edu">gmsmith@wpi.edu</a>, <a href="mailto:riedl@cc.gatech.edu">riedl@cc.gatech.edu</a></p>
+<p><em>f</em> mguzdial3, jreno, jonathanchen <em>g</em>@gatech.edu, <a href="mailto:gmsmith@wpi.edu">gmsmith@wpi.edu</a>, <a href="mailto:riedl@cc.gatech.edu">riedl@cc.gatech.edu</a></p>
+<h2 id="abstract">Abstract</h2>
+<p>Procedural content generation via Machine Learning
+(PCGML) is the umbrella term for approaches that generate
+content for games via machine learning. One of the benefits
+of PCGML is that, unlike search or grammar-based PCG, it
+does not require hand authoring of initial content or rules.
+Instead, PCGML relies on existing content and black box
+models, which can be difficult to tune or tweak without
+expert knowledge. This is especially problematic when a
+human designer needs to understand how to manipulate
+their data or models to achieve desired results. We present
+an approach to Explainable PCGML via Design Patterns in
+which the design patterns act as a vocabulary and mode of
+interaction between user and model. We demonstrate that
+our technique outperforms non-explainable versions of our
+system in interactions with five expert designers, four of
+whom lack any machine learning expertise.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Procedural Content Generation (PCG), represents a field
+of research into, and a set of techniques for, generating
+game content algorithmically. PCG historically requires a
+significant amount of human-authored knowledge to generate content, such as rules, heuristics, and individual components, creating a time and design expertise burden. Procedural Content Generation via Machine Learning (PCGML) attempts to solve these issues by applying machine learning to
+extract this design knowledge from existing corpora of game
+content (Summerville et al. 2017). However, this approach
+has its own weaknesses; Applied naively, these models require machine learning literacy to understand and debug.
+arXiv:1809.09419v1 [cs.AI] 25 Sep 2018
+Machine learning literacy is uncommon, especially among
+those designers who might most benefit from PCGML.
+Explainable AI represents a field of research into opening</p>
+<p>Copyright c 2018, Association for the Advancement of Artificial
+Intelligence ( <a href="http://www.aaai.org/">www.aaai.org</a>). All rights reserved.</p>
+<p>Design patterns (Bjork and Holopainen 2004) represent
+one popular way to represent game design knowledge. A design pattern is a category of game structure that serves a general design purpose across similar games. Researchers tend
+to derive design patterns via subjective application of design
+expertise (Hullett and Whitehead 2010), which makes it difficult to broadly apply one set of patterns across different
+designers and games. The same subjective limitation also
+means that an individual set of design patterns can serve to
+clarify what elements of a game matter to an individual designer. Given a set of design patterns specialized to a particular designer one could leverage these design patterns in an
+Explainable PCGML system to help a designer understand
+and tweak a model to their needs. We note our usage of the
+term pattern differs from the literature. Typically, a design
+pattern generalizes across designers, whereas we apply it to
+indicate the unique structures across a game important to an
+individual designer.
+We present an underlying system for a potential co-</p>
+<p>individual designer.
+We present an underlying system for a potential cocreative PCGML tool, intended for designers without ML
+expertise. This system takes user-defined design patterns for
+a target level, and outputs a PCGML model. The design patterns provided by designers and generated by our system can
+be understood as labels on level structure, which allow our
+PCGML model to better represent and reflect the design values of an individual designer. This system has two major
+components: (1) a classification system that learns to classify level structures with the user-specified design pattern
+labels. This system ensures a user does not have to label all
+existing content to train (2) a level generation system that inarXiv:1809.09419v1 [cs.AI] 25 Sep 2018corporates the user’s level design patterns, and can use these
+patterns as a vocabulary with which to interact with the user.
+For example, generating labels on level structure to represent
+the model’s interpretation of that structure to the user.
+The rest of this paper is organized as follows. First, we re-</p>
+<p>late our work to prior, related work. Second, we describe our plainable AI is not just that it will help users understand such
+major components. Third, we discuss the three evaluations al. 2018). If we could include some representation of an in-</p>
+<p>AI to PCGML, the use of a random forest classifier to minimize user effort, and the results of our evaluations. Our re-</p>
+<hr />
+<p>Figure 1: Network architecture for the Autoencoder.</p>
+<p>in improving user interaction and a positive impact on the
+underlying model’s performance.</p>
+<h2 id="related-work">Related Work</h2>
+<p>There exist many prior approaches to co-creative or mixedinitiative design agents and editors (Yannakakis, Liapis, and
+Alexopoulos 2014; Deterding et al. 2017). However, the
+majority of existing approaches have relied upon search
+or grammar-based approaches instead of machine learning,
+making it difficult to adapt to the needs of a particular designer over time (Liapis, Yannakakis, and Togelius 2013;
+Shaker, Shaker, and Togelius 2013; Baldwin et al. 2017). A
+final version of our system would focus on machine learning, adapting to the user, and <em>explaining and visualizing its</em> <em>inner model/process</em>.
+Procedural content generation via Machine Learning</p>
+<p>models to individual designers.
+Super Mario Bros. (SMB) represents a common area
+of research into PCGML (Dahlskog and Togelius 2012;
+Summerville and Mateas 2016; Jain et al. 2016; Snodgrass
+and Ontanon´ 2017). Beyond explainability, our approach
+differs from prior SMB PCGML approaches in terms of representation quality and the size of generated content. We
+focus on the generation of individual level sections instead
+of entire levels in order to better afford collaborative level
+building (Smith, Whitehead, and Mateas 2011). Second,
+prior approaches have abstracted away the possible level
+components into higher order groups. For example, treating
+all enemy types as equivalent and ignoring decorative elements. We make use of a rich representation of all possible
+level components and an ordering that allows our approach
+to place decorative elements appropriately.
+Explainable AI represents an emerging field of research</p>
+<p>ery sample be hand-labeled with an explanation and treated
+explanations from different authors as equivalent. Ehsan et
+al. (2017) made use of explainable AI for explainable agent
+behavior for automated game playing. Their approach relies
+on rationalization, which relies on a second machine learning interpretation of the original behavior, rather than visualizing or explaining the original model as our approach does.
+Design patterns represent a well-researched approach to</p>
+<p>Design patterns represent a well-researched approach to
+game design (Bjork and Holopainen 2004). In theory, game
+design patterns describe general solutions to game design
+problems that occur across many different games. Game Design patterns have been used as heuristics in evolutionary
+PCG systems including in the domain of Super Mario Bros.
+(Dahlskog and Togelius 2012). Researchers tend to derive
+game design patterns through either rigorous, cross-domain
+analysis (Milam and El Nasr 2010) or based upon their subjective interpretation of game structure. We embrace this
+subjectivity in our work by having designers create a language of game design patterns unique to themselves with
+which to interact with a PCGML system.</p>
+<p>ity or co-creativity. We note some discussion in the Sum-</p>
+<h2 id="system-overview">System Overview</h2>
+<p>players, but no work to our knowledge looks at adapting</p>
+<p>The approach presented in this paper builds an Explainable
+PCGML model based on existing level structure and an expert labeling design patterns upon that structure. We chose
+Super Mario Bros. as a domain given its familiarity to the
+game designers who took part in our evaluation. The general process for building a final model is as follows: First,
+users label existing game levels with the game design patterns they want to use for communicating with the system.
+For example, one might label both areas with large amounts
+of enemies and areas that require precise jumps as “challenges”. The exact label can be anything as long as it is used
+consistently. Given this initial user labeling of level structure, we train a random forest classifier to classify additional
+level structure according to the labeled level chunks (Liaw,
+Wiener, and others 2002), which we then use to label all
+available levels with the user design pattern labels. Given
+this now larger training set of both level structure and labels,
+we train a convolutional neural network-based autoencoder
+on both levels structure and its associated labels (Lang 1988;
+LeCun et al. 1989), which can then be used to generate new
+level structure and label its generated content with these design pattern labels (Jain et al. 2016).
+We make use of Super Mario Bros. as our domain, and, in</p>
+<p>(Biran and Cotton 2017), focused on translating or rational-</p>
+<p>Codella et al. (2018) demonstrated how explanations could
+improve model accuracy on three tasks, but required that ev-</p>
+<p>We make use of Super Mario Bros. as our domain, and, in
+particular, we utilize those Super Mario Bros levels present in the Video Game Level Corpus (Summerville et al. 2016b).
+We do not include underwater or boss/castle Super Mario
+Bros. levels. We made this choice as we perceived these two
+level types to be significantly different from all other level
+types. Further, while we make use of the VGLC levels, we
+do not make use of any of the VGLC Super Mario Bros.
+representations, which abstract away level components into
+higher order groups. Instead, we draw on the image parsing approach introduced in (Guzdial and Riedl 2016), using
+a spritesheet and OpenCV (Bradski and Kaehler 2000) to
+parse images of each level for a richer representation.
+In total we identified thirty unique classes of level compo-</p>
+<p>parse images of each level for a richer representation.
+In total we identified thirty unique classes of level components, and make use of a matrix representation for each level
+section of size 8 8 30. The first two dimensions determine the tiles in the <em>x</em> and <em>y</em> axes, while the last dimension
+represents a one-hot vector of length 30 expressing component class. This vector is all 0’s for any empty tile of a Super
+Mario Bros. level, and otherwise has 1’s at the index associated with that particular level component. Thus, we can
+represent all level components, including background decoration. We note that we treat palette swaps of the same component as equivalent in class.
+We make use of the SciPy random forest classifier (Jones,</p>
+<p>ponent as equivalent in class.
+We make use of the SciPy random forest classifier (Jones,
+Oliphant, and Peterson 2014) and tensorflow for the autoencoder (Abadi et al. 2016).</p>
+<h2 id="design-pattern-label-classifier-our-goal-for-the-design-pattern-label-classifier-is-to-minimize">Design Pattern Label Classifier Our goal for the design pattern label classifier is to minimize</h2>
+<p>Our goal for the design pattern label classifier is to minimize
+the amount of work and time costs for a potential user of the
+system. Users have to label level structure with the design
+patterns they would like to use, but the label classifier ensures they do not have to hand-label all available levels. The
+classifier for this task must be able to perform given access
+to whatever small amount of training data a designer is willing to label for it, along with being able to easily update its
+model given potential feedback from a user. We anticipate
+the exact amount of training data the system has access to
+will differ widely between users, but we do not wish to overburden authors with long data labeling tasks. Random forest
+classifiers are known to perform reasonably under these constraints (Michalski, Carbonell, and Mitchell 2013).
+The random forest model takes in an eight by eight level</p>
+<p>100 in order to encourage generality.
+In the case of an interactive, iterative system the random
+forest can be easily retrained. In the case where the random
+forest classifier correctly classifies any new design pattern
+there is no need for retraining. Otherwise, we can delete a
+subset of the trees of the random forest that incorrectly classified the design pattern, and retrain an appropriate number
+of trees to return to the maximum forest size on the existing
+labels and any additional new information.
+Even with the design pattern level classifier this system re-</p>
+<p>cabulary, and labeling content is much easier than designing
+new content. Further, we note that when two humans collaborate they must negotiate a shared vocabulary.</p>
+<h2 id="generator">Generator</h2>
+<p>The existing level generation system is based on an autoencoder, and we visualize its architecture in Figure 1. The input
+comes in the form of a chunk of level content and the associated design patterns label, such as “intro” in the figure. This
+chunk is represented as an eight by eight by thirty input tensor plus a tensor of size <em>n</em> where <em>n</em> indicates the total number
+of design pattern labels given by the user. This last vector of
+size <em>n</em> is a one-hot encoded vector of level design pattern
+labels.
+After input, the level structure and design pattern label</p>
+<p>labels.
+After input, the level structure and design pattern label
+vector are separated. The level structure passes through a
+two layer convolutional neural network (CNN). We note that
+we placed a dropout layer in between the two CNN layers to
+allow better generalization. After the CNN layers the output
+of this section and the design patterns vector recombine and
+pass through a fully connected layer with relu activation to
+an embedded vector of size 512. We note that, while large,
+this is much smaller than the 1920+ <em>n</em> features of the input
+layer. The decoder section is an inverse of the encoder section of the architecture, starting with a relu fully connected
+layer, then deconvolutional neural network layers with upsampling handling the level structure. We implemented this
+model with an adam optimizer and mean square loss. Note
+that for the purposes of evaluation this is a standard autoencoder. We intend to make use of a variational autoencoder in
+future work (Kingma and Welling 2013).</p>
+<h2 id="evaluation">Evaluation</h2>
+<p>Our system has two major parts: (1) a random forest classifier that attempts to label additional content with userprovided design patterns to learn the designer’s vocabulary
+and (2) an autoencoder over level structure and associated
+patterns for generation. In this section we present three evaluations of our system. The first addresses the random forest
+classifier of labels, the second the entirety of the system, and
+the third addresses the limiting factor of time in human computer interactions. For all three evaluations we make use of
+a dataset of levels from Super Mario Bros. labeled by five
+expert designers.</p>
+<p><strong>Adam Le Doux</strong>: Le Doux is a game developer and designer best known for his Bitsy game engine. He is currently a Narrative Tool Developer at Bungie.</p>
+<p>ever, this is a necessary step for the benefit of a shared vo-</p>
+<p>We reached out to ten design experts to label three or more
+Super Mario Bros. levels of their choice to serve as a dataset
+for this evaluation. We do not include prior, published academic patterns of Super Mario Bros. levels (e.g. (Dahlskog
+and Togelius 2012)) as these patterns were designed for general automated design instead of explainable co-creation.
+Our goals for choosing these ten designers were to get as
+diverse a pool of labels as possible. Of these ten, five responded and took part in this study.
+Adam Le Doux: Le Doux is a game developer and de-</p>
+<h2 id="dataset-collection">Dataset Collection</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>set</th>
+<th>labels</th>
+<th>total</th>
+<th>top three</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le Doux</td>
+<td>47</td>
+<td>259</td>
+<td>platform(29)，jump(22)，pipe-flower(22)</td>
+</tr>
+<tr>
+<td>Del Rosario</td>
+<td>26</td>
+<td>38</td>
+<td>concept introduction(3)，objective(3)，completionist reward(2)</td>
+</tr>
+<tr>
+<td>Smith</td>
+<td>21</td>
+<td>95</td>
+<td>enemy pair(17)，staircase(11)，ditch(9)</td>
+</tr>
+<tr>
+<td>Smith-Naive</td>
+<td>25</td>
+<td>118</td>
+<td>multi level(18)，enemy pair(17)，staircase(13)</td>
+</tr>
+<tr>
+<td>Kini</td>
+<td>23</td>
+<td>28</td>
+<td>hazard introduction(3)，hidden powerup(2)，pipe trap(2)</td>
+</tr>
+<tr>
+<td>Snyder</td>
+<td>34</td>
+<td>155</td>
+<td>walking enemy(18)，power up block(17)，coins(13)</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: A table comparing the characteristics of our six sets
+of design pattern labels.</p>
+<p><strong>Dee Del Rosario</strong>: Del Rosario is an events and community organizer in games with organizations such as Different Games Collective and Seattle Indies, along with being
+a gamedev hobbyist. They currently work as a web developer and educator.
+Kartik Kini: Kini is an indie game developer through his</p>
+<p><strong>Gillian Smith</strong>: Smith is an Assistant Professor at WPI.
+She focuses on game design, AI, craft, and generative design.
+Kelly Snyder: Snyder is an Art Producer at Bethesda and</p>
+<p>These experts labeled static images of non-boss and nonunderwater Super Mario Bros. levels present in the Video
+Game Level Corpus (VGLC) (Summerville et al. 2016b).
+The experts labeled these images by drawing a rectangle
+over the level structure in which the design pattern occurred
+with some string to define the pattern. These rectangles
+could be of arbitrary size, but we translated each into either a single training example centered on the eight by eight
+chunk our system requires, or multiple training examples if
+it was larger than eight by eight.
+We include some summarizing information about these</p>
+<p>Figure 2: The first example of the the top label in each set of
+design pattern labels.</p>
+<table>
+<thead>
+<tr>
+<th>set</th>
+<th>approach</th>
+<th>train</th>
+<th>test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le Doux</td>
+<td>RF</td>
+<td>84.06±0.76</td>
+<td>28.73±1.89</td>
+</tr>
+<tr>
+<td>Le Doux</td>
+<td>CNN</td>
+<td>49.06±4.43</td>
+<td>26.73±3.70</td>
+</tr>
+<tr>
+<td>Del Rosario</td>
+<td>RF</td>
+<td>86.71±0.78</td>
+<td>0.77±1.07</td>
+</tr>
+<tr>
+<td>Del Rosario</td>
+<td>CNN</td>
+<td>36.08±19.01</td>
+<td>1.04±0.82</td>
+</tr>
+<tr>
+<td>Smith</td>
+<td>RF</td>
+<td>92.11±0.89</td>
+<td>33.28±3.48</td>
+</tr>
+<tr>
+<td>Smith</td>
+<td>CNN</td>
+<td>59.76±8.16</td>
+<td>26.19±5.02</td>
+</tr>
+<tr>
+<td>Smith-Naive</td>
+<td>RF</td>
+<td>88.49±0.92</td>
+<td>42.31±2.96</td>
+</tr>
+<tr>
+<td>Smith-Naive</td>
+<td>CNN</td>
+<td>65.50±19.68</td>
+<td>36.82±11.84</td>
+</tr>
+<tr>
+<td>Kini</td>
+<td>RF</td>
+<td>90.19±0.69</td>
+<td>41.93±2.29</td>
+</tr>
+<tr>
+<td>Kini</td>
+<td>CNN</td>
+<td>44.32±2.89</td>
+<td>29.07±2.13</td>
+</tr>
+<tr>
+<td>Snyder</td>
+<td>RF</td>
+<td>86.72±1.62</td>
+<td>1.85±5.56</td>
+</tr>
+<tr>
+<td>Snyder</td>
+<td>CNN</td>
+<td>49.40±0.77</td>
+<td>0.00±0.00</td>
+</tr>
+</tbody>
+</table>
+<p>$$
+\overline{{28.73{\pm}1.89}}
+$$</p>
+<p>$$
+\overline{{26.73\pm3.70}}
+$$</p>
+<p>$$
+\overline{{36.08{\pm}19.01}}
+$$</p>
+<p>$$
+{overline{{26.19{\pm5.02}}}}
+$$</p>
+<p>studio Finite Reflection, and an associate producer at Car-</p>
+<p>$$
+4 2. 3 1 \pm 2. 9 6
+$$</p>
+<p>$$
+\overline{{92.11{\pm}0.89}}
+$$</p>
+<p>$$
+\overline{{36.82{\pm}11.84}}
+$$</p>
+<p>$$
+\overline{{59.76{\pm}8.16}}
+$$</p>
+<p>$$
+\overline{{88.49{\pm}0.92}}
+$$</p>
+<p>$$
+\ overline{{41.93{2\pm2.29}}
+$$</p>
+<p>$$
+\ {\overline{{99.19{\pm}0.69}}}
+$$</p>
+<p>$$
+2 9. 0 7 \pm 2. 1 3
+$$</p>
+<p>$$
+\overline{{44.32{\pm}2.89}}
+$$</p>
+<p>$$
+\overline{{1.85{\pm\mathfrak{5}}.56}}
+$$</p>
+<p>$$
+\underline{{{86.72{\pm1}.62}}}
+$$</p>
+<p>44.32 2.89 29.07 2.13 previously a Technical Producer at Bungie.
+All five of these experts were asked to label their choice
+guage/vocabulary that you’d use if you were designing lev-</p>
+<p>$$
+\ {overline{{49.44{\pm}00.77}}}
+$$</p>
+<p>Table 2: A table comparing the accuracy of our random forest label classifier compared to a CNN baseline.</p>
+<p>beled, one including only those patterns she felt the sys-</p>
+<p>In this section we seek to understand how well our random
+forest classifier is able to identify design patterns in level
+structure. For the purposes of this evaluation we made use
+of AlexNet as a baseline (Szegedy et al. 2016), given that
+a convolutional neural network would be the naive way one
+might anticipate solving this problem. We chose AlexNet
+given its popularity and success at similar image recognition
+tasks. In all instances we trained the AlexNet until its error
+converged. We make use of a three-fold cross validation on</p>
+<p>sorted by frequency and alphabetically, of each set. Each ex-</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>set</th>
+<th>No labels</th>
+<th>No Auto Tag</th>
+<th>Full</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le Doux</td>
+<td>12.3±6.3</td>
+<td>152.8±4.8</td>
+<td>10.6±5.6</td>
+</tr>
+<tr>
+<td>Del Rosario</td>
+<td>10.4±5.0</td>
+<td>135.7±3.8</td>
+<td>9.0±4.4</td>
+</tr>
+<tr>
+<td>Smith</td>
+<td>11.5±6.1</td>
+<td>157.2±3.5</td>
+<td>10.4±5.6</td>
+</tr>
+<tr>
+<td>Smith-Naive</td>
+<td>12.7±4.8</td>
+<td>167.6±4.0</td>
+<td>11.5±4.4</td>
+</tr>
+<tr>
+<td>Kini</td>
+<td>9.4±4.4</td>
+<td>129.6±3.6</td>
+<td>10.6±3.3</td>
+</tr>
+<tr>
+<td>Snyder</td>
+<td>28.6±9.9</td>
+<td>144.2±5.0</td>
+<td>15.0±9.4</td>
+</tr>
+</tbody>
+</table>
+<p>$$
+\overline{{12.3{\pm}6.3}}
+$$</p>
+<p>$$
+\overline{{152.8{\pm}4.8}}
+$$</p>
+<p>$$
+\overline{{10.6{\pm\bf{5}}.6}}
+$$</p>
+<p>$$
+\overline{{{10.4\pm5.0}}}
+$$</p>
+<p>$$
+\overline{{135.7{\pm3.8}}}
+$$</p>
+<p>$$
+\overline{{\ 9\pm0.4\pm4.4}}
+$$</p>
+<p>$$
+1 1. 5 \pm 6. 1
+$$</p>
+<p>$$
+\overline{{157.2{\pm3.5}}}
+$$</p>
+<p>$$
+\overline{{10.4{\pm\bf{5}}.6}}
+$$</p>
+<p>$$
+\overline{{12.7{\pm\mathrm{4.8}}}}
+$$</p>
+<p>$$
+\overline{{11.5{\pm\mathrm{4.4}}}}
+$$</p>
+<p>$$
+{\overline{{167.6{\pm4.0}}}}
+$$</p>
+<p>$$
+\overline{{129.6{\pm3.6}}}
+$$</p>
+<p>$$
+\overline{{10.6{\pm}3.3}}
+$$</p>
+<p>$$
+\overline{{28.6{\pm}9.9}}
+$$</p>
+<p>$$
+\overline{{144.2\pm5.0}}
+$$</p>
+<p>$$
+\overline{{15.0\ \pm9.4}}
+$$</p>
+<p>Table 3: A table comparing the error in terms of incorrect
+sprites for our three generators. Smaller values represent
+fewer mistakes.</p>
+<p>the labels for this and the remaining evaluations. We make
+use of a three-fold validation to address the variance across
+even a single expert’s labels and due to the small set of labels
+available for some experts.
+Our major focus is training and test accuracy across the</p>
+<p>available for some experts.
+Our major focus is training and test accuracy across the
+folds. We summarize the results of this evaluation in Table 2, giving the average training and test accuracies across
+all folds along with the standard deviation. We note that in
+all instances our random forest (RF) approach outperformed
+AlexNet CNN in terms of training accuracy, and nearly always in terms of test accuracy. We note that given more
+training time AlexNet’s training accuracy might improve,
+but at the cost of test accuracy. We further note that AlexNet
+was on average one and a half times slower than the random
+forest in terms of training time. These results indicate that
+our random forest produces a more general classifier compared to AlexNet.
+We note that our random forest performed fairly consis-</p>
+<p>pared to AlexNet.
+We note that our random forest performed fairly consistently in terms of training accuracy, at around 85%, but that
+the test accuracy varied significantly. Notably, the test accuracy did not vary according to the the number of training samples or number of labels per expert. This indicates
+that individual experts identify patterns that are more or less
+easy to classify automatically. Further we note that Snyder
+and Del Rosario had very low testing error across the board,
+which indicates a large amount of variance between tagged
+examples. Despite this, we demonstrate the utility of this approach in the next section.</p>
+<p><strong>Autoencoder Structure Evaluation</strong>
+We hypothesize that the inclusion of design pattern labels
+into our autoencoder network will improve its overall representative quality. Further, that the use of an automatic label
+classifier will allow us to gather sufficient training data to
+train the autoencoder. This evaluation addresses both these
+hypotheses. We draw upon the same dataset and the same
+three folds from the prior evaluation and create three variations of our system. The first autoencoder variation has no
+design pattern labels and is trained on all 8 8 chunks of
+level instead of only those chunks labeled or autolabeled
+with a design pattern. Given that this means fewer features
+and smaller input and output tensors, this model should outperform our full model unless the design pattern labels im-</p>
+<h2 id="autoencoder-structure-evaluation-we-hypothesize-that-the-inclusion-of-design-pattern-labels">Autoencoder Structure Evaluation We hypothesize that the inclusion of design pattern labels</h2>
+<p>prove overall representative quality. The second autoencoder
+variation does not make use of the automatic design pattern
+label classifier, thus greatly reducing the training data. The
+last variation is simply our full system. For all approaches
+we trained till training error converged. We note that we
+trained a single ’no labels’ variation and tested it on each
+expert, but trained models for the no automatic classifier and
+full versions of our approach for each expert.
+Given these three variations, we chose to measure the dif-</p>
+<p>Given these three variations, we chose to measure the difference in structure when the autoencoder was fed the test
+portions of each of the three folds. Specifically we capture
+the number of incorrect structure features predicted. This
+can be understood as a stand in for representation quality,
+given that the output of the autoencoder for the test sample
+will be the closest thing the autoencoder can represent to the
+test sample.
+We give the average number and standard deviation of in-</p>
+<p>We give the average number and standard deviation of incorrect structural features/tiles over all three folds in Table
+2. We note that the minimum value here would be 0 errors
+and the maximum value would be 8 8 30 or 1920 incorrect structural feature values. For every expert except for
+Kini, who authored the smallest number of labels, our full
+system outperformed both variations. While some of these
+numbers are fairly close between the full and no labels variation, the values in bold were significantly lower according
+to the paired Wilcoxon Mann Whitney U test (p &lt; 0: 001).
+Given the results in Table 3. We argue that both our hy-</p>
+<p>$$
+(p&lt;0.001)
+$$</p>
+<p>to the paired Wilcoxon Mann Whitney U test (p &lt; 0: 001).
+Given the results in Table 3. We argue that both our hypotheses were shown to be correct, granted that the expert
+gives sufficient labels, with the cut-off appearing to be between Kini’s 28 and Del Rosario’s 38. Specifically the representation quality is improved when labels are used, and the
+label classifier improves performance over not applying the
+label classifier.</p>
+<h2 id="transfer-evaluation-a-major-concern-for-any-co-creative-tool-based-on-machine">Transfer Evaluation A major concern for any co-creative tool based on Machine</h2>
+<p>Transfer Evaluation
+A major concern for any co-creative tool based on Machine
+Learning is training time. In the prior autoencoder evaluation, both the no labels and full versions of our system took
+hours to train to convergence. This represents a major weakness, given that in some co-creative contexts designers may
+not want to wait for an offline training process, especially
+when we anticipate authors wanting to rapidly update their
+set of labels. Given these concerns, we evaluate a variation
+of our approach utilizing transfer learning. This drastically
+speeds up training time by adapting the weights of a pretrained network on one task to a new task.
+We make use of student-teacher or born again neural net-</p>
+<p>We present the results of this evaluation in Table 4. We
+note that, while the best performing variation did not change
+from the prior variation, in all cases except for the Kini</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Le Doux</th>
+<th>Del Rosario</th>
+<th>Smith</th>
+<th>Smith-Naive</th>
+<th>Kini</th>
+<th>Snyder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No labels</td>
+<td>12.3±16.3</td>
+<td>10.4±5.0</td>
+<td>11.5±6.1</td>
+<td>12.7±4.8</td>
+<td>9.3±4.4</td>
+<td>28.6±9.9</td>
+</tr>
+<tr>
+<td>Transfer No Auto Tag</td>
+<td>11.1±5.8</td>
+<td>10.1±5.0</td>
+<td>11.2±6.1</td>
+<td>12.6±4.8</td>
+<td>9.3±4.4</td>
+<td>16.7±9.8</td>
+</tr>
+<tr>
+<td>Transfer w/ Auto</td>
+<td>10.8±5.8</td>
+<td>9.8±5.0</td>
+<td>11.0±6.0</td>
+<td>11.8±6.3</td>
+<td>10.3±4.2</td>
+<td>16.1±9.6</td>
+</tr>
+<tr>
+<td>Full</td>
+<td>10.6±5.6</td>
+<td>9.0±4.4</td>
+<td>10.4±5.6</td>
+<td>11.5±4.4</td>
+<td>10.6±3.3</td>
+<td>15.0±9.4</td>
+</tr>
+</tbody>
+</table>
+<p>$$
+{{\ \overline{{{12.3\pm\mathrm{16}.3}}}}},
+$$</p>
+<p>$$
+\overline{{{10.4\pm5.0}}}
+$$</p>
+<p>$$
+\overline{{11.5\ \pm6.1}}
+$$</p>
+<p>$$
+\overline{{9.3{\pm4.4}}}
+$$</p>
+<p>$$
+\overline{{11.1\ {pm.8}}}
+$$</p>
+<p>$$
+\overline{{28.6{\pm}9.9}}
+$$</p>
+<p>$$
+\overline{{{10.1\pm5.0}}}
+$$</p>
+<p>$$
+\overline{{{11.2\pm6.1}}}
+$$</p>
+<p>$$
+\overline{{10.8{\pm\bf{5}}.8}}
+$$</p>
+<p>$$
+1 1. 0 \pm 6. 0
+$$</p>
+<p>$$
+\overline{{9.3{\pm44.4}}}
+$$</p>
+<p>$$
+\overline{{{0.8\pm5.0}}}
+$$</p>
+<p>$$
+\overline{{16.7\ \pm9.8}}
+$$</p>
+<p>$$
+\overline{{10.3{\pm}4.2}}
+$$</p>
+<p>$$
+\overline{{10.6{\pm\bf{5}}.6}}
+$$</p>
+<p>$$
+\overline{{{16.1\pm9.6}}}
+$$</p>
+<p>$$
+\overline{{9.0{\pm4.4}}}
+$$</p>
+<p>$$
+\overline{{10.4{\pm\bf{5}}.6}}
+$$</p>
+<p>$$
+\overline {{1 5. 0 \pm 9. 4}}
+$$</p>
+<p>$$
+\overline{{11.5{\pm\mathrm{4.}4}}}
+$$</p>
+<p>Table 4: A table comparing the transfer learning approach structure errors to the full system structure errors.</p>
+<h2 id="qualitative-example">Qualitative Example</h2>
+<p>implementation details will depend upon the intended audi-</p>
+<p>ence. However, it is illustrative to give an example of how
+the system could be used. In Figure 3 we present an ex-</p>
+<p>models, the transfer approaches got closer to the full variation approach, sometimes off by as little as a fraction of
+one structure feature. Further, these approaches were significantly faster to train, with the no automatic labeling transfer approach training in an average of 4.48 seconds and the
+automatic labeler transfer approach training in an average
+of 144.92 seconds, compared to the average of roughly five
+hours of the full approach on the same computer. This points
+to a clear breakdown in when it makes sense to apply what
+variation of our approach, depending on time requirements
+and processing power. In addition, it continues to support
+our hypotheses concerning the use of automatic labeler and
+personal level design pattern labels.
+<strong>Qualitative Example</strong></p>
+<p>full system, including the random forest classifier, trains on
+these examples (and the other labels from Del Rosario), and
+is then given as input the eight by eight chunk with only the
+floating bar within it on the left of the image along with the
+desired label “completionist reward”. One can imagine that
+Del Rosario as a user wants to add a reward to this section,
+but doesn’t have any strong ideas. Given this input the system outputs the image on the right.
+We asked Del Rosario what they thought of the perfor-</p>
+<p>tem outputs the image on the right.
+We asked Del Rosario what they thought of the performance of the system and whether they considered this output matched their definition of completionist reward. They
+replied “Yes – I think? I would because I’m focusing on
+the position of the coins.” We note that Del Rosario did not
+see the most decisive patch when making this statement,
+which we extracted as in (Olah et al. 2018). This clearly
+demonstrates some harmony between the learned model and
+the design intent. However, Del Rosario went on to say “I
+think if I were to go... more strict with the definition/phrase,
+I’d think of some other configuration that would make you
+think, ‘oooooh, what a tricky design!!’ ”. This indicates a
+desire to further clarify the model. Thus, we imagine an iterative model is necessary for a tool utilizing this system and
+a user to reach a state of harmonious interaction.</p>
+<h2 id="conclusions">Conclusions</h2>
+<h2 id="conclusions-that-label-and-its-output">Conclusions that label and its output.</h2>
+<p>In this paper, we present an approach to explainable PCGML
+(XPCGML) through user-authored design pattern labels
+over existing level structure. We evaluate our autoencoder
+and random forest labeler components on levels labeled by
+game design experts. These labels serve as a shared language
+between the user and level design agent, which allows for
+the possibility of explainability and meaningful collaborative interaction. We intend to take our system and incorporate it into a co-creative tool for novice and expert level designers. To the best of our knowledge this represents the first
+approach to explainable PCGML.</p>
+<h2 id="acknowledgements-we-want-to-thank-our-five-expert-volunteers-this-mate-">Acknowledgements We want to thank our five expert volunteers. This mate-</h2>
+<p>rial is based upon work supported by the National Science
+Foundation under Grant No. IIS-1525967. We would also Qualitative Example
+like to thank the organizers and attendees of Dagstuhl Seminar 17471 on Artificial and Computational Intelligence in</p>
+<p>[Abadi et al. 2016]Abadi, M.; Barham, P.; Chen, J.; Chen,
+Z.; Davis, A.; Dean, J.; Devin, M.; Ghemawat, S.; Irving,</p>
+<hr />
+<p>G.; Isard, M.; et al. 2016. Tensorflow: A system for largescale machine learning. In <em>OSDI</em>, volume 16, 265–283.
+[Baldwin et al. 2017]Baldwin, A.; Dahlskog, S.; Font, J. M.;
+and Holmberg, J. 2017. Mixed-initiative procedural generation of dungeons using game design patterns. In <em>Compu-</em> <em>tational Intelligence and Games (CIG), 2017 IEEE Confer-</em> <em>ence on</em>, 25–32. IEEE.
+[Biran and Cotton 2017]Biran, O., and Cotton, C. 2017. Explanation and justification in machine learning: A survey. In
+<em>IJCAI 2017 Workshop on Explainable AI (XAI)</em>.
+[Bjork and Holopainen 2004]Bjork, S., and Holopainen, J.
+2004. Patterns in game design. <em>ISBN:1584503548</em>.
+[Bradski and Kaehler 2000]Bradski, G., and Kaehler, A.
+2000. Opencv. <em>Dr. Dobbs journal of software tools</em> 3.
+[Codella et al. 2018]Codella, N. C.; Hind, M.; Ramamurthy,
+K. N.; Campbell, M.; Dhurandhar, A.; Varshney, K. R.; Wei,
+D.; and Mojsilovic, A. 2018. Teaching meaningful explanations. <em>arXiv:1805.11648</em>.
+[Dahlskog and Togelius 2012]Dahlskog, S., and Togelius, J.
+2012. Patterns and procedural content generation: revisiting
+mario in world 1 level 1. In <em>Proceedings of the First Work-</em> <em>shop on Design Patterns in Games</em>, 1. ACM.
+[Deterding et al. 2017]Deterding, C. S.; Hook, J. D.;
+Fiebrink, R.; Gow, J.; Akten, M.; Smith, G.; Liapis, A.; and
+Compton, K. 2017. Mixed-initiative creative interfaces. In
+<em>CHI EA’17: Proceedings of the 2016 CHI Conference Ex-</em> <em>tended Abstracts on Human Factors in Computing Systems</em>.
+ACM.
+[Ehsan et al. 2017]Ehsan, U.; Harrison, B.; Chan, L.; and
+Riedl, M. O. 2017. Rationalization: A neural machine translation approach to generating natural language explanations.
+<em>arXiv:1702.07826</em>.
+[Guzdial and Riedl 2016]Guzdial, M., and Riedl, M. 2016.
+Game level generation from gameplay videos. In <em>Twelfth</em> <em>Artificial Intelligence and Interactive Digital Entertainment</em> <em>Conference</em>.
+[Hullett and Whitehead 2010]Hullett, K., and Whitehead, J.
+2010. Design patterns in fps levels. In <em>FDG’10 Proceedings</em> <em>of the Fifth International Conference on the Foundations of</em> <em>Digital Games</em>. ACM.
+[Jain et al. 2016]Jain, R.; Isaksen, A.; Holmgard, C.; and To-˚
+gelius, J. 2016. Autoencoders for level generation, repair,
+and recognition. In <em>Proceedings of the ICCC Workshop on</em> <em>Computational Creativity and Games</em>.
+[Jones, Oliphant, and Peterson 2014]Jones, E.; Oliphant, T.;
+and Peterson, P. 2014. <em>f</em> SciPy <em>g</em>: open source scientific tools
+for <em>f</em> Python <em>g</em>.
+[Kingma and Welling 2013]Kingma, D. P., and Welling, M.
+2013. Auto-encoding variational bayes. In <em>The 2nd Interna-</em> <em>tional Conference on Learning Representations (ICLR)</em>.
+[Lang 1988]Lang, K. J. 1988. A time-delay neural network
+architecture for speech recognition. <em>Technical Report CMU-</em> <em>CS-88-152</em>.
+[LeCun et al. 1989]LeCun, Y.; Boser, B.; Denker, J. S.; Henderson, D.; Howard, R. E.; Hubbard, W.; and Jackel, L. D.</p>
+<ol>
+<li>Backpropagation applied to handwritten zip code
+      recognition. <em>Neural computation</em> 1(4):541–551.
+      [Liapis, Yannakakis, and Togelius 2013]Liapis, A.; Yannakakis, G. N.; and Togelius, J. 2013. Sentient sketchbook:
+      Computer-aided game level authoring. In <em>Proceedings</em> <em>of ACM Conference on Foundations of Digital Games</em>,
+      213–220. FDG.
+      [Liaw, Wiener, and others 2002]Liaw, A.; Wiener, M.; et al.</li>
+<li>Classification and regression by randomforest. <em>R news</em>
+      2(3):18–22.
+      [Michalski, Carbonell, and Mitchell 2013]Michalski, R. S.;
+      Carbonell, J. G.; and Mitchell, T. M. 2013. <em>Machine learn-</em> <em>ing: An artificial intelligence approach</em>. Springer Science &amp;
+      Business Media.
+      [Milam and El Nasr 2010]Milam, D., and El Nasr, M. S.</li>
+<li>Design patterns to guide player movement in 3d
+      games. In <em>Proceedings of the 5th ACM SIGGRAPH Sym-</em> <em>posium on Video Games</em>, 37–42. ACM.
+      [Olah et al. 2018]Olah, C.; Satyanarayan, A.; Johnson, I.;
+      Carter, S.; Schubert, L.; Ye, K.; and Mordvintsev, A. 2018.
+      The building blocks of interpretability. <em>Distill</em> 3(3):e10.
+      [Shaker, Shaker, and Togelius 2013]Shaker, N.; Shaker, M.;
+      and Togelius, J. 2013. Ropossum: An authoring tool for
+      designing, optimizing and solving cut the rope levels. In
+      <em>Proceedings of the Ninth AAAI Conference on Artificial In-</em> <em>telligence and Interactive Digital Entertainment</em>.
+      [Smith, Whitehead, and Mateas 2011]Smith, G.; Whitehead, J.; and Mateas, M. 2011. Tanagra: Reactive planning
+      and constraint solving for mixed-initiative level design.
+      <em>IEEE Transactions on Computational Intelligence and AI in</em> <em>Games</em> 3(3):201–215.
+      [Snodgrass and Ontanon 2017] ´ Snodgrass, S., and Ontanon, ´
+      S. 2017. Learning to generate video game maps using
+      markov models. <em>IEEE Transactions on Computational In-</em> <em>telligence and AI in Games</em> 9(4):410–422.
+      [Summerville and Mateas 2016]Summerville, A., and
+      Mateas, M. 2016. Super mario as a string: Platformer level
+      generation via lstms. In <em>The 1st International Conference of</em> <em>DiGRA and FDG</em>.
+      [Summerville et al. 2016a]Summerville, A.; Guzdial, M.;
+      Mateas, M.; and Riedl, M. O. 2016a. Learning player tailored content from observation: Platformer level generation
+      from video traces using lstms. In <em>Twelfth Artificial Intelli-</em> <em>gence and Interactive Digital Entertainment Conference</em>.
+      [Summerville et al. 2016b]Summerville, A. J.; Snodgrass,
+      S.; Mateas, M.; and Ontanon, S. 2016b. The vglc: The video ´
+      game level corpus. In <em>Procedural Content Generation Work-</em> <em>shop at DiGRA/FDG</em>.
+      [Summerville et al. 2017]Summerville, A.; Snodgrass, S.;
+      Guzdial, M.; Holmgard, ˚ C.; Hoover, A. K.; Isaksen, A.;
+      Nealen, A.; and Togelius, J. 2017. Procedural content
+      generation via machine learning (pcgml). <em>arXiv preprint</em> <em>arXiv:1702.00539</em>.
+      [Szegedy et al. 2016]Szegedy, C.; Vanhoucke, V.; Ioffe, S.;
+      Shlens, J.; and Wojna, Z. 2016. Rethinking the inception
+      architecture for computer vision. In <em>Proceedings of the IEEE</em></li>
+</ol>
+<hr />
+<p><em>Conference on Computer Vision and Pattern Recognition</em>,
+2818–2826.
+[Yannakakis, Liapis, and Alexopoulos 2014]Yannakakis,
+G. N.; Liapis, A.; and Alexopoulos, C. 2014. Mixedinitiative co-creativity. In <em>Proceedings of the 9th Con-</em> <em>ference on the Foundations of Digital Games</em>. FDG.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
