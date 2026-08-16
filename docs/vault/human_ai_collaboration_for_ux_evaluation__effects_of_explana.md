@@ -2,7 +2,7 @@
 title: "Human-AI Collaboration for UX Evaluation: Effects of Explanations and Synchronization"
 source_url: "http://arxiv.org/pdf/2112.12387v1"
 doi: "10.1145/nnnnnnn.nnnnnnn"
-ingest_date: "2026-08-15"
+ingest_date: "2026-08-16"
 status: "publish"
 ---
 

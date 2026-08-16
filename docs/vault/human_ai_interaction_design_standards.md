@@ -2,7 +2,7 @@
 title: "Human-AI Interaction Design Standards"
 source_url: "http://arxiv.org/pdf/2503.16472v2"
 doi: "10.48550/arXiv.2503.16472"
-ingest_date: "2026-08-15"
+ingest_date: "2026-08-16"
 status: "publish"
 ---
 

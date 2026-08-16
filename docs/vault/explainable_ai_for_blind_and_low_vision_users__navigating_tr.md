@@ -1,8 +1,8 @@
 ---
 title: "Explainable AI for Blind and Low-Vision Users: Navigating Trust, Modality, and Interpretability in the Agentic Era"
 source_url: "http://arxiv.org/pdf/2604.00187v2"
-doi: "10.1145/nnnnnnn.nnnnnnn"
-ingest_date: "2026-08-15"
+doi: "https://doi.org/10.1145/nnnnnnn.nnnnnnn"
+ingest_date: "2026-08-16"
 status: "publish"
 ---
 

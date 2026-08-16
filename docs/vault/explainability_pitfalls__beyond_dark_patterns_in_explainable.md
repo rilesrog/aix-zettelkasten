@@ -2,7 +2,7 @@
 title: "Explainability Pitfalls: Beyond Dark Patterns in Explainable AI"
 source_url: "http://arxiv.org/pdf/2109.12480v1"
 doi: "arXiv:2109.12480v1"
-ingest_date: "2026-08-15"
+ingest_date: "2026-08-16"
 status: "publish"
 ---
 

@@ -2,7 +2,7 @@
 title: "The Bias Paradox: How AI Personas Can Overcome Human Limitations in UX Research"
 source_url: "http://arxiv.org/pdf/2606.17101v1"
 doi: "https://doi.org/10.1145/1234567890"
-ingest_date: "2026-08-15"
+ingest_date: "2026-08-16"
 status: "publish"
 ---
 
