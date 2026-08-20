@@ -2,7 +2,7 @@
 title: "Explainability Pitfalls: Beyond Dark Patterns in Explainable AI"
 source_url: "http://arxiv.org/pdf/2109.12480v1"
 doi: "arXiv:2109.12480v1"
-ingest_date: "2026-08-19"
+ingest_date: "2026-08-20"
 status: "publish"
 ---
 
@@ -20,7 +20,7 @@ To make Explainable AI (XAI) systems trustworthy, understanding harmful effects 
 
 Safety and trustworthiness are major goals of Explainable AI (XAI), a research area that aims to provide human-understandable justifications for the system’s behavior [1–3]. This safety is vital because AI systems increasingly power decision-making in high-stakes domains like healthcare [4–7], finance [8, 9], and criminal justice [10–12]. Adding explainabilty does not necessarily guarantee positive effects; there can also be detrimental ones. To facilitate AI safety, beyond designing effective explanations, we also need to properly understand detrimental effects of AI explanations.
 
-Despite commendable progress in XAI, emerging work has highlighted detrimental effects of expla- nations [13–16]. For instance, deceptive practices can be intentionally used to design placebic expla- nations (devoid of justificatory content) and engender trust in AI systems and obfuscate harm [17]. *However, not all detrimental effects are intentional.* Despite the designer’s best intentions, it is
+Despite commendable progress in XAI, emerging work has highlighted detrimental effects of explanations [13–16]. For instance, deceptive practices can be intentionally used to design placebic explanations (devoid of justificatory content) and engender trust in AI systems and obfuscate harm [17]. *However, not all detrimental effects are intentional.* Despite the designer’s best intentions, it is
 
 # arXiv:2109.12480v1 [cs.HC] 26 Sep 2021
 
@@ -44,7 +44,7 @@ In this case study [23], we investigated how two different groups—people with 
 
 In the study, participants provided both qualitative and quan- titative perception information after watching videos of three robots (AI agents) using Reinforcement Learning to navigate a sequential decision-making environment—a field of rolling boulders and flowing lava to retrieve essential food supplies for trapped space explorers (more task details in [23]). The robots behave identically except in the way they “think out loud” or explain themselves. The NR robot (the relevant one for this paper) “thinks out loud” by simply outputting the numerical Q- values for the current state (Fig. 1). Q-values [24] can provide some transparency into the agent’s beliefs about each action’s relative utility (“quality”), but do not contain information on “why” one action has a higher utility than another. Participants were *not* told that the numbers are Q-values nor do they know Figure 1: Screenshot depicting the which values correspond to which actions. Numerical-Reasoning (NR) robot navi-
 
-We found that *participants in both groups had unwarranted* gating the task environment and “think- ing out loud” using numbers. Taken *faith in numbers*. However, their extent and reasons for doing from [23]. This robot was used as a foil so were different. To understand the reasons behind the effect, against two other robots with natural we will use the notion of cognitive heuristics (rules-of-thumb or language explanation strategies. mental short-cuts), which leads to biases and errors if applied inappropriately [25–27]. We will see how different heuristics, tied to one’s AI background, can lead to undesired outcomes.
+We found that *participants in both groups had unwarranted* gating the task environment and “thinking out loud” using numbers. Taken *faith in numbers*. However, their extent and reasons for doing from [23]. This robot was used as a foil so were different. To understand the reasons behind the effect, against two other robots with natural we will use the notion of cognitive heuristics (rules-of-thumb or language explanation strategies. mental short-cuts), which leads to biases and errors if applied inappropriately [25–27]. We will see how different heuristics, tied to one’s AI background, can lead to undesired outcomes.
 
 For the *AI group*, the mere presence of numbers triggered heuristic reasoning that associated mathe- matical representations with logical algorithmic thinking process even when they could “‘not fully
 
@@ -113,11 +113,11 @@ With our deepest gratitude, we thank our participants for generously investing t
 [12] Karen Hao. Ai is sending people to jail – and getting it wrong. *MIT Technology Review*, January
 
 2019.
-[13] Simone Stumpf, Adrian Bussone, and Dympna O’sullivan. Explanations considered harmful? user interactions with machine learning systems. In *ACM SIGCHI Workshop on Human-* *Centered Machine Learning*, 2016.
+[13] Simone Stumpf, Adrian Bussone, and Dympna O’sullivan. Explanations considered harmful? user interactions with machine learning systems. In *ACM SIGCHI Workshop on Human-Centered Machine Learning*, 2016.
 
 [14] Alison Smith-Renner, Ron Fan, Melissa Birchfield, Tongshuang Wu, Jordan Boyd-Graber, Daniel S Weld, and Leah Findlater. No explainability without accountability: An empirical study of explanations and feedback in interactive ml. In *Proceedings of the 2020 CHI Conference* *on Human Factors in Computing Systems*, pages 1–13, 2020.
 
-[15]Harmanpreet Kaur, Harsha Nori, Samuel Jenkins, Rich Caruana, Hanna Wallach, and Jennifer Wortman Vaughan. Interpreting Interpretability: Understanding Data Scientists’ Use of Inter- pretability Tools for Machine Learning. In *Proceedings of the 2020 CHI Conference on Human* *Factors in Computing Systems*, CHI ’20, pages 1–14, New York, NY, USA, 2020. Association for Computing Machinery.
+[15]Harmanpreet Kaur, Harsha Nori, Samuel Jenkins, Rich Caruana, Hanna Wallach, and Jennifer Wortman Vaughan. Interpreting Interpretability: Understanding Data Scientists’ Use of Interpretability Tools for Machine Learning. In *Proceedings of the 2020 CHI Conference on Human* *Factors in Computing Systems*, CHI ’20, pages 1–14, New York, NY, USA, 2020. Association for Computing Machinery.
 
 [16] Bhavya Ghai, Q Vera Liao, Yunfeng Zhang, Rachel Bellamy, and Klaus Mueller. Explainable active learning (xal) toward ai explanations as interfaces for machine teachers. *Proceedings of* *the ACM on Human-Computer Interaction*, 4(CSCW3):1–28, 2021.
 
@@ -145,9 +145,9 @@ With our deepest gratitude, we thank our participants for generously investing t
 1974.
 [27] Richard E Petty and John T Cacioppo. The elaboration likelihood model of persuasion. In *Communication and persuasion*, pages 1–24. Springer, 1986.
 
-[28] Upol Ehsan and Mark O Riedl. Human-centered explainable ai: Towards a reflective sociotech- nical approach. In *International Conference on Human-Computer Interaction*, pages 449–466. Springer, 2020.
+[28] Upol Ehsan and Mark O Riedl. Human-centered explainable ai: Towards a reflective sociotechnical approach. In *International Conference on Human-Computer Interaction*, pages 449–466. Springer, 2020.
 
-[29] Ellen J Langer, Arthur Blank, and Benzion Chanowitz. The mindlessness of ostensibly thought- ful action: The role of" placebic" information in interpersonal interaction. *Journal of personality* *and social psychology*, 36(6):635, 1978.
+[29] Ellen J Langer, Arthur Blank, and Benzion Chanowitz. The mindlessness of ostensibly thoughtful action: The role of" placebic" information in interpersonal interaction. *Journal of personality* *and social psychology*, 36(6):635, 1978.
 
 [30] Matthew Chalmers and Ian MacColl. Seamful and seamless design in ubiquitous computing. In *Workshop at the crossroads: The interaction of HCI and systems issues in UbiComp*, volume 8,
 
@@ -155,7 +155,7 @@ With our deepest gratitude, we thank our participants for generously investing t
 [31] Sarah Inman and David Ribes. " beautiful seams" strategic revelations and concealments. In *Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems*, pages 1–14,
 
 2019.
-[32] Gregor Broll and Steve Benford. Seamful design for location-based mobile games. In *Interna-* *tional Conference on Entertainment Computing*, pages 155–166. Springer, 2005.
+[32] Gregor Broll and Steve Benford. Seamful design for location-based mobile games. In *International Conference on Entertainment Computing*, pages 155–166. Springer, 2005.
 
 [33] Janet Vertesi. Seamful spaces: Heterogeneous infrastructures in interaction. *Science, Technology,* *&amp; Human Values*, 39(2):264–284, 2014.
 
